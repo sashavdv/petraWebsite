@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function sendMail(){
-        return view('pages.contact');
+    public function sendMail(Request $request){
+        
     }
 }
