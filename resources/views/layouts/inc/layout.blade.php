@@ -8,7 +8,7 @@
 
 
 <div class="container">
-    @include('template.menu')
+    @include('layouts.inc.menu')
     @yield('content')
 </div>
 <div class="footer">

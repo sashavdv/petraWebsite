@@ -33,3 +33,6 @@ Route::post('/contact', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('admin_area', ['middleware' => 'admin', function () {
+    return view('admin.home');
+}]);
