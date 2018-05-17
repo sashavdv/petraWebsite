@@ -26,9 +26,7 @@ Route::get('/relaxatie', function () {
 Route::get('/contact', function () {
     return view('user.pages.contact');
 });
-Route::post('/contact', function () {
-    return view('user.pages.contact');
-});
+Route::post('/contact', 'ContactController@sendMail');
 
 Auth::routes();
 
