@@ -12,7 +12,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -25,7 +24,7 @@
     <header>
         @include('layouts.inc.menu')
     </header>
-    <article>
+    <article id="content">
         @yield('content')
     </article>
     <footer>

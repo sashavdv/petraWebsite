@@ -1,0 +1,15 @@
+/* Variables */
+$body-bg: #EBF5FD;
+$header-bg: #99CEF2;
+
+body{
+  background-color: $body-bg;
+  height: 200vh;
+}
+header{
+  background-color: $header-bg;
+  height: 400px;
+}
+nav{
+  background-color: rgba(0,0,0,0.05);
+}
