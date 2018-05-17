@@ -11,27 +11,28 @@
 |
 */
 
+Route::get('/', function () {
+    return view('pages.home');
+});
+Route::get('/schoonheid', function () {
+    return view('pages.schoonheid');
+});
+Route::get('/divinatie', function () {
+    return view('pages.divinatie');
+});
+Route::get('/relaxatie', function () {
+    return view('pages.relaxatie');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::post('/contact', function () {
+    return view('pages.contact');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin_area', ['middleware' => 'admin', function () {
-//
+    return view('admin.home');
 }]);
-Route::get('/', function () {
-    return view('user.pages.home');
-});
-Route::get('/schoonheid', function () {
-    return view('user.pages.schoonheid');
-});
-Route::get('/divinatie', function () {
-    return view('user.pages.divinatie');
-});
-Route::get('/relaxatie', function () {
-    return view('user.pages.relaxatie');
-});
-Route::get('/contact', function () {
-    return view('user.pages.contact');
-});
-Route::post('/contact', function () {
-    return view('user.pages.contact');
-});
