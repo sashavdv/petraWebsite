@@ -29,3 +29,7 @@ Route::get('/contact', function () {
 Route::post('/contact', function () {
     return view('pages.contact');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
