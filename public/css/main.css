@@ -1,0 +1,19 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
+
+body{
+    background-color : #f7f7f7;
+}
+.nav-item > .nav-link{
+    font-size: 20px;
+    font-weight:bold;
+    text-transform: Capitalize;
+    color: #030303;
+}
+.nav-item {
+    border-right : 1px solid black;
+    padding-right: 2em;
+    padding-left: 2em
+}
+.nav-item:last-child {
+    border-right : none;
+}
