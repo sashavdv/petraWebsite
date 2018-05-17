@@ -12,22 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('user.pages.home');
 });
 Route::get('/schoonheid', function () {
-    return view('pages.schoonheid');
+    return view('user.pages.schoonheid');
 });
 Route::get('/divinatie', function () {
-    return view('pages.divinatie');
+    return view('user.pages.divinatie');
 });
 Route::get('/relaxatie', function () {
-    return view('pages.relaxatie');
+    return view('user.pages.relaxatie');
 });
 Route::get('/contact', function () {
-    return view('pages.contact');
+    return view('user.pages.contact');
 });
 Route::post('/contact', function () {
-    return view('pages.contact');
+    return view('user.pages.contact');
 });
 
 Auth::routes();

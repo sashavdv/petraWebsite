@@ -22,13 +22,13 @@
 </head>
 <body>
     <header>
-        @include('inc.nav')
+        @include('layouts.inc.menu')
     </header>
     <article>
         @yield('content')
     </article>
     <footer>
-        @include('inc.foot')
+        @include('layouts.inc.footer')
     </footer>
 </body>
 </html>
