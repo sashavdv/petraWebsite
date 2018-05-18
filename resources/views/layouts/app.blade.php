@@ -24,11 +24,28 @@
     <header>
         @include('layouts.inc.menu')
     </header>
-    <article id="content">
-        @yield('content')
-    </article>
-    <footer>
-        @include('layouts.inc.footer')
-    </footer>
+    <div id="content-section" class="row">
+        <article id="content" class="col-8 offset-1">
+            @yield('content')
+        </article>
+        <div id="calendar" class="col-2 offset-1">
+            <table>
+                <thead>
+                <tr>
+                    <td colspan="3">May</td>
+                </tr>
+                <tr>
+                    <td><button id="previous-button">&lt;</button></td>
+                    <td>14 tot 20</td>
+                    <td><button id="next-button">&gt;</button></td>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <footer>
+            @include('layouts.inc.footer')
+        </footer>
+    </div>
+
 </body>
 </html>
