@@ -3,7 +3,7 @@
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
 body {
   background-color: #EBF5FD;
-  height: 200vh;
+  overflow-x: hidden;
 }
 
 header {
@@ -13,21 +13,6 @@ header {
 
 nav {
   background-color: rgba(0, 0, 0, 0.05);
-}
-
-/* Calendar */
-#calendar {
-  width: 350px;
-  background-color: #F5FAFE;
-  pagging: 0;
-}
-
-#calendar table {
-  width: 100%;
-  display: block;
-  border: 1px solid black;
-  padding: 0;
-  margin: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,7 +4,7 @@ $header-bg: #99CEF2;
 
 body{
   background-color: $body-bg;
-  height: 200vh;
+  overflow-x: hidden;
 }
 header{
   background-color: $header-bg;
@@ -12,17 +12,4 @@ header{
 }
 nav{
   background-color: rgba(0,0,0,0.05);
-}
-/* Calendar */
-#calendar{
-  width: 350px;
-  background-color: #F5FAFE;
-  pagging: 0;
-}
-#calendar table{
-  width: 100%;
-  display: block;
-  border: 1px solid black;
-  padding: 0;
-  margin: 0;
 }
