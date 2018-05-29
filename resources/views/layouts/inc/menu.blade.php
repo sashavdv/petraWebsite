@@ -7,19 +7,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">@lang('titles.home')<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="schoonheid">Schoonheid</a>
+                <a class="nav-link" href="schoonheid">@lang('titles.beauty')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="relaxatie">Relaxatie</a>
+                <a class="nav-link" href="relaxatie">@lang('titles.relaxation')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="divinatie">Divinatie</a>
+                <a class="nav-link" href="divinatie">@lang('titles.divination')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact">Contact</a>
+                <a class="nav-link" href="contact">@lang('titles.contact')</a>
             </li>
         </ul>
     </div>

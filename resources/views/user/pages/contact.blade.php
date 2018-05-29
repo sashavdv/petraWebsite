@@ -20,7 +20,7 @@
             #map { height: 500px; }
         </style>
     </div>
-    <h1>Inschrijfformulier</h1>
+    <h1>@lang('titles.subscribe')</h1>
     {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post']) }}
     {{ Form::label('first-name', 'Voornaam') }}
     {{ Form::text('first-name', '', ['class' => 'form-control']) }}

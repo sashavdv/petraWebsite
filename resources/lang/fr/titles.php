@@ -1,21 +1,32 @@
 <?php
 return [
+    /* Navigation */
+      'home' => 'Accueil',
+      'beauty' => 'Beauté',
+      'relaxation' => 'Relaxation',
+      'divination' => 'Divination',
+      'contact' => 'Contact',
+
     /* Home */
       'about' => 'à Propos de Pure Petra',
+
     /* Beauty */
       'face_care' => 'Soin du Visage',
-      'herbs' => 'Natuurlijke Kruiden',
-      'pedicure' => 'Medische Pedicure',
+      'herbs' => 'Herbes Naturelles',
+      'pedicure' => 'Pédicure Médicale',
+
     /* Relaxation */
-      'meditation' => 'Meditatie',
-      'coaching' => 'Coaching',
-      'spirituality' => 'Spiritualiteit',
+      'meditation' => 'Méditation',
+      'coaching' => 'Encadrement',
+      'spirituality' => 'Spiritualité',
+
     /* Divination */
-      'movie' => 'Filmpje',
-      'price' => 'Tarieven',
+      'movie' => 'Film',
+      'price' => 'Tarifs',
+
     /* Contact */
       'contact' => 'Contact',
-      'parking' => 'Parking',
-      'location' => 'Locatie',
-      'subscribe' => 'Inschrijfformulier',
+      'parking' => 'Stationnement',
+      'location' => 'Lieu',
+      'subscribe' => 'Formulaire d\'inscription',
 ];
