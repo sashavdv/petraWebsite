@@ -20,8 +20,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <!-- JQuery -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <header>
@@ -36,5 +34,33 @@
     <footer>
             @include('layouts.inc.footer')
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="{{ asset('js/clndr.js') }}"></script>
+    <script type="text/javascript">
+        var calendars = {};
+
+        $(document).ready(function () {
+            console.log('Page loaded');
+
+            var eventArray = [];
+
+            calendars.clndr = $('.calendar').clndr({
+                events: eventArray,
+                clickEvents: {
+                    nextMonth: function () {
+                        console.log('Next Month');
+                    },
+                    previousMonth: function () {
+                        console.log('Previous Month');
+                    }
+                },
+                showAdjacentMonths: true,
+                adjacentDaysChangeMonth: false
+            });
+        });
+    </script>
 </body>
 </html>
