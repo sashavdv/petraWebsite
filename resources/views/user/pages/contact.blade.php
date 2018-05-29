@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <h1>Contact</h1>
+    <h1>@lang('titles.contact')</h1>
     <h1>Parking</h1>
     <h1>Maps</h1>
     <div class="container">
