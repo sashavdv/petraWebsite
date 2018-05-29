@@ -19,26 +19,22 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <header>
         @include('layouts.inc.menu')
     </header>
-    <div id="content-section" class="row">
-        <article id="content" class="col-9">
-            <div class="container">
-                @yield('content')
-            </div>
-        </article>
-        <div id="calendar" class="col-3">
-            <div class="container">
-                @include('layouts.inc.calendar')
-            </div>
-        </div>
-        <footer>
-            @include('layouts.inc.footer')
-        </footer>
-    </div>
 
+    @include('layouts.inc.calendar')
+
+    <div class="container">
+                @yield('content')
+    </div>
+    <footer>
+            @include('layouts.inc.footer')
+    </footer>
 </body>
 </html>

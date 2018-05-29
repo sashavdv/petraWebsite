@@ -2,14 +2,15 @@
 $body-bg: #EBF5FD;
 $header-bg: #99CEF2;
 
-body{
+body {
   background-color: $body-bg;
   overflow-x: hidden;
 }
-header{
+header {
   background-color: $header-bg;
   height: 400px;
 }
-nav{
+nav {
   background-color: rgba(0,0,0,0.05);
 }
+
