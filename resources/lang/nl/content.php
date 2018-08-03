@@ -112,22 +112,46 @@ return [
                 <p>Wil je je liever làten verzorgen en verwennen?... Dan kan je de prijslijst van mijn intieme schoonheidssalon raadplegen en op die manier genieten!</p>
                     
                 <p>Trefwoorden: aromatherapie-ongekunsteld-homeopathie-DYI-genieten-fythotherapie-geuren-echte natuurlijkheid-wellness-happy feel-gezonde hormonen-hoe werkt mijn huid- balans- gezonde ingrediënten-ontspanning-ontstressen-creatief zijn</p>
-
-
-
-
-
 ',
     'herbs' => 'Herbes Naturelles',
     'pedicure' => 'Pédicure Médicale',
 
     /* Relaxation */
-    'meditation' => 'Méditation',
+    'meditation' => '
+        
+    ',
     'coaching' => 'Encadrement',
     'spirituality' => 'Spiritualité',
 
     /* Divination */
-    'movie' => 'Film',
+    'movie' => '
+        <p>Divinatie is datgene zichtbaar en helder maken wat onzichtbaar was, of nog in het onderbewuste lag, door middel van je intuïtie, rationele deductie en verbanden te leggen. Al worden deze deductieprocessen aangestuurd door je gevoel, toch wil ik benadrukken dat bij divinatie veel meer komt kijken dan louter je intuïtieve gevoelens.</p>
+        <p>De bekenste vorm van divinatie is Tarot.
+            Tarot is net een compleet systeem, waarin elke kaart, elke figuur op de kaarten, en élk gebied van de kaart een betekenis heeft. 
+        <br/>Met dat ‘gebied’ bedoel ik: Cijfers, mystieke symbolen, kleuren, het uitgebeelde verhaal etc…
+        <br/>Dus zowel de kaart op zich, als de kaart in versterkende of meer ontkrachtende vorm met andere kaarten, vertelt een verhaal. </p>
+        <p>Dit verhaal geeft je dan de bewuste inzichten die je al in je energie meedroeg, maar waar je tot op dat moment nog net wat minder voeling mee had. In dit opzicht werkt Tarot zeer onthullend en is het gelijk een erg goede tool voor meer innerlijke wijsheid bloot te leggen../p>
+        <p>Vaak heb ik de kaarten weten leggen aan iemand en men noemde dit dan ‘voorspellen’. Maar op het gevaar af, van tegen de stroom op te zwemmen nu, wil ik hier toch een deel bijstellen.
+        <br/>Mits dat energie veranderlijk is – het kost meer moeite iets altijd hetzelfde te houden dan eender wat anders…ÉN we ook nog dagdagelijks leven met het gegeven van kosmische vrije wil, schept dit in zijn totaliteit toch een ander plaatje dan staten dat de kaarten leggen ‘voorspellen’ is.</p>
+        <p>Wat kaartleggen voor je kan doen, is de energie van een moment vastleggen. Dat wil zeggen: wanneer er niets in je leven verandert, dan zal ‘zus of zo’ het antwoord op je vraag zijn. Als, ten minste, je een legster kiest die bij je eigen natuur past en die daardoor jou ook goed kan in-voelen. </p>
+        <p>De fijnste manier om te checken of je iemand anders de kaarten voor je wil laten leggen, is dat kleine nerveuze gevoel dat vaak ook gepaard gaat met spirituele groei. Je voelt een deel(tje) weerstand dus of angst, maar dat gevoel wordt meer overschaduwd door de opwinding en nieuwsgierigheid naar de ervaring van de kaartlegging. Datzelfde geldt ook op helemaal dezelfde manier voor de persoon door wie je de legging het wilt laten uitvoeren trouwens.</p>
+        <p>Nu zijn er natuurlijk nog veel meer vormen van divinatie dan Tarot, of andere kaartspellen. Lenormand en engelenkaarten zijn daar oa goede voorbeelden van, maar divinatie stopt niet daar.
+        <br/>Strikt genomen wilt de term zeggen: aflezen van de energie die in het gebied ligt, dat voor onze gewone zintuigen normaal gezien niet zo makkelijk waarneembaar is.
+                Ook voorwerpen worden hiervoor gebruikt, tekeningen je maakt etc…eigenlijk is de lijst eindeloos.</p>
+        <p>De Tarot laten leggen is een co-creatie.</p>
+        <p>De Tarot zèlf leggen is eveneens een co-creatie, alleen heb je daar geen tussenpersoon als brug naar je on(der)bewuste.</p>
+        <p>Wat voor jou het fijnst aanvoelt, is natuurlijk een persoonlijke zaak.
+        Al kan Tarot, bol van symboliek als die staat, wel enige studie vergen.
+        Wil je de kaarten vaker raadplegen, dan kan je instappen in de leergang ik hiervoor aanbied.
+        </p>
+        <p>De meest gebruikte Tarot is die van Rider-Waite. De meest complexe kaarten bekend, is het Thoth spel.</p>
+        <p>Beiden zijn afgeleiden van de Golden Dawn kaarten, maar de esoterische Thoth Tarot betrekt véél meer mystieke elementen in het spel, dan enige andere.
+        Uiteraard, ook dat is weer een keuze.
+        </p>
+        <p>Om je een idee te geven: De Thoth Tarot van occulist Aleister Crowley ( met de schilderijen van kunstenares Lady Frieda Harris ), omvat elementen van Egyptische, Griekse, Oosterse, middeleeuwse en christelijke tradities. Alchemie, astrologie, kabbala en numerologie inbegrepen. Deze vormen samen een compleet portret van achetypen, van innerlijke en uiterlijke menselijke processen met als doel volledig cultuur overstijgend te kunnen zijn. 5 jaar ontwikkeling hadden de kaarten nodig, maar ze werden pas berucht en beroemd na de dood van beide ontwerpers.</p>
+        <p>Zowel voor zelf leren kaarten te leggen, als voor een persoonlijke sessie, kan je bij me terecht. Raadpleeg gerust met regelmaat de agenda van de workshops op deze website hiervoor.</p>
+        <p>Ik wens je alvast ‘The Divine’ toe!</p>
+    ',
     'price' => 'Tarifs',
 
     /* Contact */
