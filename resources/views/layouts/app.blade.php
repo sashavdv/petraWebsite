@@ -34,11 +34,8 @@
         @include('layouts.inc.menu')
     </header>
 
-    @include('layouts.inc.calendar')
+    @yield('content')
 
-    <div class="container">
-                @yield('content')
-    </div>
     <footer>
             @include('layouts.inc.footer')
     </footer>

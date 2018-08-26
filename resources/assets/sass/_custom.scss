@@ -1,16 +1,30 @@
-/* Variables */
-$body-bg: #EBF5FD;
-$header-bg: #99CEF2;
+/* Colors */
+$color-white: #fff;
+$color-light-blue: #AAEEFF;
+$color-yellow: #FDE995;
+$color-nav-top: #373A3C;
+$color-grey;
 
-body {
-  background-color: $body-bg;
-  overflow-x: hidden;
+/* Margin & Padding */
+$padding-sections: 70px;
+
+/* CSS */
+section {
+  margin: 0;
+  padding: $padding-sections 0;
 }
-header {
-  background-color: $header-bg;
-  height: 400px;
-}
-nav {
-  background-color: rgba(0,0,0,0.05);
+section.bkg-white {
+  background-color: $color-white;
 }
 
+section.bkg-blue {
+  background-color: $color-light-blue;
+}
+
+section.bkg-yellow {
+  background-color: $color-yellow;
+}
+
+div.review {
+  background-color: white;
+}
