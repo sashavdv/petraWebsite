@@ -8,10 +8,6 @@ section {
   padding: 70px 0;
 }
 
-section h2 {
-  margin-bottom: 20px;
-}
-
 section.bkg-white {
   background-color: #fff;
 }
@@ -26,50 +22,6 @@ section.bkg-yellow {
 
 div.review {
   background-color: white;
-}
-
-/* Custom Calendar */
-.clndr {
-  display: inline-block;
-  background-color: #fff;
-  padding: 10px;
-  border: 2px solid #d3d3d3;
-  border-radius: 10px;
-}
-
-div.clndr-control-button, div.month {
-  display: inline-block;
-  font-size: 1.8em;
-}
-
-span.clndr-control-button:before {
-  content: "&lt;";
-}
-
-div.clndr-control-button {
-  margin: 20px;
-}
-
-td.header-day, td.day {
-  display: inline-block;
-  width: 49px;
-  height: 49px;
-  margin: 5px;
-  padding: 11px 0;
-  text-align: center;
-}
-
-td.day {
-  border: 2px solid #d3d3d3;
-  border-radius: 4px;
-}
-
-td.today {
-  background-color: #AAEEFF;
-}
-
-td.past {
-  opacity: 0.6;
 }
 
 /*# sourceMappingURL=app.css.map */
