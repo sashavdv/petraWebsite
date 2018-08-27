@@ -40,10 +40,6 @@
             <div class="col-lg-9">
                 @yield('content')
             </div>
-            <div class="col-lg-3 text-center">
-
-                @include('layouts.inc.calendar')
-            </div>
         </div>
     </div>
     <footer>

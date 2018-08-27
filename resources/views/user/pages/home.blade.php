@@ -11,6 +11,8 @@
     <section id="events" class="bkg-blue">
         <div class="container">
             <h2>@lang('titles.events')</h2>
+            @include('layouts.inc.calendar')
+
         </div>
     </section>
 
