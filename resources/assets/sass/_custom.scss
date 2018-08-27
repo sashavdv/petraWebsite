@@ -16,7 +16,9 @@ section {
 section.bkg-white {
   background-color: $color-white;
 }
-
+.clndr{
+  background-color: $color-white;
+}
 section.bkg-blue {
   background-color: $color-light-blue;
 }
@@ -26,5 +28,31 @@ section.bkg-yellow {
 }
 
 div.review {
+  margin-top:30px;
   background-color: $color-white;
+  border-radius: 5px;
+  border-style:solid;
+  border-width: thin;
+  border-color:$color-grey;
+  padding: 20px 30px 20px 30px ;
+}
+span.rev-name{
+ // color: $color-grey;
+  padding-left: 10px;
+  font-weight: bold;
+  color: $color-grey;
+  text-transform: capitalize;
+}
+span.rev-title{
+  font-size: large;
+  font-weight: bold;
+}
+span.rev-stars {
+      float:right;
+}
+.fa-star{
+  opacity:0.80;
+}
+p.rev-content{
+  padding-top: 20px;
 }

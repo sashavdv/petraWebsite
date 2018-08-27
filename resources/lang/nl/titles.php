@@ -9,7 +9,8 @@ return [
 
     /* Home */
       'about' => 'Over Pure Petra',
-
+       'reviews' => 'Pluimpjes',
+        'events' => 'Kalender',
     /* Beauty */
       'face_care' => 'Gelaatsverzorging',
       'herbs' => 'Natuurlijke Kruiden',
