@@ -47,5 +47,11 @@
     <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
     <script srd="{{ asset('js/leaflet.jd') }}" type="text/javascript"></script>
     <script srd="{{ asset('js/leaflet-src.jd') }}" type="text/javascript"></script>
+    <script>
+        var prevBtn = document.getElementsByClassName("clndr-previous-button");
+        prevBtn[0].innerHTML = "<";
+
+        console.log(prevBtn);
+    </script>
 </body>
 </html>
