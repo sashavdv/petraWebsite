@@ -54,7 +54,118 @@ return [
 
     /* Relaxation */
     'meditation' => '
-        
+<h2>Bedreigingen van de innerlijke vrede, belang van relaxatie.</h2>
+
+<p>In een wereld waar we overspoeld worden door vervuiling, lichtpollutie, welvaart- toxiciteit, stress en een overvloed aan prikkels, krijgen onze organen en ons zenuwstelsel het zwaar te verduren.</p>
+
+<p>Het is maar logisch dat het ons soms allemaal te machtig en teveel wordt. Dit kan je enerzijds zien aan het stijgend aantal burn-outs en anderzijds aan het aantal mensen dat ervoor kiest om volledig anders te gaan leven.</p>
+
+<p>Ontspanning is dus broodnodig en dat kan je op verschillende manieren doen. Er is echter een groot verschil tussen gewoon een wijntje gaan drinken met vrienden, een avondje voor de tv hangen of het verankeren van een werkelijk rustpunt.</p>
+<p>Dit laatste zinkt veel dieper in ons lichaamssysteem in en werkt veel langer door.</p>
+
+<p>Toch is het niet nodig om je leven volledig om te gooien om meer balans te ervaren.</p>
+<p>Bovendien kan je balancering of herbalancering op elk moment van de dag doorvoeren.</p>
+
+<h2>Wanneer kiezen voor herbalancerende relaxatie?</h2>
+
+<p>&hellip; als het je allemaal teveel wordt.</p>
+<p>&hellip; als je je beter in je vel wilt voelen.</p>
+<p>&hellip; als je snel boos wordt.</p>
+<p>&hellip; als je het gevoel hebt dat je leven te snel gaat.</p>
+<p>&hellip; als je je somber voelt.</p>
+<p>&hellip; als je op zoek bent naar een meer completer leven.</p>
+<p>&hellip; als je voelt dat je rust mist.</p>
+<p>&hellip; als je je bewustzijn wilt verruimen.</p>
+<p>&hellip; als je merkt dat je sarcastisch en kortaf naar anderen reageert.</p>
+<p>&hellip; als je jezelf gelukkig wilt maken zonder dat het al teveel van je vergt.</p>
+
+
+<p>Het is je innerlijke bron van geluk naar buiten laten komen en niemand kan dat van je afnemen of be&iuml;nvloeden als jij dat niet wilt.</p>
+
+<h2>Wat kan ik voor je betekenen?</h2>
+
+<p>Balanceren of relaxatie kan je leren, en meditatie is daarbij een doeltreffende techniek die ik je kan aanleren.</p>
+<p>Evenzo kan je je huidige leven naast dat van de levensgebieden van de Chakra&rsquo;s leggen.</p>
+<p>Ook hier bied ik een programma voor aan. Het ene al meer uitgebreid als het andere, steeds op maat van je eigen specifieke behoeftes en wensen.</p>
+
+<p>Meditatie, ontspanningstechnieken, gezonde slaap, een frisse geest in een verfrist lijf, meer balans in AL je levensgebieden doordat jij ze onder de loupe neemt &ndash; wil jij dit ook?...</p>
+<p>Dat kan!</p>
+
+<p>Wil jij ook leren hoe je meer balans in je leven kan aanbrengen?</p>
+<p>Kijk dan met regelmaat naar de workshop/activiteiten agenda op deze website, of volg me via Instagram, YouTube of Facebook.</p>
+
+
+<h2>Laten we samen op pad gaan! &lt;3</h2>
+<h2>&nbsp;</h2>
+
+<h1>BIJLAGE bij MEDITATIE:</h1>
+
+<h2><span style="font-family: Wingdings;">&agrave;</span> Onze oerinstincten werken door.</h2>
+<p>Al 20.000 jaar ontwikkelen wij ons als mens, toch blijven onze zelfbehoud reflexen gelden. Je hoorde waarschijnlijk al van de <strong>vecht-vlucht-verstijven (fight-flight-freeze) reactie. </strong></p>
+
+<p>Die benaming omvat datgene wat er in ons <span style="font-family: \'Cambria\',serif;">oudste hersendeel</span> gebeurt wanneer we een bedreiging ervaren.</p>
+
+<p>Zeer nuttig om dit zo te hebben werken als je nog als jager in de prehistorie leeft en een gevecht op leven en dood moet aangaan met een groot wild dier of een vijandige stam, maar praktisch onhoudbaar als je je in onze huidige maatschappij begeeft waar diezelfde zelfbehoud reflexen geactiveerd worden omdat er een emotionele behoefte niet vervuld wordt.</p>
+
+<p>Dit <strong>lymbisch systeem</strong> <strong>(oudste hersendeel)</strong> dat jouw emoties, reuk, gedrag en zintuigen aanstuurt, triggert telkens weer je autonome zenuwstelsel dat op zijn beurt je hormonenhuishouding en je stofwisseling beheerst.</p>
+<p>Zelfs je sympatische zenuwstelsel ( deel van het autonome zenuwstelsel dat instaat voor je lichaamsprocessen) reageert dan op volle toeren.</p>
+
+<h2><span style="font-family: Wingdings;">&agrave;</span> Lichamelijke gevolgen van onze zelfbehoud reflexen:</h2>
+<ul>
+<li>hogere bloeddruk en je hart staat onder druk</li>
+<li>bloedvaten vernauwen zich</li>
+<li>stresshormonen nemen toe, verhoogde staat van lichamelijke alertheid</li>
+<li>torenhoge bloedsuikerspiegel</li>
+<li>de spijsvertering valt stil doordat je bloedsomloop voornamelijk naar je benen en armen toegaat om te kunnen aanvallen of vluchten</li>
+<li>groei &eacute;n seksuele hormonen nemen pauze</li>
+<li>immuniteit wordt onderdrukt, ziekteverwekkers bestrijden is overbodig als je leven &lsquo;bedreigd&rsquo; wordt</li>
+<li>je bloed wordt kleveriger doordat je lichaam zich op verwondingen voorbereid</li>
+</ul>
+<p style="margin-left: 36.0pt;">&nbsp;</p>
+<p>AL deze zaken voert je lijf volautomatisch uit, met als gevolg een verhoogd risico op vele stress gerelateerde ziekten. Zelfs ons leervermogen en ons geheugen tast stress aan.</p>
+
+<p><strong>Maar het voornaamste wat te onthouden valt van dit alles, is dat in onze huidige maatschappij stress veroorzaakt wordt door onvervulde behoeften!</strong></p>
+<p><strong>Elke ergernis, elke tegenvaller, elke druk van werk of je omgeving jij ervaart, zet deze oude vecht-vlucht-verstijven modus in actie!</strong></p>
+
+<p>Klinische proeven wijzen uit dat een&nbsp; gemiddeld persoon die ni&eacute;t overwerkt is, of aan het einde van zijn Latijn zit, toch nog gemiddeld 11 &agrave; 12 keer per dag dit proces doorgaat door &eacute;&eacute;n of andere kleine frustratie.</p>
+<p>Dit komt uit op een gemiddelde van meer dan 1 keer per uur!</p>
+
+<p>Reden ten over dus, om een manier te vinden om dit proces trachten om te keren. Liefst dan nog cumulatief werkend elke maal je je gekozen methode beoefent.</p>
+
+<p><em>Meditatie lijkt de methode bij uitstek om dit aan te pakken.</em></p>
+<p><em>&ldquo;Ga je het internet op vind je al makkelijk over de 7.000.000 zoekresultaten op meer dan 2000 onderzoeksdocumenten die dit staven.&rdquo; (* de Geheimen van Meditatie &ndash; Davidji)</em></p>
+
+<p>Verlichting van stress, fysiek welbehagen en op een goede manier cognitief functioneren,&hellip;allemaal wordt dit via klinische studies rechtstreeks in verband gebracht met mediteren.</p>
+
+<p><strong>Ook is mediteren iets wat iedereen kan.</strong> De transformerende resultaten werken al van je eerste sessie.</p>
+
+<p>Alleen het daadwerkelijk doen is aan jou.</p>
+
+
+<p><em>&nbsp;</em></p>
+
+<h1>BIJLAGE bij CHAKRA-werk:</h1>
+
+<p>De Chakra&rsquo;s vertegenwoordigen een verzameling van verschillende energie centra in ons lichaam. Eigenlijk kan je ze beschouwen als een soort van <strong>brug tussen materie en geest. </strong></p>
+
+<p><strong>Een chakra behuist een plaats in ons lichaam, met zijn eigen specifieke orgaan dat bepaalde hormonale en zenuw gerelateerde fysieke processen beheerst. Ook linken we een chakra dan telkens aan een levensgebied en specifieke behoeften, emoties en ervaringen</strong>.</p>
+
+<p>De meest klassieke methode reikt je 7 levensgebieden aan die het best in balans verkeren, wil jij je voldaan en gelukkig in je vel voelen. Deze levensgebieden kennen we uit de overlevering van de tantrische yoga traditie. Hier en nu in het Westen, brengen we ze nog altijd in verband met subtiele draaikolken van energie, die de zenuwknopen van ons centrale zenuwstelsel aansturen en be&iuml;nvloeden.</p>
+
+<p>Ook worden de chakra&rsquo;s in verband gebracht met een spiritueel ontwaken, al kan zulks natuurlijk ook beschouwd worden als een puur lichamelijke ervaring.</p>
+<p>Mijn inziens geldt het beiden.</p>
+
+<p>En wat ik meer belangrijk vind:</p>
+<p>&nbsp;<em>&ldquo;de Chakra&rsquo;s kan je gebruiken als een vergrootglas om naar jezelf en de wereld om je heen te kijken.&rdquo; (* Werkboek Chakra &ndash; Anodea Judith)</em></p>
+<p><em>&nbsp;</em></p>
+<p><strong>Wil jij ook meer balans in je leven ondervinden, kijken waar het beter kan of waar het nog aan schort?... </strong></p>
+<p><strong>Dan is Chakra-werk iets voor jou. Het feit dat je deze tekst leest, is al een 1<sup>ste</sup> indicatie dat je de universele synchronisiteit ervaart, die je kan toelaten dit pad te nemen.</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Ik wens je in alle liefde hier succes toe!</p>
+
+
+
+
     ',
     'coaching' => 'Encadrement',
     'spirituality' => 'Spiritualité',
