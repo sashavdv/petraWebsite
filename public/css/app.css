@@ -3,12 +3,17 @@
 /* Margin & Padding */
 /* CSS */
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
+@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
 section {
   margin: 0;
   padding: 70px 0;
 }
 
 section.bkg-white {
+  background-color: #fff;
+}
+
+.clndr {
   background-color: #fff;
 }
 
@@ -21,7 +26,37 @@ section.bkg-yellow {
 }
 
 div.review {
-  background-color: white;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d3d3d3;
+  padding: 20px 30px 20px 30px;
+}
+
+span.rev-name {
+  padding-left: 10px;
+  font-weight: bold;
+  color: #d3d3d3;
+  text-transform: capitalize;
+}
+
+span.rev-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+span.rev-stars {
+  float: right;
+}
+
+.fa-star {
+  opacity: 0.80;
+}
+
+p.rev-content {
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */
