@@ -11,6 +11,11 @@
     <section id="events" class="bkg-blue">
         <div class="container">
             <h2>@lang('titles.events')</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="cal1 mx-auto"></div>
+                </div>
+            </div>
         </div>
     </section>
 
