@@ -15,71 +15,7 @@ return [
                     Tevens draaide ze in een vorm van jeugdige rebellie, alle wereldgodsdiensten wel eens op zijn kop en bleef toen een periode hangen aan het paganisme. 
                     Al kwam die insteek oorspronkelijk eerder op gang door haar enorme voorliefde voor fytotherapie en het ritueel gebruik van geneeskrachtige en giftige planten.
                 </p>
-                <p>
-                    Toch ook daar, bij deze natuurgodsdienst, zette ze na 15 jaar kanttekeningen bij de heersende denkbeelden die evenzeer eerder richting macht stroomden, dan richting universele 
-                    liefde en liefde voor het individue.
-                </p>
-                <p>
-                    In de loop der jaren, verdiepte ze zich in het eenheidsgegeven van deze wereld, zonder daarom aan onze klassieke ‘realiteit’ van dualiteit voorbij te gaan.
-                    Wit & zwart, voor haar gaan ze, in deze realiteit, deze wereld samen. 
-                    Met als stipulatie weliswaar, dat onze leefwereld er een is waar kwantumfysica & kosmisch denken, gelukkig stilaan mainstream in ons gezamenlijk collectief doorbreekt.
-                </p>
-                <p>
-                    De kern hiervan: Zelfliefde & healing, het weten dat het al goed (zo) is, ongeacht de omstandigheden van onze persoonlijke levens, is wat ze wilt uitdragen.
-                    Voor deze hedendaagse maatschappij, is dat gegeven van verbinding, van zoveel mogelijk echtheid, haar gift. 
-                </p>
-
-                <p>
-                    Petra is van opleiding een gedreven schoonheidsspecialiste met een specialisatie in cosmetologie, aromatherapie, natuurlijke huidverzorging, cosmetische en ontspanningsmassage en medische pedicure.
-                    Kleur, geur en natuurlijke fleur, doen haar hart sneller slaan. 
-                </p>
-                <p>
-                    Je kan bij haar terecht voor persoonlijk advies rond je  gevoelige- of probleemhuid + littekenbehandeling na plastische chirurgie of operaties.
-                    Een gelaatsverzorging zal altijd voorafgegaan worden door een grondige huidanalyse, en de gebruikte extracten en producten worden ter plekke aan jouw huidtype aangepast.
-                    Heb je probleem voeten, of gewoon moeilijk te verzorgen voeten of teennagels, dan kan je bij haar genieten van een pedicure die verder gaat dan nagels knippen en velletjes & eelt verwijderen. 
-                </p>
-                <p>
-                    Tevens biedt Petra je veelvuldige meditatietechnieken aan, en ook op het gebied van spiritualiteit kan je bij haar terecht. Balancering door middel van chakrawerk is een specialiteit.
-                </p>
-                <p>
-                    Of voel je je aangetrokken tot de werking van de Tarot en zijn omstandige, mystieke symboliek? Heb je eerder een boon voor de vrijmoedige Lenormandkaarten?
-                    Petra geeft regelmatig info hierover vrij, en er staat jaarcursus op het programma voor  diegenen die zich hierin willen verdiepen. 
-                </p>
-                <p>
-                    De modus in spiritueel onderzoek en divinatie is altijd gericht op een groter begripsvermogen en bijgaande inzichtelijke puurheid, die reikt naar wat ons doet tikken als mens, naar dat wat 
-                    onze harten oplicht en verblijd. 
-                </p> 
-                <p>
-                    Schaduwonderzoek wordt hierbij niet vermeden daar perfectionisme naar constante vrolijkheid, een utopie is die vaak maar ontduikingsgedrag voorstelt.
-                    We zijn licht én duister in haar ondervinding, al vallen deze beiden sowieso onder de noemer LIEFDE. Instincten en miljoenen jaren celgeheugen laten zich op dit vlak wel degelijk gelden, 
-                    toch zijn wij mensen als energetische entiteit zoveel groter en meer dan we zelf vaak beseffen.
-                </p>
-                <p>
-                    Gelukkig zijn is voor Petra een balans(oefening) die je kan leren, iets waar ze zich graag mee naar het collectief toe, ten dienste stelt.
-                    Wees gerust, we zijn nooit klaar, en we never get it ‘done’. 
-                    Mens zijn betekent voor haar intrinsiek impecfectie. Datgene wat net zo mooi, ontwapenend en spannend kan zijn.
-                    Intuïtieve kracht in jezelf vinden, dicht bij jezelf blijven - maw het goddelijke aspect van jezelf eren, datgene wat zo moeilijk onder woorden te brengen is, is wat zij op een DIY 
-                    manier inbouwt in haar leven. Gelijk ook hetgene zij uitdraagt en waar ze allerlei manieren voor aanreikt als houvast.
-                </p>
-                <p>
-                    Haar laatste fascinatie geldt de verschillen in man- vrouw energie. En hoe we als maatschappij en individue kunnen terugkomen van het #METOO verhaal.
-                    Maw: Hoe geraken een man en een vrouw nader?
-                    Liefde beleven in het post feministische tijdperk - waar de eerste uitwassen van deze maatschappelijk (nodige) stroming blijken  – is niet voor watjes of bange zieltjes. Je hart staat op het 
-                    spel en we begrijpen elkaar vaak niet…
-                </p>
-                <p>
-                    Petra is nu 45, heeft een leven van onderzoek erop zitten, baarde 2 prachtige kinderen – Jasper & Jasmijn en is pas gehuwd met een man voor wie ze haar spirituele inslag en haar hang naar esthetiek 
-                    en werkelijke schoonheid, niet moet minimaliseren of langer ontkennen.
-                </p>
-                <p>
-                    Haar keuze om te kiezen voor innerlijke en uiterlijke schoonheid en esthetiek, balancering en ontspanningsvermogen in combinatie in-zichtelijkheid via divinatie, 
-                    leest na dit relaas waarschijnlijk als de logica zelve.
-                    Haar MISSION STATEMENT in life is dan ook Fun, Freedom, Helping others and Love.
-                </p>
-                <p>
-                    Enkele jaren terug besliste zij om uitsluitend nog datgene te doen met haar leven, wat onder deze noemers te catalogiseren valt.        
-                </p>',
-
+                ',
     /* Beauty */
     'face_care' => '
                 <p>Onze huid is ons grootste orgaan. En toch vergeten we vaak, dat dit een levend organisme is.</p>

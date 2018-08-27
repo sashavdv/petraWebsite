@@ -1,18 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-/* Variables */
+/* Colors */
+/* Margin & Padding */
+/* CSS */
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
-body {
-  background-color: #EBF5FD;
-  overflow-x: hidden;
+section {
+  margin: 0;
+  padding: 70px 0;
 }
 
-header {
-  background-color: #99CEF2;
-  height: 400px;
+/* Backgrounds */
+section.bkg-white {
+  background-color: #fff;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0.05);
+section.bkg-blue {
+  background-color: #AAEEFF;
+}
+
+section.bkg-yellow {
+  background-color: #FDE995;
+}
+
+.reviews article {
+  background-color: #fff;
 }
 
 /* Calendar css */
