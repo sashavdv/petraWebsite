@@ -1,1 +1,1 @@
-<div class="calendar"></div>
+<div class="cal1 mx-auto"></div>

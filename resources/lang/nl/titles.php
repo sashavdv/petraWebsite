@@ -16,7 +16,7 @@ return [
       'pedicure' => 'Medische Pedicure',
 
     /* Relaxation */
-      'meditation' => 'Meditatie',
+      'meditation' => 'Relaxation',
       'coaching' => 'Coaching',
       'spirituality' => 'Spiritualiteit',
 
