@@ -19,6 +19,15 @@
         </div>
     </section>
 
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
     <section id="reviews" class="bkg-yellow">
         <div class="container">
             <h2>@lang('titles.reviews')</h2>
