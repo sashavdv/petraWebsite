@@ -8,17 +8,16 @@ $color-grey: #d3d3d3;
 /* Margin & Padding */
 $padding-sections: 70px;
 
-/* CSS */
+/* Main */
 section {
   margin: 0;
   padding: $padding-sections 0;
+  text-align: justify;
 }
 section.bkg-white {
   background-color: $color-white;
 }
-.clndr{
-  background-color: $color-white;
-}
+
 section.bkg-blue {
   background-color: $color-light-blue;
 }
@@ -27,23 +26,21 @@ section.bkg-yellow {
   background-color: $color-yellow;
 }
 
+/* Reviews */
 div.review {
   margin-top:30px;
   background-color: $color-white;
   border-radius: 5px;
-  border-style:solid;
-  border-width: thin;
-  border-color:$color-grey;
+  border: 1px solid $color-grey;
   padding: 20px 30px 20px 30px ;
 }
 span.rev-name{
- // color: $color-grey;
-  padding-left: 10px;
   font-weight: bold;
-  color: $color-grey;
+  color: #9B9C9D;
   text-transform: capitalize;
 }
 span.rev-title{
+  margin-right: 10px;
   font-size: large;
   font-weight: bold;
 }
@@ -54,7 +51,8 @@ span.rev-stars {
   opacity:0.80;
 }
 p.rev-content{
-  padding-top: 20px;
+  margin-top: 20px;
+  text-align: justify;
 }
 
 /* Custom Calendar */

@@ -15,19 +15,12 @@ class CreateReviewsTable extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('name');
-            $table->integer('rating');
+            $table->integer('rating')->nullable();
             $table->text('review');
             $table->timestamps();
         });
-
-        DB::table('reviews')->insert([
-            'title' => 'Review 1',
-            'name' => 'yoeri',
-            'rating' => 4,
-            'review' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
-        ]);
     }
 
     /**

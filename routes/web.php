@@ -14,13 +14,13 @@
 Route::get('/', 'WelcomeController@index');
 Route::get('/home', 'WelcomeController@index');
 
-Route::get('/schoonheid', function () {
+Route::get('/beauty', function () {
     return view('user.pages.schoonheid');
 });
-Route::get('/divinatie', function () {
+Route::get('/divination', function () {
     return view('user.pages.divinatie');
 });
-Route::get('/relaxatie', function () {
+Route::get('/relaxation', function () {
     return view('user.pages.relaxatie');
 });
 Route::get('/contact', function () {
@@ -32,10 +32,3 @@ Route::get('/admin', 'AdminController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('admin_area', ['middleware' => 'admin', function () {
-    return view('admin.home');
-}]);
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
