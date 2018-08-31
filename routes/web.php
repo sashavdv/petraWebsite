@@ -28,6 +28,10 @@ Route::get('/contact', function () {
 });
 Route::post('/contact', 'ContactController@sendMail');
 
+Route::get('/prices', function () {
+    return view('user.pages.prices');
+});
+
 Route::get('/admin', 'AdminController@index');
 
 Auth::routes();

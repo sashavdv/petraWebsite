@@ -16,7 +16,7 @@
             @lang('beauty.text-calender-info')
 
             <h5>@lang('beauty.title-price')</h5>
-            <?php echo __('beauty.text-price', ['link' => 'test']); ?>
+            <?php echo __('beauty.text-price', ['link' => 'prices#beauty']); ?>
         </div>
     </section>
 @endsection
