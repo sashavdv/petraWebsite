@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function sendMail(Request $request){
+    public function Subscribe(Request $request){
         
     }
 }

@@ -26,7 +26,7 @@ Route::get('/relaxation', function () {
 Route::get('/contact', function () {
     return view('user.pages.contact');
 });
-Route::post('/contact', 'ContactController@sendMail');
+Route::post('/contact', 'ContactController@Subscribe');
 
 Route::get('/prices', function () {
     return view('user.pages.prices');

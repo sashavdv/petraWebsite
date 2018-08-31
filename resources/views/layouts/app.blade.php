@@ -37,7 +37,7 @@
     @yield('content')
 
     <footer>
-            @include('layouts.inc.footer')
+
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
