@@ -3,7 +3,6 @@
 return [
     'title-beauty' =>
         'Schooneid',
-
     'title-face-care' =>
         'Gelaatsverzorging',
     'text-face-care' =>
@@ -26,4 +25,18 @@ return [
         'Massage',
     'text-massage' =>
         '<p>Ontspannende rug-, nek & hoofdhuidmassage op basis van aangepaste natuurlijke draagolie & essentiële olie: 45€</p>',
+
+    'title-relaxation' =>
+        'Relaxatie',
+    'list-relaxation' =>
+        '<ul>
+             <li>Intake: afstemming der behoeften (max 45 minuten): 30€</li>
+             <li>Privé sessies: 60€/u (na intake)</li>
+         </ul>
+         <p><i>Deze prijzen gelden zowel voor de ontspannende Meditatietechnieken, als voor het balancerend Chakrawerk.</i></p>',
+    'text-relaxation' =>
+        '<p>Wil jij liever deze onderwerpen liever niet privé maar in kleine groepjes verkennen?<br />Dat kan! Werp hiervoor gerust een blik op mijn activiteiten/workshop agenda en ontdek wat jou persoonlijk het meest aanspreekt.</p>',
+
+    'title-divination' =>
+        'Divinatie',
 ];

@@ -22,4 +22,18 @@
             </article>
         </div>
     </section>
+
+    <section id="relaxation">
+        <div class="container">
+            <h2>@lang('prices.title-relaxation')</h2>
+            @lang('prices.list-relaxation')
+            @lang('prices.text-relaxation')
+        </div>
+    </section>
+
+    <section id="divination">
+        <div class="container">
+            <h2>@lang('prices.title-divination')</h2>
+        </div>
+    </section>
 @endsection
