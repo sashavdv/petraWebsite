@@ -14,28 +14,25 @@
 Route::get('/', 'WelcomeController@index');
 Route::get('/home', 'WelcomeController@index');
 
-Route::get('/schoonheid', function () {
-    return view('user.pages.schoonheid');
+Route::get('/beauty', function () {
+    return view('user.pages.beauty');
 });
-Route::get('/divinatie', function () {
-    return view('user.pages.divinatie');
+Route::get('/divination', function () {
+    return view('user.pages.divination');
 });
-Route::get('/relaxatie', function () {
-    return view('user.pages.relaxatie');
+Route::get('/relaxation', function () {
+    return view('user.pages.relaxation');
 });
 Route::get('/contact', function () {
     return view('user.pages.contact');
 });
-Route::post('/contact', 'ContactController@sendMail');
+Route::post('/contact', 'ContactController@Subscribe');
+
+Route::get('/prices', function () {
+    return view('user.pages.prices');
+});
 
 Route::get('/admin', 'AdminController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('admin_area', ['middleware' => 'admin', function () {
-    return view('admin.home');
-}]);
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

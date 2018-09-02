@@ -1,9 +1,0 @@
-@extends('layouts.app')
-@section('content')
-    <h1>@lang('titles.face_care')</h1>
-    <p>@lang('content.face_care')</p>
-    <h1>@lang('titles.herbs')</h1>
-    <p>@lang('content.herbs')</p>
-    <h1>@lang('titles.pedicure')</h1>
-    <p>@lang('content.pedicure')</p>
-@endsection

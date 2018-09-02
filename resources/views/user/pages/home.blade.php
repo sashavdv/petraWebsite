@@ -25,22 +25,21 @@
             <div class="reviews">
                 @foreach ($aReviews as $oReview)
                 <div id="review{{ $oReview->id }}" class="review">
-                    <span class="rev-title">{{ $oReview->title }}</span>
-                    <span class="rev-name">{{ $oReview->name }}</span>
-                    <span class="rev-stars">
-                       @for($i = 0; $i < 5;$i++)
-                           @if($oReview->rating > $i)
-                            <i class="fas fa-star"></i>
-                                @else
-                                <i class="far fa-star"></i>
-
-
-                            @endif
-
-
-                        @endfor
-
-                    </span>
+                    @if($oReview->title != null)
+                        <span class="rev-title">{{ $oReview->title }}</span>
+                    @endif
+                        <span class="rev-name">{{ $oReview->name }}</span>
+                    @if($oReview->rating != null)
+                        <span class="rev-stars">
+                           @for($i = 0; $i < 5;$i++)
+                               @if($oReview->rating > $i)
+                                <i class="fas fa-star"></i>
+                                    @else
+                                    <i class="far fa-star"></i>
+                                @endif
+                            @endfor
+                        </span>
+                    @endif
                     <p class="rev-content">{{ $oReview->review }}</p>
                 </div>
                 @endforeach
