@@ -3,13 +3,18 @@ var eventArray = [];
 
 $(document).ready(function () {
     console.log('Page loaded');
+    GetEventsCall().done(loadCalender);
 
+function loadCalender(){
+    console.log('loadcalender()');
+    console.log(eventArray);
     calendars.clndr = $('.cal1').clndr({
-        events: eventArray,
+        events:eventArray,
         clickEvents: {
             click: function(target){
-                console.log(target.date._i);
-                alert('er is geklikt op de datum ' + target.date._i );
+                document.getElementById("title").innerHTML = target.events[0].title;
+                document.getElementById("description").innerHTML = target.events[0].description_nl;
+                document.getElementById("price").innerHTML = target.events[0].price;
             },
 
             nextMonth: function () {
@@ -22,8 +27,21 @@ $(document).ready(function () {
         showAdjacentMonths: true,
         adjacentDaysChangeMonth: false
     });
-});
 
+}
 function addEvents(events) {
     eventArray = events;
+    console.log(eventArray);
 }
+function GetEventsCall(){
+    return $.ajax({
+        url: 'json_events',
+        datatype: 'jsonp',
+        success: function (data) {
+            eventArray = data['data'];
+            //addEvents(data['data']);
+        }
+    });
+}
+});
+

@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\agenda_events;
 use App\Review;
 use Illuminate\Http\Request;
+use App\Agenda;
+
+
 
 class WelcomeController extends Controller
 {
@@ -11,6 +15,6 @@ class WelcomeController extends Controller
         $aReviews = Review::get();
         return view('user.pages.home', [
             'aReviews' => $aReviews,
-        ]);
+            ]);
     }
 }

@@ -1,5 +1,6 @@
 <?php
-
+use App\Agenda;
+use App\Http\Resources\agenda_events;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,9 @@ Route::get('/prices', function () {
 });
 
 Route::get('/admin', 'AdminController@index');
+Route::get('/json_events', function(){
+    return agenda_events::collection(Agenda::get());
+});
 
 Auth::routes();
 

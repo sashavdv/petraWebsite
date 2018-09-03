@@ -13,12 +13,7 @@ class CreateAgendasTable extends Migration
      */
     public function up()
     {
-        Schema::create('agendas', function (Blueprint $table) {
-            $table->increments('id');
-            $table->dateTime('date');
-            $table->text('description');
-            $table->timestamps();
-        });
+
     }
 
     /**

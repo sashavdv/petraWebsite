@@ -7,7 +7,9 @@
             <p>@lang('content.about')</p>
         </div>
     </section>
-
+    @component('layouts.inc.modal')
+  
+        @endcomponent
     <section id="events" class="bkg-blue">
         <div class="container">
             <h2>@lang('titles.events')</h2>
