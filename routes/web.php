@@ -12,8 +12,10 @@ use App\Http\Resources\agenda_events;
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index')->name('home');
 Route::get('/home', 'WelcomeController@index');
+Route::post('/', 'WelcomeController@writeReview');
+Route::post('/home', 'WelcomeController@writeReview');
 
 Route::get('/beauty', function () {
     return view('user.pages.beauty');

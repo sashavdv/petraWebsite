@@ -9,4 +9,8 @@ class ContactController extends Controller
     public function Subscribe(Request $request){
         
     }
+
+    public function sendMail(Request $request) {
+
+    }
 }
