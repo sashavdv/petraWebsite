@@ -16,7 +16,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
-                <button type="button" class="btn btn-primary">Inschrijven</button>
+                <button type="button" class="btn btn-primary" id="inschrijving" onclick="registerForEvent()" >Inschrijven</button>
             </div>
         </div>
     </div>

@@ -29,6 +29,7 @@ Route::get('/relaxation', function () {
 Route::get('/contact', function () {
     return view('user.pages.contact');
 });
+Route::get('/contact/{eventTitle}', 'ContactController@fillEventTitle');
 Route::post('/contact', 'ContactController@Subscribe');
 
 Route::get('/prices', function () {

@@ -13,4 +13,7 @@ class ContactController extends Controller
     public function sendMail(Request $request) {
 
     }
+    public function fillEventTitle(Request $request, $sTitle){
+        return view('user.pages.contact',['title' => $sTitle]);
+    }
 }

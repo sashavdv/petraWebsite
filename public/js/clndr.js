@@ -63,7 +63,7 @@
                 "<% for(var j = 0; j < 7; j++){ %>" +
                 "<% var d = j + i * 7; %>" +
                     "<td class='<%= days[d].classes %>'>" +
-                        "<div class='day-contents' data-toggle='modal' data-target='#exampleModal'><%= days[d].day %></div>" +
+                        "<div class='day-contents'><%= days[d].day %></div>" +
                     "</td>" +
                 "<% } %>" +
                 "</tr>" +

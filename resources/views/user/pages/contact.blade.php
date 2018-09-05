@@ -10,6 +10,16 @@
             {{ Form::text('last-name', '', ['class' => 'form-control']) }}
             {{ Form::label('email', __('forms.email')) }}
             {{ Form::email('email', '', ['class' => 'form-control']) }}
+            {{ Form::label('title', __('forms.title')) }}
+            @if(isset($title))
+
+            {{ Form::text('title', $title, ['class' => 'form-control']) }}
+        @else
+            {{ Form::text('title', '', ['class' => 'form-control']) }}
+
+        @endif
+            {{ Form::label('description', __('forms.description')) }}
+            {{ Form::textArea('description', '', ['class' => 'form-control']) }}
             {{ Form::checkBox('subscribe', true, true) }}
             {{ Form::label('subscribe', __('forms.get_emails')) }}
             {{ Form::submit(__('forms.subscribe'), ['class' => 'form-control']) }}

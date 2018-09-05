@@ -12,9 +12,15 @@ function loadCalender(){
         events:eventArray,
         clickEvents: {
             click: function(target){
+                console.log(target.events);
+                if(target.events.length > 0 ){
+                    $("#exampleModal").modal("show");
+
                 document.getElementById("title").innerHTML = target.events[0].title;
                 document.getElementById("description").innerHTML = target.events[0].description_nl;
                 document.getElementById("price").innerHTML = target.events[0].price;
+               }
+
             },
 
             nextMonth: function () {

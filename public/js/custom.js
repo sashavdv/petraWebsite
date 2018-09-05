@@ -1,11 +1,12 @@
 window.onscroll = function() {
     nav();
 }
-
 function registerForEvent(){
     var eventTitle = $('#title').text();
-$.get("petra.test/contact", eventTitle);
+    console.log("contact/" + encodeURI(eventTitle));
+    window.location = "contact/" + encodeURI(eventTitle);
 }
+
 nav = function(){
 
 };
