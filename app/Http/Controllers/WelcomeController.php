@@ -19,21 +19,7 @@ class WelcomeController extends Controller
     }
 
     public function writeReview(Request $request) {
-        if ($request->post('title') != null) {
-            Review::insert([
-                'title' => $request->post('title'),
-                'name' => $request->post('name'),
-                'rating' => $request->post('rating'),
-                'review' => $request->post('review'),
-            ]);
-            return redirect('home');
-        }
-        else {
-            if (!Session::has('write-review')) {
-                Session::flash('write-review');
-                return redirect('home#new-review');
-            }
-        }
+
 
     }
 }

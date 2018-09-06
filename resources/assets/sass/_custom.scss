@@ -95,6 +95,13 @@ td.today {
   background-color: $color-light-blue;
 }
 
+td.event {
+  background-color: $color-yellow;
+}
+td.today:hover {
+  cursor: pointer;
+}
+
 td.past {
   opacity: 0.6;
 }

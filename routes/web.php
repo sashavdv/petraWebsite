@@ -14,8 +14,6 @@ use App\Http\Resources\agenda_events;
 
 Route::get('/', 'WelcomeController@index')->name('home');
 Route::get('/home', 'WelcomeController@index');
-Route::post('/', 'WelcomeController@writeReview');
-Route::post('/home', 'WelcomeController@writeReview');
 
 Route::get('/beauty', function () {
     return view('user.pages.beauty');
@@ -37,6 +35,9 @@ Route::get('/prices', function () {
 });
 
 Route::get('/admin', 'AdminController@index');
+Route::get('/admin/reviews', 'AdminReviewController@index');
+Route::post('/admin/reviews', 'AdminReviewController@writeReview');
+
 Route::get('/json_events', function(){
     return agenda_events::collection(Agenda::get());
 });
