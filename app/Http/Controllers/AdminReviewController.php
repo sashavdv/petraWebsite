@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Session;
 class AdminReviewController extends Controller
 {
     public function index() {
+        /*
+        if (!Auth::check()) {
+            return redirect('login');
+        }
+        */
+
         $aReviews = Review::get();
 
         return view('admin.reviews', [
@@ -18,20 +24,21 @@ class AdminReviewController extends Controller
     }
 
     public function writeReview(Request $request) {
+        /*
         if (!Auth::check()) {
             return redirect('login');
         }
+        */
+
+        $aReviews = Review::get();
+        $sStatus = null;
+        $iToUpdate = null;
 
         if ($request->post('status') == 'new') {
-            Session::flush();
-            Session::flash('write-review');
-
-            return redirect('/admin/reviews#new-review');
+            $sStatus = 'new';
         }
 
-        if ($request->post('status') == 'add') {
-            Session::flush();
-
+        if ($request->post('status') == 'save-new') {
             Review::insert([
                 'title' => $request->post('title'),
                 'name' => $request->post('name'),
@@ -42,24 +49,14 @@ class AdminReviewController extends Controller
             return redirect('/admin/reviews');
         }
 
-        if (substr($request->post('status'), 0, 4) === "edit") {
-            Session::flush();
-
-            $aSplit = str_split($request->post('status'));
-            $iId = $aSplit[count($aSplit) - 1];
-
-            Session::flash('edit-review' , $iId);
-
-            return redirect('/admin/reviews#edit-review');
+        if (substr($request->post('status'), 0, 6) == 'update') {
+            $iToUpdate = substr($request->post('status'), 7);
         }
 
-        if (substr($request->post('status'), 0, 6) === "update") {
-            Session::flush();
+        if (substr($request->post('status'), 0, 11) == 'save-update') {
+            $iToUpdate = substr($request->post('status'), 12);
 
-            $aSplit = str_split($request->post('status'));
-            $iId = $aSplit[count($aSplit) - 1];
-
-            Review::where('id', $iId)->update([
+            Review::where('id' , $iToUpdate)->update([
                 'title' => $request->post('title'),
                 'name' => $request->post('name'),
                 'rating' => $request->post('rating'),
@@ -68,6 +65,20 @@ class AdminReviewController extends Controller
 
             return redirect('/admin/reviews');
         }
+
+        if (substr($request->post('status'), 0, 4) == 'drop') {
+            $iToDrop = substr($request->post('status'), 5);
+
+            Review::destroy($iToDrop);
+
+            return redirect('/admin/reviews');
+        }
+
+        return view('admin.reviews', [
+            'aReviews' => $aReviews,
+            'sStatus' => $sStatus,
+            'iToUpdate' => $iToUpdate,
+        ]);
     }
 
     public function updateReview(Request $request) {

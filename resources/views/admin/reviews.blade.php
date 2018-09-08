@@ -5,18 +5,23 @@
             <h2>Pluimpjes</h2>
             <div class="reviews">
                 @foreach($aReviews as $oReview)
-                    @if(Session::has('update-review') and (Session::get('update-review') == $oReview->id))
-                        <div id="edit-review" class="review">
+                    @if(isset($iToUpdate) and $iToUpdate == $oReview->id)
+                        <div id="update-review" class="review">
                             {{ Form::open(['action' => 'AdminReviewController@writeReview', 'method' => 'post']) }}
-                            <div class="form-group">
-                                {{ Form::label('title' , __('forms.review-title')) }}
-                                {{ Form::text('title' , $oReview->title, ['class' => 'form-control', 'required']) }}
-                            </div>
-                            <div class="form-group">
-                                {{ Form::label('name' , __('forms.review-name')) }}
-                                {{ Form::text('title' , $oReview->name, ['class' => 'form-control', 'required']) }}
-                            </div>
-                            <button type="submit" name="status" value="update-{{ $oReview->id }}" class="form-control">Wijzigingen opslaan</button>
+                            {{ Form::label('title', 'Titel') }}
+                            {{ Form::text('title', $oReview->title, ['class' => 'form-control', 'required']) }}
+                            {{ Form::label('name', 'Naam') }}
+                            {{ Form::text('name', $oReview->name, ['class' => 'form-control', 'required']) }}
+                            {{ Form::label('rating', 'Aanbeveling') }}
+                            <select name="rating" class="form-control" value="{{ $oReview->rating }}">
+                                @for($i = 5; $i > 0; $i--)
+                                    <option value="{{ $i }}">{{ __("forms.review-recommendation-$i") }}</option>
+                                @endfor
+                            </select>
+                            {{ Form::label('review', 'Beschrijving') }}
+                            {{ Form::textArea('review', $oReview->review, ['class' => 'form-control', 'required']) }}
+                            <button type="submit" name="status" value="save-update-{{ $oReview->id }}" class="form-control">Review Opslaan</button>
+                            <button type="submit" name="status" value="drop-{{ $oReview->id }}" class="form-control">Review Verwijderen</button>
                             {{ Form::close() }}
                         </div>
                     @else
@@ -34,47 +39,39 @@
                                             <i class="far fa-star"></i>
                                         @endif
                                     @endfor
+                                    @endif
                             </span>
-                            @endif
                             <p class="rev-content">{{ $oReview->review }}</p>
                                 {{ Form::open(['action' => 'AdminReviewController@writeReview', 'method' => 'post']) }}
-                                <button type="submit" name="status" value="edit-{{ $oReview->id }}" class="form-control">Review aanpassen</button>
+                                <button type="submit" name="status" value="update-{{ $oReview->id }}" class="form-control">Review aanpassen</button>
+                                <button type="submit" name="status" value="drop-{{ $oReview->id }}" class="form-control">Review Verwijderen</button>
                                 {{ Form::close() }}
                         </div>
                     @endif
                 @endforeach
-                @if(Session::has('write-review'))
+
+                @if(isset($sStatus) and $sStatus == 'new')
                     <div id="new-review" class="review">
                         {{ Form::open(['action' => 'AdminReviewController@writeReview', 'method' => 'post']) }}
-                        <div class="form-group">
-                            {{ Form::label('title', __('forms.review-title')) }}
-                            {{ Form::text('title', '', ['class' => 'form-control', 'required']) }}
-                        </div>
-                        <div class="form-group">
-                            {{ Form::label('name', __('forms.review-name')) }}
-                            {{ Form::text('name', '', ['class' => 'form-control', 'required']) }}
-                        </div>
-                        <div class="form-group">
-                            {{ Form::label('rating', __('forms.review-recommendation')) }}
-                            <select name="rating" class="form-control" required>
-                                @for($i = 5; $i > 0; $i--)
-                                    <option value="{{ $i }}">
-                                        {{ __("forms.review-recommendation-$i") }}
-                                    </option>
-                                @endfor
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            {{ Form::label('review', __('forms.review-description')) }}
-                            {{ Form::textArea('review', '', ['class' => 'form-control', 'required']) }}
-                        </div>
-                        <button type="submit" name="status" value="add" class="form-control">Review toevoegen</button>
+                        {{ Form::label('title', 'Titel') }}
+                        {{ Form::text('title', '', ['class' => 'form-control', 'required']) }}
+                        {{ Form::label('name', 'Naam') }}
+                        {{ Form::text('name', '', ['class' => 'form-control', 'required']) }}
+                        {{ Form::label('rating', 'Aanbeveling') }}
+                        <select name="rating" class="form-control">
+                            @for($i = 5; $i > 0; $i--)
+                                <option value="{{ $i }}">{{ __("forms.review-recommendation-$i") }}</option>
+                            @endfor
+                        </select>
+                        {{ Form::label('review', 'Beschrijving') }}
+                        {{ Form::textArea('review', '', ['class' => 'form-control', 'required']) }}
+                        <button type="submit" name="status" value="save-new" class="form-control">Review Toevoegen</button>
                         {{ Form::close() }}
                     </div>
-                @else
+                    @else
                     <div id="new-review" class="review">
                         {{ Form::open(['action' => 'AdminReviewController@writeReview', 'method' => 'post']) }}
-                        <button type="submit" name="status" value="new" class="form-control">Laat een review achter</button>
+                        <button type="submit" name="status" value="new" class="form-control">Nieuwe Review Aanmaken</button>
                         {{ Form::close() }}
                     </div>
                 @endif
