@@ -96,6 +96,14 @@ td.today {
   background-color: #AAEEFF;
 }
 
+td.event {
+  background-color: #FDE995;
+}
+
+td.today:hover {
+  cursor: pointer;
+}
+
 td.past {
   opacity: 0.6;
 }
