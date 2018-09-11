@@ -1,15 +1,14 @@
 @extends('layouts.app')
 @section('content')
-
+    @component('layouts.inc.modal')
+    @endcomponent
     <section id="about" class="bkg-white">
         <div class="container">
             <h2>@lang('titles.about')</h2>
             <p>@lang('content.about')</p>
         </div>
     </section>
-    @component('layouts.inc.modal')
-  
-        @endcomponent
+
     <section id="events" class="bkg-blue">
         <div class="container">
             <h2>@lang('titles.events')</h2>
