@@ -183,10 +183,18 @@ img.about-photo {
   border: none;
   background-color: $color-primary;
 }
+.events {
+  position: relative;
+}
 
 /* Calender */
-.clndr {
+.cal1 {
+  float: left;
   width: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+.clndr {
   border: 1px solid black;
 }
 .clndr-table {
@@ -240,12 +248,53 @@ img.about-photo {
 .event .day-contents {
   border: 1px solid #961a1c;
 }
-.sekected .day-contents {
+.selected .day-contents {
   background-color: #f3f3f3;
 }
 .event.selected .day-contents {
   background-color: #961a1c;
 }
+/* Calendar Details */
+.details {
+  width: calc(50% - 41px);
+  height: 419px;
+  display: inline-block;
+  border: 1px solid black;
+  border-left: none;
+  background-color: #f4f2e8;
+  padding: 0 20px;
+  overflow-y: scroll;
+}
+#day {
+  line-height: 50px;
+  font-size: 1.2em;
+}
+.selected-event {
+  margin-top: 30px;
+}
+.selected-event button {
+  margin-top: 20px;
+  margin-left: 70px;
+  display: block;
+  width: calc(100% - 70px);
+  height: 40px;
+  border: none;
+  background-color: $color-primary;
+}
+#event-time {
+  font-size: 1.15em;
+  display: inline-block;
+  margin-right: 20px;
+  width: 45px;
+}
+#event-title {
+  font-size: 1.15em;
+}
+#event-description {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
 
 /* Reviews */
 .review {
