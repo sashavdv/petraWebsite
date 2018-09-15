@@ -205,8 +205,79 @@ img.about-photo {
 }
 
 /* Calender */
+.clndr {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.clndr-table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.15em;
+  height: 300px;
+  padding: 20px;
+}
+
+.clndr-controls {
+  text-align: center;
+  position: relative;
+  background-color: #fcd51b;
+  line-height: 50px;
+  font-size: 1.2em;
+}
+
+.clndr-controls .clndr-control-button {
+  position: absolute;
+  left: 30px;
+}
+
+.clndr-controls .clndr-control-button:last-child {
+  position: absolute;
+  left: auto;
+  right: 30px;
+}
+
 .clndr-controls div {
   display: inline-block;
+}
+
+.day {
+  width: 14%;
+  line-height: 16%;
+  padding-top: 12px;
+}
+
+.adjacent-month {
+  opacity: 0.4;
+}
+
+.day-contents {
+  padding: 10px 8px 6px;
+  line-height: 100%;
+  height: 1.15em;
+  width: 1.15em;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.header-days td {
+  padding-bottom: 10px;
+}
+
+.today .day-contents {
+  border: 1px solid #292363;
+}
+
+.event .day-contents {
+  border: 1px solid #961a1c;
+}
+
+.sekected .day-contents {
+  background-color: #f3f3f3;
+}
+
+.event.selected .day-contents {
+  background-color: #961a1c;
 }
 
 /* Reviews */
