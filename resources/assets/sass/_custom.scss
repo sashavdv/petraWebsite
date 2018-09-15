@@ -1,14 +1,237 @@
-/* Colors */
+$color-primary: #fcd51b;
+$color-text: #000;
+$color-shadow: rgba(0,0,0,0.16);
+$color-background: #f3f3f3;
+$color-calender-background: #f4f2e8;
+
+/* Set defaults */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $color-background;
+}
+
+/* Set Primary Colors */
+nav, footer, .copy {
+  background-color: $color-primary;
+}
+nav a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+/* Primary navigation */
+.nav-top {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  box-shadow: 0 3px 6px $color-shadow;
+  overflow: hidden;
+  z-index: 10;
+}
+.nav-top ul {
+  list-style-type: none;
+}
+.nav-top li {
+  float: left;
+}
+.nav-top span {
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  margin-top: -6%;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+.nav-top img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Navigation Toggle */
+#nav-open {
+  float: right;
+  height: 60px;
+  margin-right: 30px;
+  font-size: 1.2em;
+  border: none;
+  background-color: transparent;
+}
+#nav-close {
+  height: 60px;
+  margin-left: 30px;
+  font-size: 1.2em;
+  border: none;
+  background-color: transparent;
+}
+
+/* Secondary Navigation */
+.nav-side {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  box-shadow: -3px 0 6px $color-shadow;
+  transition: all 0.15s ease-in-out;
+  z-index: 100;
+}
+.nav-side.visible {
+  right: 0;
+}
+.nav-side.hidden {
+  right: -203px;
+}
+.nav-side ul{
+  list-style-type: none;
+}
+.nav-side li {
+  border-top: 1px solid rgba(255,255,255,0.4);
+  padding-left: 30px;
+  line-height: 50px;
+}
+.nav-side .lang {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Footer */
+footer {
+  box-shadow: 3px 0 6px $color-shadow;
+}
+footer p {
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+div.footer-info-left, div.footer-info-right {
+  width: 50%;
+  float: left;
+  line-height: 30px;
+}
+div.footer-info ul {
+  margin: 20px 0 20px;
+  list-style-type: none;
+}
+div.footer-info-left ul {
+  float: right;
+  width: 50%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+div.footer-info-right ul {
+  width: 50%;
+  text-align: right;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+div.social ul {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+}
+div.social ul li {
+  display: inline;
+  margin: 0 20px;
+}
+span.copy {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  line-height: 50px;
+}
+
+/* Main Application */
+#app {
+  margin: 60px auto 0 auto;
+  padding-top: 30px;
+  width: 80%;
+  min-height: 800px;
+  background-color: $color-background;
+}
+section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+img.about-photo {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 30px;
+}
+.about-short {
+  height: 258px;
+  position: relative;
+  width: auto;
+  text-align: justify;
+  border: 1px solid black;
+  margin-left: 330px;
+  padding: 20px;
+  overflow: hidden;
+}
+.about-short button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: $color-primary;
+}
+
+/* Calender */
+.clndr-controls div {
+  display: inline-block;
+}
+
+/* Reviews */
+.review {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  margin-top: 30px;
+}
+.review:first-child {
+  margin: 0;
+}
+.rev-title {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-right: 20px;
+
+}
+.rev-name {
+  font-size: 1.15em;
+}
+.rev-stars {
+  float: right;
+}
+.rev-content {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+/*
 $color-white: #fff;
 $color-light-blue: #AAEEFF;
 $color-yellow: #FDE995;
 $color-nav-top: #373A3C;
 $color-grey: #d3d3d3;
 
-/* Margin & Padding */
 $padding-sections: 70px;
 
-/* Main */
 section {
   margin: 0;
   padding: $padding-sections 0;
@@ -26,7 +249,6 @@ section.bkg-yellow {
   background-color: $color-yellow;
 }
 
-/* Reviews */
 div.review {
   margin-top:30px;
   background-color: $color-white;
@@ -55,7 +277,6 @@ p.rev-content{
   text-align: justify;
 }
 
-/* Custom Calendar */
 .clndr {
   display: inline-block;
   background-color: #fff;
@@ -105,3 +326,4 @@ td.today:hover {
 td.past {
   opacity: 0.6;
 }
+*/

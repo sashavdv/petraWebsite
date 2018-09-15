@@ -1,67 +1,304 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-/* Colors */
-/* Margin & Padding */
-/* Main */
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
+/* Set defaults */
 @import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
-section {
+* {
   margin: 0;
-  padding: 70px 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/* Set Primary Colors */
+nav, footer, .copy {
+  background-color: #fcd51b;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Primary navigation */
+.nav-top {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.nav-top ul {
+  list-style-type: none;
+}
+
+.nav-top li {
+  float: left;
+}
+
+.nav-top span {
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  margin-top: -6%;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.nav-top img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Navigation Toggle */
+#nav-open {
+  float: right;
+  height: 60px;
+  margin-right: 30px;
+  font-size: 1.2em;
+  border: none;
+  background-color: transparent;
+}
+
+#nav-close {
+  height: 60px;
+  margin-left: 30px;
+  font-size: 1.2em;
+  border: none;
+  background-color: transparent;
+}
+
+/* Secondary Navigation */
+.nav-side {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16);
+  transition: all 0.15s ease-in-out;
+  z-index: 100;
+}
+
+.nav-side.visible {
+  right: 0;
+}
+
+.nav-side.hidden {
+  right: -203px;
+}
+
+.nav-side ul {
+  list-style-type: none;
+}
+
+.nav-side li {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-left: 30px;
+  line-height: 50px;
+}
+
+.nav-side .lang {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Footer */
+footer {
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.16);
+}
+
+footer p {
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+div.footer-info-left, div.footer-info-right {
+  width: 50%;
+  float: left;
+  line-height: 30px;
+}
+
+div.footer-info ul {
+  margin: 20px 0 20px;
+  list-style-type: none;
+}
+
+div.footer-info-left ul {
+  float: right;
+  width: 50%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+div.footer-info-right ul {
+  width: 50%;
+  text-align: right;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+div.social ul {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+}
+
+div.social ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+span.copy {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  line-height: 50px;
+}
+
+/* Main Application */
+#app {
+  margin: 60px auto 0 auto;
+  padding-top: 30px;
+  width: 80%;
+  min-height: 800px;
+  background-color: #f3f3f3;
+}
+
+section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+img.about-photo {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 30px;
+}
+
+.about-short {
+  height: 258px;
+  position: relative;
+  width: auto;
   text-align: justify;
+  border: 1px solid black;
+  margin-left: 330px;
+  padding: 20px;
+  overflow: hidden;
 }
 
-section.bkg-white {
-  background-color: #fff;
+.about-short button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #fcd51b;
 }
 
-section.bkg-blue {
-  background-color: #AAEEFF;
-}
-
-section.bkg-yellow {
-  background-color: #FDE995;
+/* Calender */
+.clndr-controls div {
+  display: inline-block;
 }
 
 /* Reviews */
-div.review {
-  margin-top: 30px;
+.review {
+  padding: 20px;
+  border: 1px solid black;
   background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #d3d3d3;
-  padding: 20px 30px 20px 30px;
+  margin-top: 30px;
 }
 
-span.rev-name {
+.review:first-child {
+  margin: 0;
+}
+
+.rev-title {
   font-weight: bold;
-  color: #9B9C9D;
-  text-transform: capitalize;
+  font-size: 1.15em;
+  margin-right: 20px;
 }
 
-span.rev-title {
-  margin-right: 10px;
-  font-size: large;
-  font-weight: bold;
+.rev-name {
+  font-size: 1.15em;
 }
 
-span.rev-stars {
+.rev-stars {
   float: right;
 }
 
-.fa-star {
-  opacity: 0.80;
-}
-
-p.rev-content {
+.rev-content {
   margin-top: 20px;
   text-align: justify;
 }
 
-/* Custom Calendar */
+/*
+$color-white: #fff;
+$color-light-blue: #AAEEFF;
+$color-yellow: #FDE995;
+$color-nav-top: #373A3C;
+$color-grey: #d3d3d3;
+
+$padding-sections: 70px;
+
+section {
+  margin: 0;
+  padding: $padding-sections 0;
+  text-align: justify;
+}
+section.bkg-white {
+  background-color: $color-white;
+}
+
+section.bkg-blue {
+  background-color: $color-light-blue;
+}
+
+section.bkg-yellow {
+  background-color: $color-yellow;
+}
+
+div.review {
+  margin-top:30px;
+  background-color: $color-white;
+  border-radius: 5px;
+  border: 1px solid $color-grey;
+  padding: 20px 30px 20px 30px ;
+}
+span.rev-name{
+  font-weight: bold;
+  color: #9B9C9D;
+  text-transform: capitalize;
+}
+span.rev-title{
+  margin-right: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+span.rev-stars {
+      float:right;
+}
+.fa-star{
+  opacity:0.80;
+}
+p.rev-content{
+  margin-top: 20px;
+  text-align: justify;
+}
+
 .clndr {
   display: inline-block;
   background-color: #fff;
   padding: 10px;
-  border: 2px solid #d3d3d3;
+  border: 2px solid $color-grey;
   border-radius: 10px;
 }
 
@@ -88,18 +325,17 @@ td.header-day, td.day {
 }
 
 td.day {
-  border: 2px solid #d3d3d3;
+  border: 2px solid $color-grey;
   border-radius: 4px;
 }
 
 td.today {
-  background-color: #AAEEFF;
+  background-color: $color-light-blue;
 }
 
 td.event {
-  background-color: #FDE995;
+  background-color: $color-yellow;
 }
-
 td.today:hover {
   cursor: pointer;
 }
@@ -107,5 +343,6 @@ td.today:hover {
 td.past {
   opacity: 0.6;
 }
+*/
 
 /*# sourceMappingURL=app.css.map */

@@ -1,30 +1,21 @@
 @extends('layouts.app-new')
 @section('content')
-
     <section id="about" class="bkg-white">
-        <div class="container">
-            <h2>@lang('titles.about')</h2>
+        <img class="about-photo"/>
+        <div class="about-short">
             <p>@lang('content.about')</p>
+            <button>Lees meer</button>
         </div>
     </section>
-    @component('layouts.inc.modal')
-  
-        @endcomponent
-    <section id="events" class="bkg-blue">
-        <div class="container">
-            <h2>@lang('titles.events')</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="cal1 mx-auto"></div>
-                </div>
-            </div>
+
+    <section id="events">
+        <div class="events">
+            <div class="cal1"></div>
+            <div class="details"></div>
         </div>
     </section>
 
     <section id="reviews" class="bkg-yellow">
-        <div class="container">
-            <h2>@lang('titles.reviews')</h2>
-            <div class="reviews">
                 @foreach ($aReviews as $oReview)
                 <div id="review{{ $oReview->id }}" class="review">
                     @if($oReview->title != null)
@@ -45,7 +36,5 @@
                     <p class="rev-content">{{ $oReview->review }}</p>
                 </div>
                 @endforeach
-            </div>
-        </div>
     </section>
 @endsection
