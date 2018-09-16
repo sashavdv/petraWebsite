@@ -24,7 +24,7 @@
     <nav id="side-nav" class="nav-side hidden">
         <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
         <ul>
-            <li><a href="#">Over mij</a></li>
+            <li><a href="about">Over mij</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Tarieven</a></li>
             <li><a href="#">Praktisch</a></li>

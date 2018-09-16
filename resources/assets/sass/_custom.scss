@@ -150,7 +150,8 @@ span.copy {
   margin: 60px auto 0 auto;
   padding-top: 30px;
   width: 80%;
-  min-height: 800px;
+  max-width: 1200px;
+  min-height: 550px;
   background-color: $color-background;
 }
 section {
@@ -185,6 +186,7 @@ img.about-photo {
 }
 .events {
   position: relative;
+  border: 1px solid black;
 }
 
 /* Calender */
@@ -193,9 +195,10 @@ img.about-photo {
   width: 50%;
   display: inline-block;
   overflow: hidden;
+  margin-bottom: -4px;
 }
 .clndr {
-  border: 1px solid black;
+  border-right: 1px solid black;
 }
 .clndr-table {
   width: 100%;
@@ -259,11 +262,10 @@ img.about-photo {
   width: calc(50% - 41px);
   height: 419px;
   display: inline-block;
-  border: 1px solid black;
-  border-left: none;
   background-color: #f4f2e8;
   padding: 0 20px;
   overflow-y: scroll;
+  margin-bottom: -4px;
 }
 #day {
   line-height: 50px;
@@ -323,114 +325,51 @@ img.about-photo {
   text-align: justify;
 }
 
-
-
-
-
-
-
-
-/*
-$color-white: #fff;
-$color-light-blue: #AAEEFF;
-$color-yellow: #FDE995;
-$color-nav-top: #373A3C;
-$color-grey: #d3d3d3;
-
-$padding-sections: 70px;
-
-section {
-  margin: 0;
-  padding: $padding-sections 0;
-  text-align: justify;
+/* Forms */
+form {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 60px 20px 60px;
+  position: relative;
+  background-color: white;
 }
-section.bkg-white {
-  background-color: $color-white;
+form .form-title {
+  line-height: 50px;
+  background-color: $color-primary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  display: block;
+  font-size: 1.15em;
+  padding: 0 20px;
 }
-
-section.bkg-blue {
-  background-color: $color-light-blue;
+.form-group {
+  display: block;
+  margin-top: 10px;
 }
-
-section.bkg-yellow {
-  background-color: $color-yellow;
+.form-group label, .form-group input {
+  display: block;
+  margin-top: 10px;
+  width: calc(100% - 15px);
 }
-
-div.review {
-  margin-top:30px;
-  background-color: $color-white;
-  border-radius: 5px;
-  border: 1px solid $color-grey;
-  padding: 20px 30px 20px 30px ;
+.form-group input {
+  line-height: 30px;
+  padding-left: 10px;
 }
-span.rev-name{
-  font-weight: bold;
-  color: #9B9C9D;
-  text-transform: capitalize;
-}
-span.rev-title{
-  margin-right: 10px;
-  font-size: large;
-  font-weight: bold;
-}
-span.rev-stars {
-      float:right;
-}
-.fa-star{
-  opacity:0.80;
-}
-p.rev-content{
-  margin-top: 20px;
-  text-align: justify;
-}
-
-.clndr {
+.form-group input[type = "checkbox"] {
   display: inline-block;
-  background-color: #fff;
-  padding: 10px;
-  border: 2px solid $color-grey;
-  border-radius: 10px;
+  width: auto;
 }
-
-div.clndr-control-button, div.month {
-  display: inline-block;
-  font-size: 1.8em;
+form button[type = "submit"] {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: $color-primary;
 }
-
-span.clndr-control-button:before {
-  content: "&lt;";
-}
-
-div.clndr-control-button {
-  margin: 20px;
-}
-
-td.header-day, td.day {
-  display: inline-block;
-  width: 49px;
-  height: 49px;
-  margin: 5px;
-  padding: 11px 0;
-  text-align: center;
-}
-
-td.day {
-  border: 2px solid $color-grey;
-  border-radius: 4px;
-}
-
-td.today {
-  background-color: $color-light-blue;
-}
-
-td.event {
-  background-color: $color-yellow;
-}
-td.today:hover {
-  cursor: pointer;
-}
-
-td.past {
-  opacity: 0.6;
-}
-*/
