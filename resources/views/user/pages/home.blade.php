@@ -1,7 +1,7 @@
 @extends('layouts.app-new')
 @section('content')
     <section id="about" class="bkg-white">
-        <img class="about-photo"/>
+        <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
         <div class="about-short">
             <p>@lang('content.about')</p>
             <button onclick="window.location.href='/about'">Lees meer</button>

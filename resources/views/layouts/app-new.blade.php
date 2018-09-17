@@ -14,10 +14,10 @@
 <body>
     <nav id="top-nav" class="nav-top">
         <ul>
-            <li><a href="/"><img /></a></li>
-            <li><a href="beauty"><span>@lang('nav.beauty')</span><img ></a></li>
-            <li><a href="relaxation"><span>@lang('nav.relaxation')</span><img ></a></li>
-            <li><a href="divination"><span>@lang('nav.divination')</span><img ></a></li>
+            <li><a href="/"><img src="{{ asset('images/logo.png') }}" /></a></li>
+            <li><a href="beauty"><span>@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}" ></a></li>
+            <li><a href="relaxation"><span>@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}" ></a></li>
+            <li><a href="divination"><span>@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}" ></a></li>
         </ul>
         <button id="nav-open" onclick="toggleSideNav()">@lang('nav.more')</button>
     </nav>

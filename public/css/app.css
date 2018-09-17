@@ -181,14 +181,16 @@ img.about-photo {
   height: 300px;
   float: left;
   margin-right: 30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
 }
 
 .about-short {
-  height: 258px;
+  height: 260px;
   position: relative;
   width: auto;
   text-align: justify;
-  border: 1px solid black;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
   margin-left: 330px;
   padding: 20px;
   overflow: hidden;
@@ -207,7 +209,8 @@ img.about-photo {
 
 .events {
   position: relative;
-  border: 1px solid black;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
 }
 
 /* Calender */
@@ -219,16 +222,13 @@ img.about-photo {
   margin-bottom: -4px;
 }
 
-.clndr {
-  border-right: 1px solid black;
-}
-
 .clndr-table {
   width: 100%;
   text-align: center;
   font-size: 1.15em;
   height: 300px;
   padding: 20px;
+  background-color: white;
 }
 
 .clndr-controls {
@@ -342,7 +342,7 @@ img.about-photo {
 /* Reviews */
 .review {
   padding: 20px;
-  border: 1px solid black;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   background-color: #fff;
   margin-top: 30px;
 }
