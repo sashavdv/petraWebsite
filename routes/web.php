@@ -33,6 +33,7 @@ Route::post('/contact', 'ContactController@Subscribe');
 Route::get('/prices', function () {
     return view('user.pages.prices');
 });
+// ADMIN gedeelte
 
 Route::get('/lang/{lang}', function ($lang) {
     Session::flash('lang', $lang);
@@ -42,6 +43,8 @@ Route::get('/lang/{lang}', function ($lang) {
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/reviews', 'AdminReviewController@index');
 Route::post('/admin/reviews', 'AdminReviewController@writeReview');
+Route::get('/admin/events', 'AdminEventController@index');
+Route::post('/admin/events', 'AdminEventController@addEvent');
 
 Route::get('/json_events', function(){
     return agenda_events::collection(Agenda::get());
