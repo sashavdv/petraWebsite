@@ -1,4 +1,8 @@
 <!doctype html>
+<?php
+    $lang = session()->get('lang');
+    App::setLocale($lang);
+?>
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +33,7 @@
             <li><a href="#">Tarieven</a></li>
             <li><a href="#">Praktisch</a></li>
         </ul>
-        <span class="lang">NL - FR</span>
+        <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>
 
     <div id="app">

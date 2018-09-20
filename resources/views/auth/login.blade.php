@@ -3,10 +3,11 @@
 @section('content')
     <section id="login">
         <form method="post" action="{{ route('login') }}">
+            @csrf
             <span class="form-title">Login</span>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" name="email" required autofocus>
+                <input id="email" name="email" value="{{ old('email') }}" required autofocus>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
@@ -19,8 +20,7 @@
             </div>
             <button type="submit">Aanmelden</button>
         </form>
-    </section>
-    <!--
+    </section><!--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

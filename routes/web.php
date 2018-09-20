@@ -34,6 +34,11 @@ Route::get('/prices', function () {
     return view('user.pages.prices');
 });
 
+Route::get('/lang/{lang}', function ($lang) {
+    Session::flash('lang', $lang);
+    return redirect()->back();
+});
+
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/reviews', 'AdminReviewController@index');
 Route::post('/admin/reviews', 'AdminReviewController@writeReview');
