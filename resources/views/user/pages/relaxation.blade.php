@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-new')
 @section('content')
     <h1>@lang('titles.meditation')</h1>
     <p>@lang('content.meditation')</p>

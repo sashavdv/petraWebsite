@@ -1,6 +1,26 @@
-@extends('layouts.app')
+@extends('layouts.app-new')
 
 @section('content')
+    <section id="login">
+        <form method="post" action="{{ route('login') }}">
+            <span class="form-title">Login</span>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </div>
+            <div class="form-group">
+                <label>
+                    <input id="remember" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Onthoudt mij
+                </label>
+            </div>
+            <button type="submit">Aanmelden</button>
+        </form>
+    </section>
+    <!--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -65,5 +85,5 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 @endsection
