@@ -397,11 +397,23 @@ form .form-title {
   display: block;
   margin-top: 10px;
 }
-
+.round{
+  border-radius:50%;
+  border:solid darkgrey 1px;
+}
+.nav-top{
+  padding:5px;
+}
 .form-group label, .form-group input {
   display: block;
   margin-top: 10px;
   width: calc(100% - 15px);
+}
+.about-photo, .about-short, .event, .cal1, .details{
+  border-radius:5px;
+}
+.border-radius{
+  border-radius: 5px;
 }
 
 .form-group input {
