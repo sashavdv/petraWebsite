@@ -14,6 +14,11 @@ $(document).ready(function () {
                 click: function(target){
                     console.log(target.events);
                     if(target.events.length > 0 ){
+                        for(target.events in oEvent)
+                        {
+                            //make a div with class selected event, add span id=event-time span id=event-title, p id= event-description button with moreinfo
+                        
+                        }
                         $("#exampleModal").modal("show");
 
                     document.getElementById("title").innerHTML = target.events[0].title;
