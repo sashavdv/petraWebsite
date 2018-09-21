@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-    $lang = session()->get('lang');
+    $lang = Cookie::get('lang');
     App::setLocale($lang);
 ?>
 <html lang="{{ config('app.locale') }}">

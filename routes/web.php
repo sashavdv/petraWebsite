@@ -36,7 +36,7 @@ Route::get('/prices', function () {
 // ADMIN gedeelte
 
 Route::get('/lang/{lang}', function ($lang) {
-    Session::flash('lang', $lang);
+    Cookie::queue('lang', $lang, 5000);
     return redirect()->back();
 });
 
