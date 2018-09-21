@@ -6,4 +6,9 @@ return [
 
     'more' => 'Meer',
     'less' => 'Minder',
+
+    'about' => 'Over mij',
+    'contact' => 'Contact',
+    'prices' => 'Tarieven',
+    'practical' => 'Practisch',
 ];

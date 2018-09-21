@@ -28,10 +28,10 @@
     <nav id="side-nav" class="nav-side hidden">
         <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
         <ul>
-            <li><a href="about">Over mij</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Tarieven</a></li>
-            <li><a href="#">Praktisch</a></li>
+            <li><a href="about">@lang('nav.about')</a></li>
+            <li><a href="#">@lang('nav.contact')</a></li>
+            <li><a href="#">@lang('nav.prices')</a></li>
+            <li><a href="#">@lang('nav.practical')</a></li>
         </ul>
         <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>
