@@ -6,8 +6,8 @@
   padding: 0;
 }
 
-body {
-  background-color: #f3f3f3;
+body, .app {
+  background-color: #FFF!important;
 }
 
 /* Set Primary Colors */
@@ -168,7 +168,7 @@ span.copy {
   width: 80%;
   max-width: 1200px;
   min-height: 550px;
-  background-color: #f3f3f3;
+  background-color: #FFF;
 }
 
 section {
@@ -298,7 +298,7 @@ img.about-photo {
   width: calc(50% - 41px);
   height: 419px;
   display: inline-block;
-  background-color: #f4f2e8;
+  background-color: #FFF;
   padding: 0 20px;
   overflow-y: scroll;
   margin-bottom: -4px;
@@ -409,11 +409,15 @@ form .form-title {
   margin-top: 10px;
   width: calc(100% - 15px);
 }
-.about-photo, .about-short, .event, .cal1, .details{
+.about-photo, .about-short, .events{
   border-radius:5px;
 }
-.border-radius{
-  border-radius: 5px;
+.cal1{
+  border-top-left-radius: 5px;
+
+}
+.details{
+  border-top-right-radius: 5px;
 }
 
 .form-group input {
