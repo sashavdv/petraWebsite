@@ -1,5 +1,6 @@
 <?php
 return [
+    'home' => 'Home',
     'beauty' => 'Schoonheid',
     'relaxation' => 'Relaxatie',
     'divination' => 'Divinatie',
@@ -10,5 +11,5 @@ return [
     'about' => 'Over mij',
     'contact' => 'Contact',
     'prices' => 'Tarieven',
-    'practical' => 'Practisch',
+    'practical' => 'Praktisch',
 ];

@@ -9,7 +9,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ config('app.name') }}</title>
+    <title>
+        @if (isset($sPageTitle))
+            @lang("nav.$sPageTitle") -
+        @endif
+        {{ config('app.name') }}
+    </title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -29,9 +34,9 @@
         <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
         <ul>
             <li><a href="about">@lang('nav.about')</a></li>
-            <li><a href="#">@lang('nav.contact')</a></li>
-            <li><a href="#">@lang('nav.prices')</a></li>
-            <li><a href="#">@lang('nav.practical')</a></li>
+            <li><a href="contact">@lang('nav.contact')</a></li>
+            <li><a href="prices">@lang('nav.prices')</a></li>
+            <li><a href="practical">@lang('nav.practical')</a></li>
         </ul>
         <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>

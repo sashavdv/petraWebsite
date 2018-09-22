@@ -300,7 +300,6 @@ img.about-photo {
   margin-top: 20px;
 }
 
-
 /* Reviews */
 .review {
   padding: 20px;
@@ -308,6 +307,7 @@ img.about-photo {
   box-shadow: 0 0 6px $color-shadow;
   background-color: #fff;
   margin-top: 30px;
+  border-radius: 4px;
 }
 .review:first-child {
   margin: 0;

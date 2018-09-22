@@ -4,7 +4,7 @@
         <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
         <div class="about-short">
             <p>@lang('content.about')</p>
-            <button onclick="window.location.href='/about'">Lees meer</button>
+            <button onclick="window.location.href='/about'">@lang('buttons.read-more')</button>
         </div>
     </section>
 
@@ -17,7 +17,7 @@
                     <span id="event-time">12:00</span>
                     <span id="event-title">Titel Lorem Ipsum</span>
                     <p id="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eius et explicabo fuga, id illum ipsam nisi obcaecati odio quia repellat repellendus saepe sapiente sed soluta tempora vitae? Blanditiis, harum.</p>
-                    <button>Meer informatie</button>
+                    <button>@lang('buttons.more-info')</button>
                 </div>
             </div>
         </div>

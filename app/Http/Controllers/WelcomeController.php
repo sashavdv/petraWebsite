@@ -15,11 +15,7 @@ class WelcomeController extends Controller
         $aReviews = Review::get();
         return view('user.pages.home', [
             'aReviews' => $aReviews,
+            'sPageTitle' => 'home',
             ]);
-    }
-
-    public function writeReview(Request $request) {
-
-
     }
 }
