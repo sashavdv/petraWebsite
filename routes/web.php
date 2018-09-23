@@ -33,9 +33,8 @@ Route::get('/relaxation', function () {
         'sPageTitle' => 'relaxation',
     ]);
 });
-Route::get('/contact', function () {
-    return view('user.pages.contact');
-});
+Route::get('/contact', 'ContactController@index');
+
 Route::get('/contact/{eventTitle}', 'ContactController@fillEventTitle');
 Route::post('/contact', 'ContactController@Subscribe');
 

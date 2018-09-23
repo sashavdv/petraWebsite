@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+    public function index() {
+        return view('user.pages.contact', [
+            'sPageTitle' => 'contact',
+        ]);
+    }
     public function Subscribe(Request $request){
         
     }

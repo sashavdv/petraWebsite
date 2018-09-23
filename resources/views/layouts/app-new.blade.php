@@ -23,20 +23,20 @@
 <body>
     <nav id="top-nav" class="nav-top">
         <ul>
-            <li><a href="/"><img src="{{ asset('images/logo.png') }}" /></a></li>
-            <li><a href="beauty"><span>@lang('nav.beauty')</span><img class="round" src="{{ asset('images/beauty.png') }}" ></a></li>
-            <li><a href="relaxation"><span>@lang('nav.relaxation')</span><img class="round" src="{{ asset('images/relaxation.png') }}" ></a></li>
-            <li><a href="divination"><span>@lang('nav.divination')</span><img class="round" src="{{ asset('images/divination.png') }}" ></a></li>
+            <a href="/"><li><img id="logo" src="{{ asset('images/logo.png') }}" /></li></a>
+            <a href="beauty"><li><span>@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}" ></li></a>
+            <a href="relaxation"><li><span>@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}" ></li></a>
+            <a href="divination"><li><span>@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}" ></li></a>
         </ul>
         <button id="nav-open" onclick="toggleSideNav()">@lang('nav.more')</button>
     </nav>
     <nav id="side-nav" class="nav-side hidden">
         <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
         <ul>
-            <li><a href="about">@lang('nav.about')</a></li>
-            <li><a href="contact">@lang('nav.contact')</a></li>
-            <li><a href="prices">@lang('nav.prices')</a></li>
-            <li><a href="practical">@lang('nav.practical')</a></li>
+            <a href="about"><li>@lang('nav.about')</li></a>
+            <a href="contact"><li>@lang('nav.contact')</li></a>
+            <a href="prices"><li>@lang('nav.prices')</li></a>
+            <a href="practical"><li>@lang('nav.practical')</li></a>
         </ul>
         <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>

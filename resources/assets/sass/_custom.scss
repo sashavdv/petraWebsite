@@ -1,8 +1,9 @@
 $color-primary: #fcd51b;
 $color-text: #000;
 $color-shadow: rgba(0,0,0,0.16);
-$color-background: #f3f3f3;
+$color-background: #fff;
 $color-calender-background: #f4f2e8;
+$color-hover: #e8c01d;
 
 /* Set defaults */
 * {
@@ -24,7 +25,7 @@ nav a {
 
 /* Primary navigation */
 .nav-top {
-  height: 60px;
+  height: 70px;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -37,36 +38,53 @@ nav a {
 }
 .nav-top li {
   float: left;
+  border-right: 1px solid $color-shadow;
+  background-color: $color-primary;
+  padding-right: 20px;
+  padding-left: -10px;
+  transition: all 0.15s ease-in-out;
 }
 .nav-top span {
   text-align: center;
   display: inline-block;
-  width: 150px;
+  width: 130px;
   height: 60px;
-  margin-top: -6%;
+  line-height: 60px;
+  margin-top: -32%;
   font-size: 1.2em;
   vertical-align: middle;
 }
 .nav-top img {
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  margin: 5px 0;
+  border: 1px solid $color-shadow;
+}
+.nav-top #logo {
+  border-radius: 0px;
+  margin: 0 -20px 0 0;
+  height: 70px;
+  width: 70px;
+  border: none;
+}
+.nav-top a:hover li {
+  background-color: $color-hover;
 }
 
 /* Navigation Toggle */
-#nav-open {
-  float: right;
+nav button {
   height: 60px;
-  margin-right: 30px;
   font-size: 1.2em;
   border: none;
   background-color: transparent;
 }
+#nav-open {
+  float: right;
+  margin: 5px 30px 5px;
+}
 #nav-close {
-  height: 60px;
-  margin-left: 30px;
-  font-size: 1.2em;
-  border: none;
-  background-color: transparent;
+  margin: 5px 0 5px 30px;
 }
 
 /* Secondary Navigation */
@@ -92,6 +110,11 @@ nav a {
   border-top: 1px solid rgba(255,255,255,0.4);
   padding-left: 30px;
   line-height: 50px;
+  background-color: $color-primary;
+  transition: all 0.15s ease-in-out;
+}
+.nav-side a:hover li {
+  background-color: $color-hover;
 }
 .nav-side .lang {
   position: absolute;
@@ -147,7 +170,7 @@ span.copy {
 
 /* Main Application */
 #app {
-  margin: 60px auto 0 auto;
+  margin: 70px auto 0 auto;
   padding-top: 30px;
   width: 80%;
   max-width: 1200px;
@@ -164,6 +187,8 @@ img.about-photo {
   float: left;
   margin-right: 30px;
   box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
+  border-radius: 5px;
 }
 .about-short {
   height: 260px;
@@ -172,10 +197,12 @@ img.about-photo {
   text-align: justify;
   // border: 1px solid black;
   box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
   background-color: white;
   margin-left: 330px;
   padding: 20px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .about-short button {
   position: absolute;
@@ -191,7 +218,10 @@ img.about-photo {
   position: relative;
   // border: 1px solid black;
   box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
   background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 /* Calender */
@@ -201,6 +231,8 @@ img.about-photo {
   display: inline-block;
   overflow: hidden;
   margin-bottom: -4px;
+  border-radius: 5px 0 0 5px;
+  border-right: 1px solid $color-shadow;
 }
 .clndr-table {
   width: 100%;
@@ -265,7 +297,7 @@ img.about-photo {
   width: calc(50% - 41px);
   height: 419px;
   display: inline-block;
-  background-color: #f4f2e8;
+  background-color: $color-background;
   padding: 0 20px;
   overflow-y: scroll;
   margin-bottom: -4px;
@@ -305,9 +337,10 @@ img.about-photo {
   padding: 20px;
   // border: 1px solid black;
   box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
   background-color: #fff;
   margin-top: 30px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .review:first-child {
   margin: 0;
