@@ -73,14 +73,17 @@
     <script>
         function toggleSideNav() {
             var sideNav = document.getElementById('side-nav');
+            var app = document.getElementById('app');
 
             if (sideNav.classList.contains('hidden')) {
                 sideNav.classList.remove('hidden');
                 sideNav.classList.add('visible');
+                app.addEventListener('click', toggleSideNav);
             }
             else if (sideNav.classList.contains('visible')) {
                 sideNav.classList.remove('visible');
                 sideNav.classList.add('hidden');
+                app.removeEventListener('click', toggleSideNav);
             }
         }
     </script>
