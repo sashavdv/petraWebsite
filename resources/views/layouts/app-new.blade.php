@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-    $lang = session()->get('lang');
+    $lang = Cookie::get('lang');
     App::setLocale($lang);
 ?>
 <html lang="{{ config('app.locale') }}">
@@ -9,7 +9,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ config('app.name') }}</title>
+    <title>
+        @if (isset($sPageTitle))
+            @lang("nav.$sPageTitle") -
+        @endif
+        {{ config('app.name') }}
+    </title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -18,20 +23,20 @@
 <body>
     <nav id="top-nav" class="nav-top">
         <ul>
-            <li><a href="/"><img src="{{ asset('images/logo.png') }}" /></a></li>
-            <li><a href="beauty"><span>@lang('nav.beauty')</span><img class="round" src="{{ asset('images/beauty.png') }}" ></a></li>
-            <li><a href="relaxation"><span>@lang('nav.relaxation')</span><img class="round" src="{{ asset('images/relaxation.png') }}" ></a></li>
-            <li><a href="divination"><span>@lang('nav.divination')</span><img class="round" src="{{ asset('images/divination.png') }}" ></a></li>
+            <a href="/"><li><img id="logo" src="{{ asset('images/logo.png') }}" /></li></a>
+            <a href="beauty"><li><span>@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}" ></li></a>
+            <a href="relaxation"><li><span>@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}" ></li></a>
+            <a href="divination"><li><span>@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}" ></li></a>
         </ul>
         <button id="nav-open" onclick="toggleSideNav()">@lang('nav.more')</button>
     </nav>
     <nav id="side-nav" class="nav-side hidden">
         <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
         <ul>
-            <li><a href="about">Over mij</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Tarieven</a></li>
-            <li><a href="#">Praktisch</a></li>
+            <a href="about"><li>@lang('nav.about')</li></a>
+            <a href="contact"><li>@lang('nav.contact')</li></a>
+            <a href="prices"><li>@lang('nav.prices')</li></a>
+            <a href="practical"><li>@lang('nav.practical')</li></a>
         </ul>
         <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>
@@ -68,14 +73,17 @@
     <script>
         function toggleSideNav() {
             var sideNav = document.getElementById('side-nav');
+            var app = document.getElementById('app');
 
             if (sideNav.classList.contains('hidden')) {
                 sideNav.classList.remove('hidden');
                 sideNav.classList.add('visible');
+                app.addEventListener('click', toggleSideNav);
             }
             else if (sideNav.classList.contains('visible')) {
                 sideNav.classList.remove('visible');
                 sideNav.classList.add('hidden');
+                app.removeEventListener('click', toggleSideNav);
             }
         }
     </script>

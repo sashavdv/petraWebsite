@@ -1,6 +1,7 @@
 <?php
 use App\Agenda;
 use App\Http\Resources\agenda_events;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,31 +13,47 @@ use App\Http\Resources\agenda_events;
 |
 */
 
+
+
 Route::get('/', 'WelcomeController@index')->name('home');
 Route::get('/home', 'WelcomeController@index');
 
 Route::get('/beauty', function () {
-    return view('user.pages.beauty');
+    return view('user.pages.beauty', [
+        'sPageTitle' => 'beauty',
+    ]);
 });
 Route::get('/divination', function () {
-    return view('user.pages.divination');
+    return view('user.pages.divination', [
+        'sPageTitle' => 'divination',
+    ]);
 });
 Route::get('/relaxation', function () {
-    return view('user.pages.relaxation');
+    return view('user.pages.relaxation', [
+        'sPageTitle' => 'relaxation',
+    ]);
 });
-Route::get('/contact', function () {
-    return view('user.pages.contact');
-});
+Route::get('/contact', 'ContactController@index');
+
 Route::get('/contact/{eventTitle}', 'ContactController@fillEventTitle');
 Route::post('/contact', 'ContactController@Subscribe');
 
 Route::get('/prices', function () {
     return view('user.pages.prices');
 });
+
+Route::get('/about', function () {
+    return view('user.pages.about');
+});
+
+Route::get('/practical', function () {
+    return view('user.pages.practical');
+});
+
 // ADMIN gedeelte
 
 Route::get('/lang/{lang}', function ($lang) {
-    Session::flash('lang', $lang);
+    Cookie::queue('lang', $lang, 5000);
     return redirect()->back();
 });
 

@@ -4,7 +4,7 @@
         <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
         <div class="about-short">
             <p>@lang('content.about')</p>
-            <button onclick="window.location.href='/about'">Lees meer</button>
+            <button onclick="window.location.href='/about'">@lang('buttons.read-more')</button>
         </div>
     </section>
 
@@ -12,7 +12,7 @@
         <div class="events">
             <div class="cal1"></div>
             <div class="details">
-                
+
             </div>
         </div>
     </section>
