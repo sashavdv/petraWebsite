@@ -15,7 +15,8 @@ class CreateAgendaEvents extends Migration
     {
         Schema::create('agendas', function (Blueprint $table) {
             $table->increments('id');
-            $table->dateTime('date');
+            $table->date('date');
+            $table->time('time');
             $table->text('title');
             $table->text('description_nl');
             $table->text('description_en');
@@ -24,6 +25,7 @@ class CreateAgendaEvents extends Migration
         });
         DB::table('agendas')->insert([
             'date' => '2018-09-04',
+            'time' => '12-00',
             'title' => 'testEvent',
             'description_nl' => 'dit is een omschrijving',
             'description_en' => 'cest un description',

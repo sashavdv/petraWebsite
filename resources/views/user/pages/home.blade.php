@@ -12,13 +12,7 @@
         <div class="events">
             <div class="cal1"></div>
             <div class="details">
-                <span id="day">Donderdag 13 September</span>
-                <div class="selected-event">
-                    <span id="event-time">12:00</span>
-                    <span id="event-title">Titel Lorem Ipsum</span>
-                    <p id="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eius et explicabo fuga, id illum ipsam nisi obcaecati odio quia repellat repellendus saepe sapiente sed soluta tempora vitae? Blanditiis, harum.</p>
-                    <button>Meer informatie</button>
-                </div>
+                
             </div>
         </div>
     </section>
