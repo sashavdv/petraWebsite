@@ -486,6 +486,8 @@ form .form-title {
   margin-top: 10px;
   display: block;
   width: calc(100% - 3px);
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 form button[type="submit"] {

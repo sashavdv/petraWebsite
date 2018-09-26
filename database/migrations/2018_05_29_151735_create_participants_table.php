@@ -15,10 +15,10 @@ class CreateParticipantsTable extends Migration
     {
         Schema::create('participants', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name_last');
             $table->string('name_first');
+            $table->string('name_last');
             $table->string('email');
-            $table->boolean('subscribe');
+            $table->string('phone')->nullable();
             $table->timestamps();
         });
     }
