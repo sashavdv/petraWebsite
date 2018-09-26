@@ -7,22 +7,18 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function index(Request $request) {
-        if ($request->post('event-button' != null)) {
-            $oEvent = Agenda::find($request->post('event-button'));
-            return view('user.pages.contact', [
-                'sPageTitle' => 'contact',
-                'oEvent' => $oEvent,
-            ]);
-        }
-        else {
-            return view('user.pages.contact', [
-                'sPageTitle' => 'contact',
-            ]);
-        }
+    public function index() {
+        return view('user.pages.contact', [
+            'sPageTitle' => 'contact',
+        ]);
     }
+
     public function Subscribe(Request $request){
-        
+        $oEvent = Agenda::where('id', $request->post('event-button'))->first();
+        return view('user.pages.contact', [
+            'sPageTitle' => 'contact',
+            'oEvent' => $oEvent,
+        ]);
     }
 
     public function sendMail(Request $request) {

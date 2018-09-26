@@ -19,6 +19,14 @@
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{{ asset('js/bootstrap.js') }}" defer></script>
+    <script src=" {{asset('js/custom.js')}}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
+
 </head>
 <body>
     <nav id="top-nav" class="nav-top">
@@ -87,12 +95,5 @@
             }
         }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="{{ asset('js/bootstrap.js') }}" defer></script>
-    <script src=" {{asset('js/custom.js')}}" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
 </body>
 </html>

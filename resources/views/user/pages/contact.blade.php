@@ -19,10 +19,12 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required/>
         </div>
-        <div class="form-group">
-            <label for="phone">Telefoon</label>
-            <input type="tel" name="phone" id="phone" required/>
-        </div>
+        @if (isset($oEvent))
+            <div class="form-group">
+                <label for="phone">Telefoon</label>
+                <input type="tel" name="phone" id="phone" required/>
+            </div>
+        @endif
         <div class="form-group">
             <label for="description">Beschrijving</label>
             <textarea name="description" id="description" rows="10" required></textarea>

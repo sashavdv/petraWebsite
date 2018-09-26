@@ -13,8 +13,10 @@ class WelcomeController extends Controller
 {
     public function index() {
         $aReviews = Review::get();
+        $aEvents = Agenda::get();
         return view('user.pages.home', [
             'aReviews' => $aReviews,
+            'aEvents' => $aEvents,
             'sPageTitle' => 'home',
             ]);
     }

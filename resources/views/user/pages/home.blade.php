@@ -10,12 +10,15 @@
     <section id="events">
         <div class="events">
             <div class="cal1"></div>
-            {{Form::open(['action' => 'ContactController@index', 'method' => 'post'])}}
+            {{Form::open(['action' => 'ContactController@subscribe', 'method' => 'post'])}}
             <div class="details">
                 <apsn id="day">{{ date('d M Y') }}</apsn>
             </div>
             {{Form::close()}}
         </div>
+        <script>
+            addEvents(<?php echo($aEvents) ?>);
+        </script>
     </section>
 
     <section id="reviews" class="bkg-yellow">
