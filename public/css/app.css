@@ -476,6 +476,12 @@ form .form-title {
   width: auto;
 }
 
+.form-group textarea {
+  margin-top: 10px;
+  display: block;
+  width: calc(100% - 3px);
+}
+
 form button[type="submit"] {
   position: absolute;
   display: block;
