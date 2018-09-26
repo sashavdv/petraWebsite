@@ -7,13 +7,14 @@
             <button onclick="window.location.href='/about'">@lang('buttons.read-more')</button>
         </div>
     </section>
-
     <section id="events">
         <div class="events">
             <div class="cal1"></div>
+            {{Form::open()}}
             <div class="details">
                 <apsn id="day">{{ date('d M Y') }}</apsn>
             </div>
+            {{Form::close()}}
         </div>
     </section>
 
