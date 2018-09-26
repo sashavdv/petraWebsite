@@ -16,10 +16,10 @@ function loadCalender(){
                         $('.details').append('<div class="selected-event" id="' + target.events[i].id + '">' +
                             '<span class="event-time">' + target.events[i].event_time + '</span>\n' +
                             '<span class="event-title">' + target.events[i].title + '</span>\n' +
-                            '<p class="event-description">' + target.events[i].description_nl + '<p>\n' +
+                            '<p class="event-description">' + target.events[i].description_nl + '</p>\n' +
                             '<button type="submit" value="' + target.events[i].id + '" name="event-button" ">Meer informatie</button>' +
                             '</div>');
-                        alert(target.events[i].title);
+                        //alert(target.events[i].title);
                     }
                 }
             },

@@ -329,6 +329,11 @@ img.about-photo {
 }
 .selected-event {
   margin-top: 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.selected-event:last-of-type {
+  margin-bottom: 30px;
 }
 .selected-event button {
   margin-top: 20px;
@@ -443,4 +448,9 @@ form button[type = "submit"] {
   padding: 0;
   position: relative;
   background-color: white;
+}
+.selected-event button {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
 }
