@@ -12,7 +12,7 @@
         <div class="events">
             <div class="cal1"></div>
             <div class="details">
-
+                <apsn id="day">{{ date('d M Y') }}</apsn>
             </div>
         </div>
     </section>

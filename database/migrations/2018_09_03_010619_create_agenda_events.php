@@ -16,7 +16,7 @@ class CreateAgendaEvents extends Migration
         Schema::create('agendas', function (Blueprint $table) {
             $table->increments('id');
             $table->date('date');
-            $table->time('time');
+            $table->time('event_time')->nullable();
             $table->text('title');
             $table->text('description_nl');
             $table->text('description_en');
@@ -25,9 +25,11 @@ class CreateAgendaEvents extends Migration
         });
         DB::table('agendas')->insert([
             'date' => '2018-09-04',
-            'time' => '12-00',
+            'event_time' => '12:00',
             'title' => 'testEvent',
-            'description_nl' => 'dit is een omschrijving',
+            'description_nl' => 'Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen. Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.
+
+Dat haar ouders hun kerkelijk ambt aan de haak hingen en voor een gezin kozen, zorgde wel altijd voor wat deining in de dorpsgemeenschap en Petra kreeg met veelvuldige pesterijen rond dit stigma te maken. Het maakt',
             'description_en' => 'cest un description',
             'price' => '15',
         ]); DB::table('agendas')->insert([

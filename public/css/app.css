@@ -350,11 +350,23 @@ img.about-photo {
   padding: 0 20px;
   overflow-y: scroll;
   margin-bottom: -4px;
+  position: relative;
 }
 
 #day {
   line-height: 50px;
   font-size: 1.2em;
+  background-color: #fcd51b;
+  height: 50px;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  width: calc(100% + 40px);
+  text-align: center;
+  left: -20px;
+  margin-left: -20px;
+  top: 0;
+  z-index: 5;
 }
 
 .selected-event {
@@ -371,18 +383,18 @@ img.about-photo {
   background-color: #fcd51b;
 }
 
-.event-time {
+#event-time {
   font-size: 1.15em;
   display: inline-block;
   margin-right: 20px;
   width: 45px;
 }
 
-.event-title {
+#event-title {
   font-size: 1.15em;
 }
 
-.event-description {
+#event-description {
   margin-left: 70px;
   margin-top: 20px;
 }
@@ -423,9 +435,9 @@ img.about-photo {
 /* Forms */
 form {
   display: block;
-  width: 500px;
-  margin: 0 auto;
-  border: 1px solid black;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
   padding: 60px 20px 60px;
   position: relative;
   background-color: white;
