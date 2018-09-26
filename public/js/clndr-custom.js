@@ -21,7 +21,7 @@ $(document).ready(function () {
                                 '<span class="event-time">' + target.events[i].event_time + '</span>\n' +
                                 '<span class="event-title">' + target.events[i].title + '</span>\n' +
                                 '<p class="event-description">' + target.events[i].description_nl + '<p>\n' +
-                                '<button type="submit" id="'+ target.events[i].id +'">Meer informatie</button>' +
+                                '<button type="submit" name="event-button" ">Meer informatie</button>' +
                                 '</div>');
                             alert(target.events[i].title);
                         }

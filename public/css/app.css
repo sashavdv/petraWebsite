@@ -493,4 +493,13 @@ form button[type="submit"] {
   background-color: #fcd51b;
 }
 
+.events form {
+  display: inline;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  position: relative;
+  background-color: white;
+}
+
 /*# sourceMappingURL=app.css.map */

@@ -10,7 +10,7 @@
     <section id="events">
         <div class="events">
             <div class="cal1"></div>
-            {{Form::open()}}
+            {{Form::open(['action' => 'ContactController@index', 'method' => 'post'])}}
             <div class="details">
                 <apsn id="day">{{ date('d M Y') }}</apsn>
             </div>
