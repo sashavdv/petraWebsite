@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Agenda;
 use App\Participants;
 use Illuminate\Http\Request;
+use Monolog\Handler\mail;
 
 class ContactController extends Controller
 {
@@ -34,13 +35,9 @@ class ContactController extends Controller
             Participants::insert($aData);
         }
 
-        $aData['subject'] = $request->post('subject');
-        $aData['description'] = $request->post('description');
-
-        $sMailString = $this->mailTemplate($aData);
-    }
-
-    private function mailTemplate($aData) {
-        return '';
+        if (mail('info@purepetra.be', $request->post('subject'), $request->post('description')) != false) {
+            return redirect('home');
+        }
+        else return redirect()->back()->withInput();
     }
 }
