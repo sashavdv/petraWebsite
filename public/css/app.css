@@ -449,6 +449,14 @@ form {
   background-color: white;
 }
 
+.admin-review form {
+  padding: 0px 20px 60px;
+}
+
+#new-review form {
+  padding: 0px 20px 40px;
+}
+
 form .form-title {
   line-height: 50px;
   background-color: #fcd51b;

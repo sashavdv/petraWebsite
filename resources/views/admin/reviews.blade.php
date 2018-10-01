@@ -2,7 +2,6 @@
 @section('content')
     <section id="reviews">
         <div class="container">
-            <h2>Pluimpjes</h2>
             <div class="reviews">
                 @foreach($aReviews as $oReview)
                     @if(isset($iToUpdate) and $iToUpdate == $oReview->id)
@@ -25,7 +24,8 @@
                             {{ Form::close() }}
                         </div>
                     @else
-                        <div id="review{{ $oReview->id }}" class="review">
+                        <div id="review{{ $oReview->id }} admin-review" class="review">
+                            {{ Form::open(['action' => 'AdminReviewController@writeReview', 'method' => 'post']) }}
                             @if($oReview->title != null)
                                 <span class="rev-title">{{ $oReview->title }}</span>
                             @endif
@@ -42,7 +42,6 @@
                                     @endif
                             </span>
                             <p class="rev-content">{{ $oReview->review }}</p>
-                                {{ Form::open(['action' => 'AdminReviewController@writeReview', 'method' => 'post']) }}
                                 <button type="submit" name="status" value="update-{{ $oReview->id }}" class="form-control">Review aanpassen</button>
                                 <button type="submit" name="status" value="drop-{{ $oReview->id }}" class="form-control">Review Verwijderen</button>
                                 {{ Form::close() }}
