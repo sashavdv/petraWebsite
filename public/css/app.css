@@ -55,6 +55,16 @@ nav a {
   vertical-align: middle;
 }
 
+.admin-nav span {
+  margin-top: 0;
+  line-height: 70px;
+  height: 70px;
+}
+
+.admin-nav li {
+  padding: 0 20px;
+}
+
 .nav-top img {
   width: 58px;
   height: 58px;

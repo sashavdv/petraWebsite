@@ -24,7 +24,7 @@
     <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
 </head>
 <body>
-    <nav id="top-nav" class="nav-top">
+    <nav id="top-nav" class="nav-top admin-nav">
         <ul>
             <a href="/admin/reviews"><li><span>Reviews</span></li></a>
             <a href="/admin/events"><li><span>Agenda</span></li></a>
