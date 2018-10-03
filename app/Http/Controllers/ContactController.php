@@ -32,7 +32,13 @@ class ContactController extends Controller
         ];
 
         if ($request->post('subscribe')) {
-            Participants::insert($aData);
+            if (is_object($oParticipant = (Participants::where('email', $aData['email'])->first()))) {
+                Participants::where('id', $oParticipant->id)->update($aData);
+            }
+            else {
+                Participants::insert($aData);
+            }
+
         }
 
         if (mail('info@purepetra.be', $request->post('subject'), $request->post('description')) != false) {

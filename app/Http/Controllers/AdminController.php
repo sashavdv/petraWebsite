@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Participants;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,6 +12,11 @@ class AdminController extends Controller
         if (!Auth::check()){
             return redirect(route('login'));
         }
-        else return view('admin.home');
+
+        $aParticipants = Participants::get();
+
+        return view('admin.home',  [
+            'aParticipants' => $aParticipants,
+        ]);
     }
 }

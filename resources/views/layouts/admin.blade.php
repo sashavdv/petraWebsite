@@ -26,6 +26,7 @@
 <body>
     <nav id="top-nav" class="nav-top admin-nav">
         <ul>
+            <a href="/admin"><li><span>Dashboard</span></li></a>
             <a href="/admin/reviews"><li><span>Reviews</span></li></a>
             <a href="/admin/events"><li><span>Agenda</span></li></a>
         </ul>
