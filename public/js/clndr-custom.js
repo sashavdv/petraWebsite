@@ -10,6 +10,11 @@ function loadCalender(){
             click: function(target) {
                 console.log(target.events);
                 if (target.events.length > 0) {
+                    console.log(target.events);
+                    var clickedDate = new Date(target.events[0].date);
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                    $('#day').text(clickedDate.getDate() + ' ' + months[clickedDate.getMonth()] + ' ' + clickedDate.getFullYear());
                     for (var i = 0; i < target.events.length; i++) {
                         //alert(target.events[i].hasOwnProperty('event_time'));
                         //make a div with class selected event, add span id=event-time span id=event-title, p id= event-description button with moreinfo
