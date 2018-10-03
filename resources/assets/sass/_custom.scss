@@ -406,8 +406,8 @@ form {
   position: relative;
   background-color: white;
 }
-.admin-review form{
-  padding: 0px 20px 60px;
+.admin-review form {
+  padding: 20px 20px 60px;
 }
 #new-review form {
   padding: 0px 20px 40px;
@@ -443,7 +443,7 @@ form .form-title {
 .form-group textarea {
   margin-top: 10px;
   display: block;
-  width: calc(100% - 3px);
+  width: calc(100% - 10px);
   padding-top: 10px;
   padding-left: 10px;
 }
