@@ -11,7 +11,11 @@
                     <span class="form-title">Nieuw evenement toevoegen</span>
                     <div class="form-group">
                         {{ Form::label('date', 'Datum') }}
-                        {{ Form::date('date', '', ['class' => 'form-control', 'required']) }}
+                        {{ Form::date('date', '', ['class' => 'form-control', 'required' => 'required', 'pattern' => '[0-2[0-9]:[0-5][0-9]']) }}
+                    </div>
+                    <div class="form-group">
+                        {{ Form::label('time', 'Tijd') }}
+                        {{ Form::text('time', '', ['class' => 'form-control', 'required']) }}
                     </div>
                     <div class="form-group">
                         {{ Form::label('title', 'Titel') }}
