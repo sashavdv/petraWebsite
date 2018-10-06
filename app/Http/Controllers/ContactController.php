@@ -38,7 +38,6 @@ class ContactController extends Controller
             else {
                 Participants::insert($aData);
             }
-
         }
 
         if (mail('info@purepetra.be', $request->post('subject'), $request->post('description')) != false) {

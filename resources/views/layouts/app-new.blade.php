@@ -16,6 +16,7 @@
         {{ config('app.name') }}
     </title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
+    @yield('styles')
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -95,5 +96,6 @@
             }
         }
     </script>
+    @yield('scripts')
 </body>
 </html>
