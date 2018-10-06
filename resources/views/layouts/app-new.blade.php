@@ -66,7 +66,7 @@
             <div class="footer-info-right">
                 <ul>
                     <li>BE09999999999</li>
-                    <li>Kiewitstraat 43, 3500 Hasselt</li>
+                    <li>Grote markt 18, 3500 Hasselt</li>
                 </ul>
             </div>
             <div class="social">

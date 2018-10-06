@@ -25,11 +25,6 @@
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-    <style>
-        #map {
-            height: 500px;
-        }
-    </style>
 @endsection
 
 @section('scripts')
@@ -38,14 +33,14 @@
             crossorigin=""></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <script type="text/javascript">
-        var map = L.map('map').setView([50.935658, 5.328598], 15);
+        var map = L.map('map').setView([50.929189,5.3375989], 18);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.marker([50.935658, 5.328598]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        L.marker([50.929189,5.3375989]).addTo(map)
+            .bindPopup('Grote markt 18,<br>3500 Hasselt')
             .openPopup();
 
         map.addControl(new L.Control.Fullscreen());

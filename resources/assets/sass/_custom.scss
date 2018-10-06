@@ -470,3 +470,14 @@ form button[type = "submit"] {
   bottom: 0;
   margin-left: 0;
 }
+
+#map {
+  height: 500px;
+  box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
+  border-radius: 5px;
+  z-index: 1;
+}
+#map div.leaflet-popup-content {
+  text-align: center;
+}
