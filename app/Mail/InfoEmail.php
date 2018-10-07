@@ -31,7 +31,7 @@ class InfoEmail extends Mailable
     public function build()
     {
         return $this->from(['address' => config('mail.username'), 'name' => config('app.name')])
-            ->subject($this->aMailData->subject)
+            ->subject('Info Petra; ' . $this->aMailData->subject)
             ->view('emails.info.message')
             ->text('emails.info.message_plain');
     }

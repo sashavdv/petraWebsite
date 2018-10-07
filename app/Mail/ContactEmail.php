@@ -32,7 +32,7 @@ class ContactEmail extends Mailable
     {
         return $this->from(['address' => config('mail.username'), 'name' => config('app.name')])
                     ->replyTo(['address' => $this->aMailData->from, 'name' => $this->aMailData->name])
-                    ->subject($this->aMailData->subject)
+                    ->subject('Contactmail website: ' . $this->aMailData->subject)
                     ->view('emails.contact.message')
                     ->text('emails.contact.message_plain');
     }
