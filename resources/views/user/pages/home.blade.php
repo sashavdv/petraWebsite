@@ -1,10 +1,13 @@
 @extends('layouts.app-new')
 @section('content')
     <section id="about" class="bkg-white">
-        <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
-        <div class="about-short">
-            <p>@lang('content.about')</p>
-            <button onclick="window.location.href='/about'">@lang('buttons.read-more')</button>
+        <div class="container">
+            <h1>Over</h1>
+            <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
+            <div class="about-short">
+                <p>@lang('content.about')</p>
+                <button onclick="window.location.href='/about'">@lang('buttons.read-more')</button>
+            </div>
         </div>
     </section>
     <section id="events">

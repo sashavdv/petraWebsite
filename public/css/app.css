@@ -204,68 +204,75 @@ span.copy {
   line-height: 50px;
 }
 
-/* Main Application */
 #app {
-  margin: 70px auto 0 auto;
-  padding-top: 30px;
-  width: 80%;
-  max-width: 1200px;
-  min-height: 550px;
-  background-color: #fff;
+  margin-top: 70px;
 }
 
-#app button {
-  background-color: #fcd51b;
-  border: none;
-  transition: all 0.15s ease-in-out;
-}
-
-#app button:hover {
-  background-color: #e8c01d;
+button:hover {
   cursor: pointer;
 }
 
-section {
-  margin-bottom: 30px;
-  text-align: left;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: 5px;
+#app section {
+  padding: 50px 0;
 }
 
-img.about-photo {
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-right: 30px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: 5px;
+#app section:nth-child(odd) {
+  background-color: #ebebeb;
 }
 
-.about-short {
-  height: 260px;
-  position: relative;
-  width: auto;
-  text-align: justify;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  background-color: white;
-  margin-left: 330px;
+#app section div.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
 }
 
-.about-short button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 40px;
+#app section div.container h1 {
+  line-height: 50px;
+  background-color: #abeeff;
+  margin: -20px 0 20px -20px;
+  width: calc(100% + 20px);
+  padding-left: 20px;
 }
 
+/* Home - About */
+#app section#about div.container {
+  min-height: 300px;
+  background-color: white;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+#app section#about img {
+  width: calc(25% - 2px);
+  min-width: 148px;
+  max-width: 248px;
+  float: left;
+  margin: 0 20px 0 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+#app section#about p {
+  text-align: justify;
+}
+
+#app section#about button {
+  position: absolute;
+  height: 50px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  background-color: #abeeff;
+  font-size: 1.15em;
+}
+
+/* Main Application */
 #map {
   height: 500px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
