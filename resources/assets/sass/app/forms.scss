@@ -1,0 +1,73 @@
+form {
+  display: block;
+  box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
+  border-radius: 5px;
+  padding: 60px 20px 60px;
+  position: relative;
+  background-color: white;
+}
+.admin-review form {
+  padding: 20px 20px 60px;
+}
+#new-review form {
+  padding: 0px 20px 40px;
+}
+form .form-title {
+  line-height: 50px;
+  background-color: $color-primary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  display: block;
+  font-size: 1.15em;
+  padding: 0 20px;
+}
+.form-group {
+  display: block;
+  margin-top: 10px;
+}
+.form-group label, .form-group input {
+  display: block;
+  margin-top: 10px;
+  width: calc(100% - 15px);
+}
+.form-group input {
+  line-height: 30px;
+  padding-left: 10px;
+}
+.form-group input[type = "checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+.form-group textarea {
+  margin-top: 10px;
+  display: block;
+  width: calc(100% - 10px);
+  padding-top: 10px;
+  padding-left: 10px;
+}
+form button[type = "submit"] {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: $color-primary;
+}
+.events form {
+  display: inline;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  position: relative;
+  background-color: white;
+}
+.selected-event button {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+}

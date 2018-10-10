@@ -1,0 +1,131 @@
+.events {
+  position: relative;
+  // border: 1px solid black;
+  box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cal1 {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: -4px;
+  border-radius: 5px 0 0 5px;
+  border-right: 1px solid $color-shadow;
+}
+.clndr-table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.15em;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+}
+.clndr-controls {
+  text-align: center;
+  position: relative;
+  background-color: $color-primary;
+  line-height: 50px;
+  font-size: 1.2em;
+}
+.clndr-controls .clndr-control-button {
+  position: absolute;
+  left: 30px;
+}
+.clndr-controls .clndr-control-button:last-child {
+  position: absolute;
+  left: auto;
+  right: 30px;
+}
+.clndr-controls div {
+  display: inline-block;
+}
+.day {
+  width: 14%;
+  line-height: 16%;
+  padding-top: 12px;
+}
+.adjacent-month {
+  opacity: 0.4;
+}
+.day-contents {
+  padding: 10px 8px 6px;
+  line-height: 100%;
+  height: 1.15em;
+  width: 1.15em;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.header-days td{
+  padding-bottom: 10px;
+}
+.today .day-contents {
+  border: 1px solid #292363;
+}
+.event .day-contents {
+  border: 1px solid #961a1c;
+}
+.selected .day-contents {
+  background-color: #f3f3f3;
+}
+.event.selected .day-contents {
+  background-color: #961a1c;
+}
+/* Calendar Details */
+.details {
+  width: calc(50% - 41px);
+  height: 419px;
+  display: inline-block;
+  background-color: $color-background;
+  padding: 0 20px;
+  overflow-y: scroll;
+  margin-bottom: -4px;
+  position: relative;
+}
+#day {
+  line-height: 50px;
+  font-size: 1.2em;
+  background-color: $color-primary;
+  height: 50px;
+  display: block;
+  position: sticky;
+  width: calc(100% + 40px);
+  text-align: center;
+  left: -20px;
+  margin-left: -20px;
+  top: 0;
+  z-index: 5;
+}
+.selected-event {
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.selected-event:last-of-type {
+  margin-bottom: 30px;
+}
+.selected-event button {
+  margin-top: 20px;
+  margin-left: 70px;
+  display: block;
+  width: calc(100% - 70px);
+  height: 40px;
+  border: none;
+  background-color: $color-primary;
+}
+#event-time {
+  font-size: 1.15em;
+  display: inline-block;
+  margin-right: 20px;
+  width: 45px;
+}
+#event-title {
+  font-size: 1.15em;
+}
+#event-description {
+  margin-left: 70px;
+  margin-top: 20px;
+}

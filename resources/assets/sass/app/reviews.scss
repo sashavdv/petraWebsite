@@ -1,0 +1,28 @@
+.review {
+  padding: 20px;
+  // border: 1px solid black;
+  box-shadow: 0 0 6px $color-shadow;
+  border: 1px solid $color-shadow;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.review:first-child {
+  margin: 0;
+}
+.rev-title {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-right: 20px;
+
+}
+.rev-name {
+  font-size: 1.15em;
+}
+.rev-stars {
+  float: right;
+}
+.rev-content {
+  margin-top: 20px;
+  text-align: justify;
+}
