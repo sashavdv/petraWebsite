@@ -1,11 +1,12 @@
-.events {
+#app section#events div.container {
   position: relative;
-  // border: 1px solid black;
-  box-shadow: 0 0 6px $color-shadow;
-  border: 1px solid $color-shadow;
-  background-color: white;
-  border-radius: 5px;
   overflow: hidden;
+}
+.events {
+  margin: -20px -20px -20px -20px;
+  display: block;
+  width: calc(100% + 40px);
+  height: calc(100% + 20px);
 }
 .cal1 {
   float: left;
@@ -27,7 +28,7 @@
 .clndr-controls {
   text-align: center;
   position: relative;
-  background-color: $color-primary;
+  background-color: $color-accent;
   line-height: 50px;
   font-size: 1.2em;
 }
@@ -88,7 +89,7 @@
 #day {
   line-height: 50px;
   font-size: 1.2em;
-  background-color: $color-primary;
+  background-color: $color-accent;
   height: 50px;
   display: block;
   position: sticky;
@@ -114,7 +115,7 @@
   width: calc(100% - 70px);
   height: 40px;
   border: none;
-  background-color: $color-primary;
+  background-color: $color-accent;
 }
 #event-time {
   font-size: 1.15em;

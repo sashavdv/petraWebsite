@@ -18,6 +18,7 @@ button:hover {
   border: 1px solid $color-shadow;
   box-shadow: 0 0 6px $color-shadow;
   border-radius: 5px;
+  background-color: white;
 }
 #app section div.container h1 {
   line-height: 50px;
@@ -29,7 +30,6 @@ button:hover {
 /* Home - About */
 #app section#about div.container {
   min-height: 300px;
-  background-color: white;
   padding-bottom: 70px;
   position: relative;
 }

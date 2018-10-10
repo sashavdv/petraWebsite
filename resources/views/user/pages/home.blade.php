@@ -1,6 +1,6 @@
 @extends('layouts.app-new')
 @section('content')
-    <section id="about" class="bkg-white">
+    <section id="about">
         <div class="container">
             <h1>Over</h1>
             <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
@@ -10,40 +10,46 @@
             </div>
         </div>
     </section>
+
     <section id="events">
-        <div class="events">
-            <div class="cal1"></div>
-            {{Form::open(['action' => 'ContactController@subscribe', 'method' => 'post'])}}
-            <div class="details">
-                <apsn id="day">{{ date('d M Y') }}</apsn>
+        <div class="container">
+            <div class="events">
+                <div class="cal1"></div>
+                {{Form::open(['action' => 'ContactController@subscribe', 'method' => 'post'])}}
+                <div class="details">
+                    <apsn id="day">{{ date('d M Y') }}</apsn>
+                </div>
+                {{Form::close()}}
             </div>
-            {{Form::close()}}
+            <script>
+                addEvents(<?php echo($aEvents) ?>);
+            </script>
         </div>
-        <script>
-            addEvents(<?php echo($aEvents) ?>);
-        </script>
     </section>
 
-    <section id="reviews" class="bkg-yellow">
-        @foreach ($aReviews as $oReview)
-            <div id="review{{ $oReview->id }}" class="review">
-                @if($oReview->title != null)
-                    <span class="rev-title">{{ $oReview->title }}</span>
-                @endif
-                <span class="rev-name">{{ $oReview->name }}</span>
-                @if($oReview->rating != null)
-                    <span class="rev-stars">
+    <section id="reviews">
+        <div class="container">
+            <h1>Pluimpjes</h1>
+            @foreach ($aReviews as $oReview)
+                <div id="review{{ $oReview->id }}" class="review">
+                    @if($oReview->title != null)
+                        <span class="rev-title">{{ $oReview->title }}</span>
+                    @endif
+                    <span class="rev-name">{{ $oReview->name }}</span>
+                    @if($oReview->rating != null)
+                        <span class="rev-stars">
                        @for($i = 0; $i < 5;$i++)
-                           @if($oReview->rating > $i)
-                            <i class="fas fa-star"></i>
-                            @else
-                                <i class="far fa-star"></i>
-                            @endif
-                        @endfor
+                                @if($oReview->rating > $i)
+                                    <i class="fas fa-star"></i>
+                                @else
+                                    <i class="far fa-star"></i>
+                                @endif
+                            @endfor
                     </span>
-                @endif
-                <p class="rev-content">{{ $oReview->review }}</p>
-            </div>
-        @endforeach
+                    @endif
+                    <p class="rev-content">{{ $oReview->review }}</p>
+                </div>
+            @endforeach
+        </div>
     </section>
 @endsection
