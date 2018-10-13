@@ -44,6 +44,7 @@
             <a href="contact"><li>@lang('nav.contact')</li></a>
             <a href="prices"><li>@lang('nav.prices')</li></a>
             <a href="practical"><li>@lang('nav.practical')</li></a>
+            <a href="terms"><li>Terms & agreements</li></a>
         </ul>
         <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>

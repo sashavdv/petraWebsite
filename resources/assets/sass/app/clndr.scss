@@ -2,6 +2,9 @@
   position: relative;
   overflow: hidden;
 }
+#events container {
+  padding-bottom: 0px;
+}
 .events {
   margin: -20px -20px -20px -20px;
   display: block;
@@ -11,9 +14,10 @@
 .cal1 {
   float: left;
   width: 50%;
+  height: 420px;
   display: inline-block;
   overflow: hidden;
-  margin-bottom: -4px;
+  margin-bottom: -20px;
   border-radius: 5px 0 0 5px;
   border-right: 1px solid $color-shadow;
 }
@@ -31,6 +35,7 @@
   background-color: $color-accent;
   line-height: 50px;
   font-size: 1.2em;
+  border-bottom: 1px solid $color-shadow;
 }
 .clndr-controls .clndr-control-button {
   position: absolute;
@@ -93,6 +98,7 @@
   height: 50px;
   display: block;
   position: sticky;
+  border-bottom: 1px solid $color-shadow;
   width: calc(100% + 40px);
   text-align: center;
   left: -20px;
@@ -101,21 +107,19 @@
   z-index: 5;
 }
 .selected-event {
-  margin-top: 30px;
+  margin-top: 20px;
   position: relative;
-  padding-bottom: 50px;
 }
 .selected-event:last-of-type {
   margin-bottom: 30px;
 }
-.selected-event button {
-  margin-top: 20px;
-  margin-left: 70px;
+.selected-event button[name="event-button"] {
   display: block;
-  width: calc(100% - 70px);
+  width: 100%;
   height: 40px;
   border: none;
   background-color: $color-accent;
+  font-size: 1.05em;
 }
 #event-time {
   font-size: 1.15em;
@@ -129,4 +133,37 @@
 #event-description {
   margin-left: 70px;
   margin-top: 20px;
+}
+.selected-event {
+  border: 1px solid $color-shadow;
+  border-radius: 5px;
+  padding: 60px 20px 60px 20px;
+  position: relative;
+}
+.event-time {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  display: block;
+  top: 0;
+  line-height: 40px;
+  background-color: $color-accent;
+  padding-left: 20px;
+  font-size: 1.05em;
+}
+.event-title {
+  position: absolute;
+  width: 70%;
+  display: block;
+  text-align: left;
+  top: 0;
+  right: 0px;
+  line-height: 40px;
+  background-color: $color-accent;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+.events form {
+  height: 0;
 }

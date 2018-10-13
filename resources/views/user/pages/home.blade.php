@@ -17,7 +17,7 @@
                 <div class="cal1"></div>
                 {{Form::open(['action' => 'ContactController@subscribe', 'method' => 'post'])}}
                 <div class="details">
-                    <apsn id="day">{{ date('d M Y') }}</apsn>
+                    <span id="day">{{ date('d M Y') }}</span>
                 </div>
                 {{Form::close()}}
             </div>

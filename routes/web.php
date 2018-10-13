@@ -50,6 +50,10 @@ Route::get('/practical', function () {
     return view('user.pages.practical');
 });
 
+Route::get('/terms', function () {
+    return view('user.pages.terms');
+});
+
 // ADMIN gedeelte
 
 Route::get('/lang/{lang}', function ($lang) {
