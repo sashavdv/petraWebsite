@@ -484,6 +484,60 @@ button:hover {
   height: 0;
 }
 
+.selected-event.event-type.beauty span.event-time {
+  background-color: #1A5E2B;
+  color: white;
+  border-radius: 5px 0 0 0;
+}
+
+.selected-event.event-type.beauty span.event-title {
+  background-color: #1A5E2B;
+  color: white;
+  border-radius: 0 5px 0 0;
+}
+
+.selected-event.event-type.beauty button {
+  background-color: #1A5E2B;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.selected-event.event-type.relaxation span.event-time {
+  background-color: #292363;
+  color: white;
+  border-radius: 5px 0 0 0;
+}
+
+.selected-event.event-type.relaxation span.event-title {
+  background-color: #292363;
+  color: white;
+  border-radius: 0 5px 0 0;
+}
+
+.selected-event.event-type.relaxation button {
+  background-color: #292363;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.selected-event.event-type.divination span.event-time {
+  background-color: #961A1C;
+  color: white;
+  border-radius: 5px 0 0 0;
+}
+
+.selected-event.event-type.divination span.event-title {
+  background-color: #961A1C;
+  color: white;
+  border-radius: 0 5px 0 0;
+}
+
+.selected-event.event-type.divination button {
+  background-color: #961A1C;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
 form {
   display: block;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);

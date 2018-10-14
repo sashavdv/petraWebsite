@@ -167,3 +167,51 @@
 .events form {
   height: 0;
 }
+// Beauty
+.selected-event.event-type.beauty span.event-time {
+  background-color: $col-beauty;
+  color: $col-beauty-text;
+  border-radius: 5px 0 0 0;
+}
+.selected-event.event-type.beauty span.event-title {
+  background-color: $col-beauty;
+  color: $col-beauty-text;
+  border-radius: 0 5px 0 0;
+}
+.selected-event.event-type.beauty button {
+  background-color: $col-beauty;
+  color: $col-beauty-text;
+  border-radius: 0 0 5px 5px;
+}
+// Relaxation
+.selected-event.event-type.relaxation span.event-time {
+  background-color: $col-relaxation;
+  color: $col-relaxation-text;
+  border-radius: 5px 0 0 0;
+}
+.selected-event.event-type.relaxation span.event-title {
+  background-color: $col-relaxation;
+  color: $col-relaxation-text;
+  border-radius: 0 5px 0 0;
+}
+.selected-event.event-type.relaxation button {
+  background-color: $col-relaxation;
+  color: $col-relaxation-text;
+  border-radius: 0 0 5px 5px;
+}
+// Divination
+.selected-event.event-type.divination span.event-time {
+  background-color: $col-divination;
+  color: $col-divination-text;
+  border-radius: 5px 0 0 0;
+}
+.selected-event.event-type.divination span.event-title {
+  background-color: $col-divination;
+  color: $col-divination-text;
+  border-radius: 0 5px 0 0;
+}
+.selected-event.event-type.divination button {
+  background-color: $col-divination;
+  color: $col-divination-text;
+  border-radius: 0 0 5px 5px;
+}
