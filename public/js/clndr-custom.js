@@ -8,9 +8,11 @@ function loadCalender(){
         events:eventArray,
         clickEvents: {
             click: function(target) {
-                console.log(target.events);
+                // console.log(target.events);
                 if (target.events.length > 0) {
-                    console.log(target.events);
+                    $('.details').children().remove();
+                    $('.details').append('<span id="day">' + target.events[0].date + '</span>');
+                    // console.log(target.events);
                     var clickedDate = new Date(target.events[0].date);
                     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
