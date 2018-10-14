@@ -7,6 +7,11 @@ function loadCalender(){
     calendars.clndr = $('.cal1').clndr({
         events:eventArray,
         clickEvents: {
+            onMonthChange: function () {
+                $('.clndr-previous-button').html("<");
+                $('.clndr-next-button').html(">");
+            },
+
             click: function(target) {
                 // console.log(target.events);
                 if (target.events.length > 0) {
@@ -54,4 +59,7 @@ function addEvents(events) {
     console.log(eventArray);
 
     loadCalender();
+
+    $('.clndr-previous-button').html("<");
+    $('.clndr-next-button').html(">");
 }
