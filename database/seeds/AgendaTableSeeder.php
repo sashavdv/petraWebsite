@@ -12,7 +12,7 @@ class AgendaTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('agendas')->insert([
+        DB::table('agenda')->insert([
             'date' => Carbon::create(2018, 05, 10, 15, 30),
             'description' => 'test',
         ]);
