@@ -1,22 +1,31 @@
 @extends('layouts.app-new')
 @section('content')
     <section id="parking">
-        <h2>Parkeren in hasselt</h2>
-        <p>Hier vindt u de mogelijke parkeerplaatsen in de regio hasselt.</p>
-        <ul>
-            <li>
-                <span>Gratis:</span>
-                <a href="https://www.hasselt.be/nl/gratisparkeren" target="_blank">https://www.hasselt.be/nl/gratisparkeren</a>
-            </li>
-            <li>
-                <span>Betalend:</span>
-                <a href="https://www.hasselt.be/nl/betaald-parkeren" target="_blank">https://www.hasselt.be/nl/betaald-parkeren</a>
-                <small>*Tarieven kunnen in de loop van het jaar verandern. Informeer u zeker op voorhand.</small>
-            </li>
-        </ul>
+        <div class="container">
+            <h1>Parkeren in hasselt</h1>
+            <p>Hier vindt u de mogelijke parkeerplaatsen in de regio hasselt.</p>
+            <ul>
+                <li>
+                    <span>Gratis:</span>
+                    <a href="https://www.hasselt.be/nl/gratisparkeren" target="_blank">https://www.hasselt.be/nl/gratisparkeren</a>
+                </li>
+                <li>
+                    <span>Betalend:</span>
+                    <a href="https://www.hasselt.be/nl/betaald-parkeren" target="_blank">https://www.hasselt.be/nl/betaald-parkeren</a>
+                    <small>*Tarieven kunnen in de loop van het jaar verandern. Informeer u zeker op voorhand.</small>
+                </li>
+            </ul>
+        </div>
     </section>
     <section id="location">
-        <div id="map"></div>
+        <div class="container">
+            <h1>Locatie</h1>
+            <ul>
+                <li>Grote Markt 18</li>
+                <li>3500 Hasselt</li>
+            </ul>
+            <div id="map"></div>
+        </div>
     </section>
 @endsection
 
