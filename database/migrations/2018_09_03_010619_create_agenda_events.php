@@ -18,6 +18,7 @@ class CreateAgendaEvents extends Migration
             $table->date('date');
             $table->text('event_time')->nullable();
             $table->text('title');
+            $table->string('type')->nullable();
             $table->text('description_nl');
             $table->text('description_en');
             $table->double('price')->nullable();
