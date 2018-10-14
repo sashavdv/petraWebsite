@@ -41,6 +41,9 @@
   position: absolute;
   left: 30px;
 }
+.clndr-control-button:hover {
+  cursor: pointer;
+}
 .clndr-controls .clndr-control-button:last-child {
   position: absolute;
   left: auto;
@@ -73,6 +76,9 @@
 }
 .event .day-contents {
   border: 1px solid #961a1c;
+}
+.event:hover * {
+  cursor: pointer;
 }
 .selected .day-contents {
   background-color: #f3f3f3;
