@@ -233,7 +233,7 @@ button:hover {
 
 #app section div.container h1 {
   line-height: 50px;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   margin: -20px 0 20px -20px;
   width: calc(100% + 20px);
   padding-left: 20px;
@@ -268,7 +268,7 @@ button:hover {
   left: 0;
   width: 100%;
   border: none;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   font-size: 1.15em;
 }
 
@@ -326,7 +326,7 @@ button:hover {
 .clndr-controls {
   text-align: center;
   position: relative;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   line-height: 50px;
   font-size: 1.2em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
@@ -409,7 +409,7 @@ button:hover {
 #day {
   line-height: 50px;
   font-size: 1.2em;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   height: 50px;
   display: block;
   position: -webkit-sticky;
@@ -437,7 +437,7 @@ button:hover {
   width: 100%;
   height: 40px;
   border: none;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   font-size: 1.05em;
 }
 
@@ -471,7 +471,7 @@ button:hover {
   display: block;
   top: 0;
   line-height: 40px;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   padding-left: 20px;
   font-size: 1.05em;
 }
@@ -484,7 +484,7 @@ button:hover {
   top: 0;
   right: 0px;
   line-height: 40px;
-  background-color: #abeeff;
+  background-color: #fcd51b;
   padding-right: 20px;
   font-weight: bold;
   font-size: 1.05em;
@@ -495,56 +495,56 @@ button:hover {
 }
 
 .selected-event.event-type.beauty span.event-time {
-  background-color: #1A5E2B;
-  color: white;
+  background-color: #C7F8D2;
+  color: black;
   border-radius: 5px 0 0 0;
 }
 
 .selected-event.event-type.beauty span.event-title {
-  background-color: #1A5E2B;
-  color: white;
+  background-color: #C7F8D2;
+  color: black;
   border-radius: 0 5px 0 0;
 }
 
 .selected-event.event-type.beauty button {
-  background-color: #1A5E2B;
-  color: white;
+  background-color: #C7F8D2;
+  color: black;
   border-radius: 0 0 5px 5px;
 }
 
 .selected-event.event-type.relaxation span.event-time {
-  background-color: #292363;
-  color: white;
+  background-color: #ABEEFF;
+  color: black;
   border-radius: 5px 0 0 0;
 }
 
 .selected-event.event-type.relaxation span.event-title {
-  background-color: #292363;
-  color: white;
+  background-color: #ABEEFF;
+  color: black;
   border-radius: 0 5px 0 0;
 }
 
 .selected-event.event-type.relaxation button {
-  background-color: #292363;
-  color: white;
+  background-color: #ABEEFF;
+  color: black;
   border-radius: 0 0 5px 5px;
 }
 
 .selected-event.event-type.divination span.event-time {
-  background-color: #961A1C;
-  color: white;
+  background-color: #F3DFEE;
+  color: black;
   border-radius: 5px 0 0 0;
 }
 
 .selected-event.event-type.divination span.event-title {
-  background-color: #961A1C;
-  color: white;
+  background-color: #F3DFEE;
+  color: black;
   border-radius: 0 5px 0 0;
 }
 
 .selected-event.event-type.divination button {
-  background-color: #961A1C;
-  color: white;
+  background-color: #F3DFEE;
+  color: black;
   border-radius: 0 0 5px 5px;
 }
 

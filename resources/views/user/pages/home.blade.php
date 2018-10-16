@@ -1,8 +1,14 @@
 @extends('layouts.app-new')
+
+<?php
+$lang = Cookie::get('lang');
+App::setLocale($lang);
+?>
+
 @section('content')
     <section id="about">
         <div class="container">
-            <h1>Over</h1>
+            <h1>@lang('titles.about')</h1>
             <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
             <div class="about-short">
                 <p>@lang('content.about')</p>
@@ -29,7 +35,7 @@
 
     <section id="reviews">
         <div class="container">
-            <h1>Pluimpjes</h1>
+            <h1>@lang('titles.reviews')</h1>
             @foreach ($aReviews as $oReview)
                 <div id="review{{ $oReview->id }}" class="review">
                     @if($oReview->title != null)
