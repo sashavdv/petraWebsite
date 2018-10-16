@@ -1,65 +1,81 @@
 var calendars = {};
-var eventArray = [];
 
-function loadCalender(){
-    console.log('loadcalender()');
-    console.log(eventArray);
+function loadCalender(events, lang) {
+    console.log(lang);
+
+    /* Load The Calendar */
     calendars.clndr = $('.cal1').clndr({
-        events:eventArray,
+        /* Define the events */
+        events: events,
+
+        /* Add Click Events */
         clickEvents: {
             onMonthChange: function () {
+                /* Set Back and Next Buttun Text */
                 $('.clndr-previous-button').html("<");
                 $('.clndr-next-button').html(">");
             },
 
             click: function(target) {
-                // console.log(target.events);
+                /* Check if there is an event on the clicked date */
                 if (target.events.length > 0) {
-                    $('.details').children().remove();
-                    $('.details').append('<span id="day">' + target.events[0].date + '</span>');
-                    // console.log(target.events);
+                    /* Get Clicked Date and set The Display Months */
                     var clickedDate = new Date(target.events[0].date);
-                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    var months = {
+                        fr: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juilet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+                        nl: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
+                    };
 
-                    $('#day').text(clickedDate.getDate() + ' ' + months[clickedDate.getMonth()] + ' ' + clickedDate.getFullYear());
+                    /* Remove all elements and add the Date bar */
+                    $('.details').children().remove();
+                    /* Display The Date */
+                    $('.details').append($('<span id="day">').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear()));
+
                     for (var i = 0; i < target.events.length; i++) {
-                        //alert(target.events[i].hasOwnProperty('event_time'));
-                        //make a div with class selected event, add span id=event-time span id=event-title, p id= event-description button with moreinfo
+                        /* Set the description based on the current language */
+                        var description = '';
 
+                        if (lang == 'nl') {
+                            description = target.events[i].description_nl;
+                        } else {
+                            description = target.events[i].description_en;
+                        }
+
+                        /* Set the button text based on the current language */
+                        var buttonText = '';
+
+                        if (lang == 'nl') {
+                            buttonText = 'Meer Informatie';
+                        } else {
+                            buttonText = 'Plus d\'information';
+                        }
+
+                        /* Set a class based on the type of event */
                         var classString = '';
 
                         if (target.events[i].type) {
                             classString = ' event-type ' + target.events[i].type;
                         }
 
-                        $('.details').append('<div class="selected-event' + classString + '" id="' + target.events[i].id + '">' +
-                            '<span class="event-time">' + target.events[i].event_time + '</span>\n' +
-                            '<span class="event-title">' + target.events[i].title + '</span>\n' +
-                            '<p class="event-description">' + target.events[i].description_nl + '</p>\n' +
-                            '<button type="submit" value="' + target.events[i].id + '" name="event-button" ">Meer informatie</button>' +
-                            '</div>');
-                        //alert(target.events[i].title);
+                        /* Creste The Event Content */
+                        $('.details').append(
+                            $('<div class="selected-event' + classString + '">').append(
+                                $('<span class="event-time">').text(target.events[i].event_time)).append(
+                                $('<span class="event-title">').text(target.events[i].title)).append(
+                                $('<p class="event-description">').text(description)).append(
+                                $('<button type="submit">').text(buttonText))
+                        );
                     }
                 }
             },
-            nextMonth: function () {
-                console.log('Next Month');
-            },
-            previousMonth: function () {
-                console.log('Previous Month');
-            }
         },
+
+        /* Extra Calendar Options */
         showAdjacentMonths: true,
         adjacentDaysChangeMonth: false
     });
-}
 
-function addEvents(events) {
-    eventArray = events;
-    console.log(eventArray);
-
-    loadCalender();
-
+    /* Set Back and Next Buttun Text */
     $('.clndr-previous-button').html("<");
     $('.clndr-next-button').html(">");
 }

@@ -28,7 +28,7 @@ App::setLocale($lang);
                 {{Form::close()}}
             </div>
             <script>
-                addEvents(<?php echo($aEvents) ?>);
+                loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
             </script>
         </div>
     </section>
