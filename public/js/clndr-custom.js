@@ -1,7 +1,9 @@
 var calendars = {};
 
 function loadCalender(events, lang) {
-    console.log(lang);
+    if (lang != 'nl') {
+        lang = 'fr';
+    }
 
     /* Load The Calendar */
     calendars.clndr = $('.cal1').clndr({
