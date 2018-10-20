@@ -137,12 +137,11 @@ nav.nav-side ul a {
 }
 
 nav.nav-side span.lang {
-  position: fixed;
-  bottom: 20px;
+  display: block;
   line-height: 30px;
   height: 30px;
-  width: 160px;
-  margin-left: 20px;
+  padding: 20px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   font-size: 1.1em;
 }
 
@@ -202,6 +201,10 @@ span.copy {
   display: block;
   margin-top: 20px;
   line-height: 50px;
+}
+
+body {
+  position: relative;
 }
 
 #app {

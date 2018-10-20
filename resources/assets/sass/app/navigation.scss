@@ -106,12 +106,11 @@ nav.nav-side ul a {
   font-size: 1.25em;
 }
 nav.nav-side span.lang {
-  position: fixed;
-  bottom: 20px;
+  display: block;
   line-height: 30px;
   height: 30px;
-  width: 160px;
-  margin-left: 20px;
+  padding: 20px 20px;
+  border-top: 1px solid $color-shadow;
   font-size: 1.1em;
 }
 nav.nav-side span.lang a {

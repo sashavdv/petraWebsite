@@ -39,14 +39,14 @@
     </nav>
     <nav id="side-nav" class="nav-side hidden">
         <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
-        <ul>
+        <ul id="side-nav">
             <a href="about"><li>@lang('nav.about')</li></a>
             <a href="contact"><li>@lang('nav.contact')</li></a>
             <a href="prices"><li>@lang('nav.prices')</li></a>
             <a href="practical"><li>@lang('nav.practical')</li></a>
             <a href="terms"><li>Terms & agreements</li></a>
         </ul>
-        <span class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
+        <span id="lang" class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
     </nav>
 
     <div id="app">
@@ -95,6 +95,12 @@
                 app.removeEventListener('click', toggleSideNav);
             }
         }
+
+        // $( document ).ready(function () {
+        //     var top = $('#top-nav').outerHeight();
+        //     var side = $('#side-mav').outerHeight();
+        //     document.getElementById('lang').style.marginTop = '100px';
+        // });
     </script>
     @yield('scripts')
 </body>
