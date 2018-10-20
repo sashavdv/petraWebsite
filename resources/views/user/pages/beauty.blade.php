@@ -2,6 +2,7 @@
 @section('content')
     <section id="skincare">
         <div class="container">
+            <h1>Huidverzorging</h1>
             <h5>@lang('beauty.title-importance-skincare')</h5>
             @lang('beauty.text-importance-skincare')
             @lang('beauty.text-why-natural')

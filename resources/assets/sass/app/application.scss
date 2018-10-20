@@ -59,62 +59,11 @@ button:hover {
   background-color: $color-accent;
   font-size: 1.15em;
 }
-
-/* Main Application */
-//#app {
-//  margin: 70px auto 0 auto;
-//  padding-top: 30px;
-//  width: 80%;
-//  max-width: 1200px;
-//  min-height: 550px;
-//  background-color: $color-background;
-//}
-//#app button {
-//  background-color: $color-primary;
-//  border: none;
-//  transition: all 0.15s ease-in-out;
-//}
-//#app button:hover {
-//  background-color: $color-hover;
-//  cursor: pointer;
-//}
-//section {
-//  margin-bottom: 30px;
-//  text-align: left;
-//  box-shadow: 0 0 6px $color-shadow;
-//  border: 1px solid $color-shadow;
-//  border-radius: 5px;
-//}
-//img.about-photo {
-//  width: 300px;
-//  height: 300px;
-//  float: left;
-//  margin-right: 30px;
-//  box-shadow: 0 0 6px $color-shadow;
-//  border: 1px solid $color-shadow;
-//  border-radius: 5px;
-//}
-//.about-short {
-//  height: 260px;
-//  position: relative;
-//  width: auto;
-//  text-align: justify;
-//  // border: 1px solid black;
-//  box-shadow: 0 0 6px $color-shadow;
-//  border: 1px solid $color-shadow;
-//  background-color: white;
-//  margin-left: 330px;
-//  padding: 20px;
-//  overflow: hidden;
-//  border-radius: 5px;
-//}
-//.about-short button {
-//  position: absolute;
-//  bottom: 0;
-//  right: 0;
-//  display: block;
-//  width: 100%;
-//  height: 40px;
-//}
-//
-//
+div.container ul {
+  padding-left: 10px;
+  line-height: 24px;
+}
+div.container small {
+  display: block;
+  opacity: 0.7;
+}

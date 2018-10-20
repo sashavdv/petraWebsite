@@ -1,9 +1,21 @@
 @extends('layouts.app-new')
 @section('content')
-    <h1>@lang('titles.meditation')</h1>
-    <p>@lang('content.meditation')</p>
-    <h1>@lang('titles.coaching')</h1>
-    <p>@lang('content.coaching')</p>
-    <h1>@lang('titles.spirituality')</h1>
-    <p>@lang('content.spirituality')</p>
+    <section>
+        <div class="container">
+            <h1>@lang('titles.meditation')</h1>
+            <p>@lang('content.meditation')</p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1>@lang('titles.coaching')</h1>
+            <p>@lang('content.coaching')</p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1>@lang('titles.spirituality')</h1>
+            <p>@lang('content.spirituality')</p>
+        </div>
+    </section>
 @endsection

@@ -2,7 +2,7 @@
 @section('content')
     <section id="beauty">
         <div class="container">
-            <h2>@lang('prices.title-beauty')</h2>
+            <h1>@lang('prices.title-beauty')</h1>
 
             <article id="face-care">
                 <h5>@lang('prices.title-face-care')</h5>
@@ -25,7 +25,7 @@
 
     <section id="relaxation">
         <div class="container">
-            <h2>@lang('prices.title-relaxation')</h2>
+            <h1>@lang('prices.title-relaxation')</h1>
             @lang('prices.list-relaxation')
             @lang('prices.text-relaxation')
         </div>
@@ -33,7 +33,7 @@
 
     <section id="divination">
         <div class="container">
-            <h2>@lang('prices.title-divination')</h2>
+            <h1>@lang('prices.title-divination')</h1>
         </div>
     </section>
 @endsection

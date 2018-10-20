@@ -275,7 +275,16 @@ button:hover {
   font-size: 1.15em;
 }
 
-/* Main Application */
+div.container ul {
+  padding-left: 10px;
+  line-height: 24px;
+}
+
+div.container small {
+  display: block;
+  opacity: 0.7;
+}
+
 #map {
   height: 500px;
   margin: 20px -20px -20px;
@@ -556,7 +565,7 @@ form {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 5px;
-  padding: 60px 20px 60px;
+  padding: 10px 20px 60px;
   position: relative;
   background-color: white;
 }
