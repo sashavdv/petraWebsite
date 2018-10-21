@@ -2,6 +2,7 @@
 
 <?php
 $lang = Cookie::get('lang');
+if ($lang != 'nl') $lang = 'fr';
 App::setLocale($lang);
 ?>
 
@@ -21,7 +22,7 @@ App::setLocale($lang);
         <div class="container">
             <div class="events">
                 <div class="cal1"></div>
-                {{Form::open(['action' => 'ContactController@subscribe', 'method' => 'post'])}}
+                {{Form::open(['action' => 'WelcomeController@popUp', 'method' => 'post'])}}
                 <div class="details">
                     <span id="day">{{ date('d M Y') }}</span>
                 </div>
@@ -29,25 +30,6 @@ App::setLocale($lang);
             </div>
             <script>
                 loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
-
-                function addEventsListeners() {
-                    var btnEvents = document.getElementsByName('event-button');
-                    var btnAll = [];
-                    var allEvents = <?php echo($aEvents) ?>;
-
-                    for (var i = -1; i < btnEvents.length; i++) {
-                        btnAll.push(btnEvents[i]);
-                    }
-                    console.log(btnEvents);
-
-                    for (var event of allEvents) {
-
-                    }
-                }
-
-                function eventPopUp(event) {
-
-                }
             </script>
         </div>
     </section>
@@ -77,4 +59,45 @@ App::setLocale($lang);
             @endforeach
         </div>
     </section>
+    @if($oEvent = session('chosenEvent'))
+    <script>
+        var event = {
+            title: '{{ $oEvent->title }}',
+            description: '',
+            price: '{{ $oEvent->price }}',
+            date: '{{ $oEvent->date }}',
+            time: '{{ $oEvent->event_time }}',
+            disclaimer: '',
+            type: '{{ $oEvent->type }}'
+        }
+        if ('{{ $lang }}' == 'nl') {
+            event.description = '{{ $oEvent->description_nl }}';
+        }
+        else {
+            event.description = '{{ $oEvent->description_en }}';
+        }
+
+        var htmlDescription = $('<div class="popup-container">')
+            .append($('<span class="popup-date">').text(event.date))
+            .append($('<span class="popup-time">').text(event.time))
+            .append($('<span class="popup-price">').text('€' + event.price))
+            .append($('<span class="popup-type">').text(event.type))
+            .append($('<p class="popup-description">').text(event.description))
+            .append($('<small class="popup-disclaimer">').text());
+
+        $.confirm({
+            title: event.title,
+            content: htmlDescription,
+            buttons: {
+                Inschrijven: function () {
+                    window.location.href = '{{ url('/') }}/contact?event_id={{ $oEvent->id }}';
+                },
+                Annuleren: function () {
+
+                },
+            },
+            theme: 'my-theme',
+        });
+    </script>
+    @endif
 @endsection

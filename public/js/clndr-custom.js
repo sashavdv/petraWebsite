@@ -59,8 +59,7 @@ function loadCalender(events, lang) {
                             classString = ' event-type ' + target.events[i].type;
                         }
 
-                        var btn = $('<button name="event-button" id="' + target.events[i].id + '">');
-                        btn.click(addEventsListeners());
+                        var btn = $('<button name="event-button" value="' + target.events[i].id + '">');
                         btn.text(buttonText);
 
                         /* Create The Event Content */

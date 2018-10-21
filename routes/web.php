@@ -17,8 +17,8 @@ use App\Http\Resources\agenda_events;
 
 Route::get('/', 'WelcomeController@index')->name('home');
 Route::get('/home', 'WelcomeController@index');
-Route::post('/', 'ContactController@subscribe');
-Route::post('/home', 'ContactController@subscribe');
+Route::post('/', 'WelcomeController@popUp');
+Route::post('/home', 'WelcomeController@popUp');
 
 Route::get('/beauty', function () {
     return view('user.pages.beauty', [
@@ -35,7 +35,7 @@ Route::get('/relaxation', function () {
         'sPageTitle' => 'relaxation',
     ]);
 });
-Route::get('/contact', 'ContactController@index');
+Route::get('/contact', 'ContactController@index')->name('contact');
 Route::post('/contact', 'ContactController@sendMail');
 
 Route::get('/prices', function () {

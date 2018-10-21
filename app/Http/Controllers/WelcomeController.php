@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\Review;
+use Illuminate\Http\Request;
 
 
 class WelcomeController extends Controller
@@ -17,5 +18,10 @@ class WelcomeController extends Controller
             'aEvents' => $aEvents,
             'sPageTitle' => 'home',
         ]);
+    }
+
+    public function popUp(Request $request) {
+        $oEvent = Event::find($request->post('event-button'));
+        return redirect()->back()->with('chosenEvent', $oEvent);
     }
 }

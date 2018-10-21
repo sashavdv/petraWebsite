@@ -1,0 +1,65 @@
+.jconfirm.jconfirm-my-theme .jconfirm-bg{
+  background-color: $color-bg-popup;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box{
+  width: 500px;
+  padding: 70px 20px 20px;
+  position: relative;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box.loading{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box.loading:before{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box.loading:after{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-closeIcon{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-title-c{
+  position: absolute;
+  padding: 0 20px;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  background-color: $color-primary;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  width: 100%;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content-pane{
+  padding: 0;
+  margin: 0;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  height: 40px;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button{
+  margin: 0;
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  padding: 0 20px;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button:last-child{
+  right: 0;
+  background-color: #AA454A;
+  color: white;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button:first-child{
+  left: 0;
+  background-color: $color-primary;
+  color: black;
+}
+.popup-time {
+  margin-left: 20px;
+}
+.popup-price {
+  display: block;
+  padding: 10px 0;
+}

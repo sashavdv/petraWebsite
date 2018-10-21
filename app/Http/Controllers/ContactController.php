@@ -3,20 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Agenda;
+use App\Event;
 use App\Participants;
 use Illuminate\Http\Request;
 use Monolog\Handler\mail;
 
 class ContactController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
+        $oEvent = Event::where('id', $request->get('event_id'))->first();
         return view('user.pages.contact', [
             'sPageTitle' => 'contact',
+            'oEvent' => $oEvent,
         ]);
     }
 
     public function Subscribe(Request $request){
-        $oEvent = Agenda::where('id', $request->post('event-button'))->first();
+        $oEvent = Event::where('id', $request->post('event_id'))->first();
         return view('user.pages.contact', [
             'sPageTitle' => 'contact',
             'oEvent' => $oEvent,
