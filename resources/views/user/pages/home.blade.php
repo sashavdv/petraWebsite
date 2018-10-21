@@ -29,6 +29,25 @@ App::setLocale($lang);
             </div>
             <script>
                 loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
+
+                function addEventsListeners() {
+                    var btnEvents = document.getElementsByName('event-button');
+                    var btnAll = [];
+                    var allEvents = <?php echo($aEvents) ?>;
+
+                    for (var i = -1; i < btnEvents.length; i++) {
+                        btnAll.push(btnEvents[i]);
+                    }
+                    console.log(btnEvents);
+
+                    for (var event of allEvents) {
+
+                    }
+                }
+
+                function eventPopUp(event) {
+
+                }
             </script>
         </div>
     </section>

@@ -447,6 +447,7 @@ div.container small {
 .selected-event button[name="event-button"] {
   display: block;
   width: 100%;
+  margin-left: -20px;
   height: 40px;
   border: none;
   background-color: #fcd51b;

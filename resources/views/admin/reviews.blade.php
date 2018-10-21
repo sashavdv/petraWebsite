@@ -2,6 +2,7 @@
 @section('content')
     <section id="reviews">
         <div class="container">
+            <h1>Huidige reviews</h1>
             <div class="reviews">
                 @foreach($aReviews as $oReview)
                     @if(isset($iToUpdate) and $iToUpdate == $oReview->id)

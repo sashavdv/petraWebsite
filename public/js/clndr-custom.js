@@ -59,13 +59,16 @@ function loadCalender(events, lang) {
                             classString = ' event-type ' + target.events[i].type;
                         }
 
-                        /* Creste The Event Content */
+                        var btn = $('<button name="event-button" id="' + target.events[i].id + '">');
+                        btn.click(addEventsListeners());
+                        btn.text(buttonText);
+
+                        /* Create The Event Content */
                         $('.details').append(
                             $('<div class="selected-event' + classString + '">').append(
                                 $('<span class="event-time">').text(target.events[i].event_time)).append(
                                 $('<span class="event-title">').text(target.events[i].title)).append(
-                                $('<p class="event-description">').text(description)).append(
-                                $('<button type="submit">').text(buttonText))
+                                $('<p class="event-description">').text(description)).append(btn)
                         );
                     }
                 }
