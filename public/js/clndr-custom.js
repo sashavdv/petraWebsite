@@ -2,7 +2,7 @@ var calendars = {};
 
 function loadCalender(events, lang) {
     if (lang != 'nl') {
-        lang = 'fr';
+        lang = 'en';
     }
 
     /* Load The Calendar */
@@ -24,7 +24,7 @@ function loadCalender(events, lang) {
                     /* Get Clicked Date and set The Display Months */
                     var clickedDate = new Date(target.events[0].date);
                     var months = {
-                        fr: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juilet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+                        en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                         nl: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
                     };
 
@@ -49,7 +49,7 @@ function loadCalender(events, lang) {
                         if (lang == 'nl') {
                             buttonText = 'Meer Informatie';
                         } else {
-                            buttonText = 'Plus d\'information';
+                            buttonText = 'More information';
                         }
 
                         /* Set a class based on the type of event */
