@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Agenda;
 use App\Event;
+use App\Mail\ContactEmail;
 use App\Participants;
 use Illuminate\Http\Request;
-use Monolog\Handler\mail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -27,11 +28,21 @@ class ContactController extends Controller
     }
 
     public function sendMail(Request $request) {
+        $aMailData = [
+            'subject' => $request->post('subject'),
+            'name_first' => $request->post('name-first'),
+            'name_last' => $request->post('name-last'),
+            'email' => $request->post('email'),
+            'phone' => $request->post('phone'),
+            'description' => $request->post('description'),
+            'lang' => '',
+        ];
         $aData = [
             'name_first' => $request->post('name-first'),
             'name_last' => $request->post('name-last'),
             'email' => $request->post('email'),
             'phone' => $request->post('phone'),
+            'lang' => '',
         ];
 
         if ($request->post('subscribe')) {
@@ -43,9 +54,12 @@ class ContactController extends Controller
             }
         }
 
-        if (mail('info@purepetra.be', $request->post('subject'), $request->post('description')) != false) {
-            return redirect('home');
-        }
-        else return redirect()->back()->withInput();
+//        try {
+            Mail::to(config('mail.username'))->send(new ContactEmail($aMailData));
+//        }
+//        catch (\Exception  $exception) {
+//            return 'fout';
+//        }
+//        return redirect()->back()->with('succes', 'De email is succesvol verzonden!');
     }
 }

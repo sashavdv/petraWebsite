@@ -31,9 +31,17 @@ class ContactEmail extends Mailable
     public function build()
     {
         return $this->from(['address' => config('mail.username'), 'name' => config('app.name')])
-                    ->replyTo(['address' => $this->aMailData->from, 'name' => $this->aMailData->name])
-                    ->subject('Contactmail website: ' . $this->aMailData->subject)
+                    ->replyTo(['address' => $this->aMailData['email']])
+                    ->subject('Contactmail website: ' . $this->aMailData['subject'])
                     ->view('emails.contact.message')
-                    ->text('emails.contact.message_plain');
+                    ->with([
+                        'subject' => $this->aMailData['subject'],
+                        'description' => $this->aMailData['description'],
+                        'email' => $this->aMailData['email'],
+                        'phone' => $this->aMailData['phone'],
+                        'firstName' => $this->aMailData['name_first'],
+                        'lastName' => $this->aMailData['name_last'],
+                        'lang' => $this->aMailData['lang'],
+                    ]);
     }
 }

@@ -40,7 +40,7 @@
                 <textarea name="description" id="description" rows="10" required></textarea>
             </div>
             <div class="form-group">
-                <label for="terms"><input type="checkbox" name="terms" id="subscribe" required/> Ik ga akkoord met de <a href="">Voorwaarden</a></label>
+                <label for="terms"><input type="checkbox" name="terms" id="terms" required/> Ik ga akkoord met de <a href="">Voorwaarden</a></label>
             </div>
             <div class="form-group">
                 <label for="subscribe"><input type="checkbox" name="subscribe" id="subscribe" checked/> Ik wil mails ontvangen</label>
