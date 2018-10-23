@@ -12,7 +12,7 @@ App::setLocale($lang);
             <h1>@lang('titles.about')</h1>
             <img class="about-photo" src="{{ asset('images/petra.jpg') }}"/>
             <div class="about-short">
-                <p>@lang('content.about')</p>
+                <p>@lang('content.about-short')</p>
                 <button onclick="window.location.href='/about'">@lang('buttons.read-more')</button>
             </div>
         </div>

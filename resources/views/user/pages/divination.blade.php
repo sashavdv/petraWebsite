@@ -7,14 +7,7 @@
     ?>
     <section>
         <div class="container">
-            <h1>@lang('titles.movie')</h1>
-            <p>@lang('content.movie')</p>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h1>@lang('titles.price')</h1>
-            <p>@lang('content.price')</p>
+            <h1>@lang('titles.divination')</h1>
         </div>
     </section>
 @endsection

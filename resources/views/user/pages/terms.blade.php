@@ -8,7 +8,7 @@
     ?>
     <section>
         <div class="container">
-            <h1>Terms & Agreements</h1>
+            <h1>@lang('titles.terms')</h1>
         </div>
     </section>
 @endsection

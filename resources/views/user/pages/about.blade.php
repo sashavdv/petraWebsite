@@ -8,7 +8,7 @@
     ?>
     <section>
         <div class="container">
-            <h1>Over mij</h1>
+            <h1>@lang('titles.about')</h1>
         </div>
     </section>
 @endsection

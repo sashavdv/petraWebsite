@@ -50,7 +50,7 @@
             <a href="practical"><li>@lang('nav.practical')</li></a>
             <a href="terms"><li>Terms & agreements</li></a>
         </ul>
-        <span id="lang" class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">FR</a> </span>
+        <span id="lang" class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">EN</a> </span>
     </nav>
 
     <div id="app">
@@ -58,7 +58,7 @@
     </div>
 
     <footer>
-        <p>You don't have to be a witch to practice magic(k)s</p>
+        <p><i>You don't have to be a witch to practice magic(k)s</i></p>
         <div class="footer-info">
             <div class="footer-info-left">
                 <ul>

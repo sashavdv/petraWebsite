@@ -7,24 +7,25 @@
     ?>
     <section id="parking">
         <div class="container">
-            <h1>Parkeren in hasselt</h1>
-            <p>Hier vindt u de mogelijke parkeerplaatsen in de regio hasselt.</p>
+            <h1>@lang('titles.parking')</h1>
+            <p>@lang('content.parking')</p>
+            <p></p>
             <ul>
                 <li>
-                    <span>Gratis:</span>
+                    <span>@lang('content.parking-free'):</span>
                     <a href="https://www.hasselt.be/nl/gratisparkeren" target="_blank">https://www.hasselt.be/nl/gratisparkeren</a>
                 </li>
                 <li>
-                    <span>Betalend:</span>
+                    <span>@lang('content.parking-paid'):</span>
                     <a href="https://www.hasselt.be/nl/betaald-parkeren" target="_blank">https://www.hasselt.be/nl/betaald-parkeren</a>
-                    <small>*Tarieven kunnen in de loop van het jaar verandern. Informeer u zeker op voorhand.</small>
+                    <small>*@lang('content.parking-disclaimer')</small>
                 </li>
             </ul>
         </div>
     </section>
     <section id="location">
         <div class="container">
-            <h1>Locatie</h1>
+            <h1>@lang('titles.location')</h1>
             <ul>
                 <li>Grote Markt 18</li>
                 <li>3500 Hasselt</li>
