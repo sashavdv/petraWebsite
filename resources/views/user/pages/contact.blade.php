@@ -5,6 +5,15 @@
     if ($lang != 'nl') $lang = 'en';
     App::setLocale($lang);
     ?>
+    @if(session('success'))
+        <div class="message message-success">
+            <p>{{ session('success') }}</p>
+        </div>
+    @elseif(session('failure'))
+        <div class="message message-failure">
+            <p>{{ session('failure') }}</p>
+        </div>
+    @endif
     <section id="contact">
         <div class="container">
             <h1>Contacteer mij</h1>
@@ -12,7 +21,9 @@
             <div class="form-group">
                 <label for="subject">Onderwerp</label>
                 @if (isset($oEvent))
-                    <input type="text" name="subject" id="subject" disabled value="{{ $oEvent->title }}" required/>
+                    <input style="display: none" name="event" value="true">
+                    <input style="display: none" type="text" name="subject" id="subject" value="{{ $oEvent->title }}" required/>
+                    <span class="contact-event">{{ $oEvent->title }}</span>
                 @else
                     <input type="text" name="subject" id="subject" value="" required/>
                 @endif
@@ -46,10 +57,11 @@
                 <label for="subscribe"><input type="checkbox" name="subscribe" id="subscribe" checked/> Ik wil mails ontvangen</label>
                 <small>*Gegevens worden enkel opgeslagen voor het verzenden van nieuwsbrieven (indien u hiermee akkoord gaat)</small>
             </div>
+            <input style="display: none" name="lang" value="{{ $lang }}">
             @if (isset($oEvent))
                 <button name="event" value="{{ $oEvent->id }}" type="submit">Inschrijven</button>
             @else
-                <button type="submit">Inschrijven</button>
+                <button type="submit">Verzenden</button>
             @endif
             {{ Form::close() }}
         </div>

@@ -71,3 +71,12 @@ form button[type = "submit"] {
   bottom: 0;
   margin-left: 0;
 }
+span.contact-event {
+  display: block;
+  width: calc(100% - 5px - 20px);
+  line-height: 32px;
+  border: 1px solid #2d2d2d;
+  padding: 0 10px;
+  background-color: #f0f0f0;
+  margin-top: 10px;
+}

@@ -4,7 +4,15 @@
         <li><b>Naam:</b>{{ $firstName }} {{ $lastName }}</li>
         <li><b>Email:</b> {{ $email }}</li>
         <li><b>Telefoon:</b> {{ $phone }}</li>
-        <li><b>Onderwerp:</b> {{ $subject }}</li>
+        @if($subscription)
+            <?php
+                $event = \App\Event::where('title', $subject)->first();
+            ?>
+            <li><b>Inschrijving:</b> {{ $subject }}, {{ $event->date }}, {{ $event->event_time }}</li>
+
+        @else
+            <li><b>Onderwerp:</b> {{ $subject }}</li>
+        @endif
     </ul>
 </div>
 <div>

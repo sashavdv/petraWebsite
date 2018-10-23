@@ -30,9 +30,16 @@ class ContactEmail extends Mailable
      */
     public function build()
     {
+        $sPreSubject = 'Contactmail website: ';
+        $bSubscription = false;
+        if ($this->aMailData['event']) {
+            $sPreSubject = 'Inschrijving: ';
+            $bSubscription = true;
+        }
+
         return $this->from(['address' => config('mail.username'), 'name' => config('app.name')])
                     ->replyTo(['address' => $this->aMailData['email']])
-                    ->subject('Contactmail website: ' . $this->aMailData['subject'])
+                    ->subject($sPreSubject . $this->aMailData['subject'])
                     ->view('emails.contact.message')
                     ->with([
                         'subject' => $this->aMailData['subject'],
@@ -42,6 +49,7 @@ class ContactEmail extends Mailable
                         'firstName' => $this->aMailData['name_first'],
                         'lastName' => $this->aMailData['name_last'],
                         'lang' => $this->aMailData['lang'],
+                        'subscription' => $bSubscription,
                     ]);
     }
 }

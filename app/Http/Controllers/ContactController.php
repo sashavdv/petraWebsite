@@ -35,15 +35,20 @@ class ContactController extends Controller
             'email' => $request->post('email'),
             'phone' => $request->post('phone'),
             'description' => $request->post('description'),
-            'lang' => '',
+            'lang' => $request->post('lang'),
+            'event' => false,
         ];
         $aData = [
             'name_first' => $request->post('name-first'),
             'name_last' => $request->post('name-last'),
             'email' => $request->post('email'),
             'phone' => $request->post('phone'),
-            'lang' => '',
+            'lang' => $request->post('lang'),
         ];
+
+        if ($request->post('event')) {
+            $aMailData['event'] = true;
+        }
 
         if ($request->post('subscribe')) {
             if (is_object($oParticipant = (Participants::where('email', $aData['email'])->first()))) {
@@ -54,12 +59,12 @@ class ContactController extends Controller
             }
         }
 
-//        try {
+        try {
             Mail::to(config('mail.username'))->send(new ContactEmail($aMailData));
-//        }
-//        catch (\Exception  $exception) {
-//            return 'fout';
-//        }
-//        return redirect()->back()->with('succes', 'De email is succesvol verzonden!');
+        }
+        catch (\Exception  $exception) {
+            return redirect('contact')->with('failure', 'De email is niet verzonden. Probeer het later opnieuw!');
+        }
+        return redirect('contact')->with('success', 'De email is succesvol verzonden!');
     }
 }
