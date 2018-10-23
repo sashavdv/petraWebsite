@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
     $lang = Cookie::get('lang');
+    if ($lang != 'nl') $lang = 'en';
     App::setLocale($lang);
 ?>
 <html lang="{{ config('app.locale') }}">

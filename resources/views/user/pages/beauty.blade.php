@@ -1,5 +1,10 @@
 @extends('layouts.app-new')
 @section('content')
+    <?php
+    $lang = Cookie::get('lang');
+    if ($lang != 'nl') $lang = 'en';
+    App::setLocale($lang);
+    ?>
     <section id="skincare">
         <div class="container">
             <h1>Huidverzorging</h1>

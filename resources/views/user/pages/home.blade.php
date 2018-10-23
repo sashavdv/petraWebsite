@@ -2,7 +2,7 @@
 
 <?php
 $lang = Cookie::get('lang');
-if ($lang != 'nl') $lang = 'fr';
+if ($lang != 'nl') $lang = 'en';
 App::setLocale($lang);
 ?>
 
