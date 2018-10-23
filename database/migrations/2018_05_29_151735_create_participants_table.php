@@ -19,6 +19,7 @@ class CreateParticipantsTable extends Migration
             $table->string('name_last');
             $table->string('email');
             $table->string('phone')->nullable();
+            $table->char('lang', 2);
             $table->timestamps();
         });
     }
