@@ -6,5 +6,10 @@ use Illuminate\Http\Request;
 
 
 function sendUpdate() {
-    $aMailList = Participants::get();
+    Participants::insert([
+        'name_first' => 'cronjob',
+        'name_last' => 'test',
+        'email' => 'cronjob.test',
+        'lang' => 'nl',
+    ]);
 }
