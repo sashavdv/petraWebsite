@@ -72,12 +72,29 @@ App::setLocale($lang);
 
         function displayPopUp(id) {
             var event = getEvent(id);
+            var buttons;
 
             if ('{{ $lang }}' == 'nl') {
                 event.description = event.description_nl;
+                buttons = {
+                    Inschrijven: function () {
+                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
+                    },
+                    Annuleren: function () {
+
+                    },
+                };
             }
             else {
                 event.description = event.description_en;
+                buttons = {
+                    Subscribe: function () {
+                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
+                    },
+                    Cancel: function () {
+
+                    },
+                };
             }
 
             var htmlDescription = $('<div class="popup-container">')
@@ -91,14 +108,7 @@ App::setLocale($lang);
             $.confirm({
                 title: event.title,
                 content: htmlDescription,
-                buttons: {
-                    Inschrijven: function () {
-                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
-                    },
-                    Annuleren: function () {
-
-                    },
-                },
+                buttons: buttons,
                 theme: 'my-theme',
             });
         }
