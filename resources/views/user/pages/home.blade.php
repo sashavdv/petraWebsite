@@ -90,7 +90,11 @@ App::setLocale($lang);
             content: htmlDescription,
             buttons: {
                 Inschrijven: function () {
-                    window.location.href = '{{ url('/') }}/contact?event_id={{ $oEvent->id }}';
+                    if(event.type == "divination") {
+
+                    } else {
+                        window.location.href = '{{ url('/') }}/contact?event_id={{ $oEvent->id }}';
+                    }
                 },
                 Annuleren: function () {
 
