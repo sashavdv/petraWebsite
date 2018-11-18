@@ -22,11 +22,11 @@ App::setLocale($lang);
         <div class="container">
             <div class="events">
                 <div class="cal1"></div>
-                {{Form::open(['action' => 'WelcomeController@popUp', 'method' => 'post'])}}
+{{--                {{Form::open(['action' => 'WelcomeController@popUp', 'method' => 'post'])}}--}}
                 <div class="details">
                     <span id="day">{{ date('d M Y') }}</span>
                 </div>
-                {{Form::close()}}
+{{--                {{Form::close()}}--}}
             </div>
             <script>
                 loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
@@ -59,49 +59,68 @@ App::setLocale($lang);
             @endforeach
         </div>
     </section>
-    @if($oEvent = session('chosenEvent'))
     <script>
-        var event = {
-            title: '{{ $oEvent->title }}',
-            description: '',
-            price: '{{ $oEvent->price }}',
-            date: '{{ $oEvent->date }}',
-            time: '{{ $oEvent->event_time }}',
-            disclaimer: '',
-            type: '{{ $oEvent->type }}'
-        }
-        if ('{{ $lang }}' == 'nl') {
-            event.description = '{{ $oEvent->description_nl }}';
-        }
-        else {
-            event.description = '{{ $oEvent->description_en }}';
+        function addButtonEvents() {
+            var eventbuttons = document.getElementsByName('event-button');
+
+            for (var btn of eventbuttons) {
+                btn.addEventListener('click', function () {
+                    displayPopUp(this.value);
+                })
+            }
         }
 
-        var htmlDescription = $('<div class="popup-container">')
-            .append($('<span class="popup-date">').text(event.date))
-            .append($('<span class="popup-time">').text(event.time))
-            .append($('<span class="popup-price">').text('€' + event.price))
-            .append($('<span class="popup-type">').text(event.type))
-            .append($('<p class="popup-description">').text(event.description))
-            .append($('<small class="popup-disclaimer">').text());
+        function displayPopUp(id) {
+            var event = getEvent(id);
+            var buttons;
 
-        $.confirm({
-            title: event.title,
-            content: htmlDescription,
-            buttons: {
-                Inschrijven: function () {
-                    if(event.type == "divination") {
+            if ('{{ $lang }}' == 'nl') {
+                event.description = event.description_nl;
+                buttons = {
+                    Inschrijven: function () {
+                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
+                    },
+                    Annuleren: function () {
 
-                    } else {
-                        window.location.href = '{{ url('/') }}/contact?event_id={{ $oEvent->id }}';
-                    }
-                },
-                Annuleren: function () {
+                    },
+                };
+            }
+            else {
+                event.description = event.description_en;
+                buttons = {
+                    Subscribe: function () {
+                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
+                    },
+                    Cancel: function () {
 
-                },
-            },
-            theme: 'my-theme',
-        });
+                    },
+                };
+            }
+
+            var htmlDescription = $('<div class="popup-container">')
+                .append($('<span class="popup-date">').text(event.date))
+                .append($('<span class="popup-time">').text(event.event_time))
+                .append($('<span class="popup-price">').text('€' + event.price))
+                .append($('<span class="popup-type">').text(event.type))
+                .append($('<p class="popup-description">').text(event.description))
+                .append($('<small class="popup-disclaimer">').text());
+
+            $.confirm({
+                title: event.title,
+                content: htmlDescription,
+                buttons: buttons,
+                theme: 'my-theme',
+            });
+        }
+
+        function getEvent(id) {
+            var events = <?php echo $aEvents ?>;
+
+            for (var event of events) {
+                if (event.id == id) {
+                    return event;
+                }
+            }
+        }
     </script>
-    @endif
 @endsection

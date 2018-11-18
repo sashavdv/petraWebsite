@@ -19,14 +19,6 @@ class ContactController extends Controller
         ]);
     }
 
-    public function Subscribe(Request $request){
-        $oEvent = Event::where('id', $request->post('event_id'))->first();
-        return view('user.pages.contact', [
-            'sPageTitle' => 'contact',
-            'oEvent' => $oEvent,
-        ]);
-    }
-
     public function sendMail(Request $request) {
         $aMailData = [
             'subject' => $request->post('subject'),

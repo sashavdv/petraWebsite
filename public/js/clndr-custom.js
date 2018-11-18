@@ -70,6 +70,7 @@ function loadCalender(events, lang) {
                                 $('<p class="event-description">').text(description)).append(btn)
                         );
                     }
+                    addButtonEvents();
                 }
             },
         },
