@@ -27,4 +27,8 @@
             </table>
         </div>
     </section>
+    <section id="update-mail">
+        <h1>Updatemail versturen</h1>
+        <a href="/admin/updatemail/send">Verstuur mail</a>
+    </section>
 @endsection

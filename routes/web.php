@@ -70,6 +70,7 @@ Route::prefix('admin')->group(function () {
     Route::post('events/remove', 'AdminEventController@removeEvent');
     Route::get('events/edit/{id}', 'AdminEventController@editEventForm');
     Route::get('events/add', 'AdminEventController@addEventForm');
+    Route::get('updatemail/send', 'ContactController@sendUpdateMail');
 });
 
 

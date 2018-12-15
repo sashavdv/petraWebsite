@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Agenda;
 use App\Event;
 use App\Mail\ContactEmail;
+use App\Mail\UpdateMail;
 use App\Participants;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -58,5 +59,17 @@ class ContactController extends Controller
             return redirect('contact')->with('failure', 'De email is niet verzonden. Probeer het later opnieuw!');
         }
         return redirect('contact')->with('success', 'De email is succesvol verzonden!');
+    }
+
+    public function sendUpdateMail() {
+        $aEmailReceivers = Participants::pluck('email');
+
+        $aEvents = Event::getMonthlyEvents();
+
+        foreach ($aEmailReceivers as $sEmail) {
+            Mail::to($sEmail)->send(new UpdateMail($aEvents));
+        }
+
+        return $aEmailReceivers;
     }
 }
