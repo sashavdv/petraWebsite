@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
-@import "https://unpkg.com/leaflet@1.3.4/dist/leaflet.css";
-@import "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css";
-* {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://use.fontawesome.com/releases/v5.2.0/css/all.css);@import url(https://unpkg.com/leaflet@1.3.4/dist/leaflet.css);@import url(https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css);* {
   margin: 0;
   padding: 0;
 }
@@ -13,13 +9,15 @@ body {
 
 nav {
   background-color: #fcd51b;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
 }
 
 nav a {
   text-decoration: none;
   color: #000;
   font-size: 1.4em;
+  -webkit-transition: 0.2s ease-in-out all;
   transition: 0.2s ease-in-out all;
 }
 
@@ -102,6 +100,7 @@ nav.nav-side {
   z-index: 1000;
   height: 100vh;
   border-left: 1px solid rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.2s ease-in-out all;
   transition: 0.2s ease-in-out all;
   padding-top: 70px;
 }
@@ -150,7 +149,8 @@ nav.nav-side span.lang a {
 }
 
 footer {
-  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 0 6px rgba(0, 0, 0, 0.16);
   background-color: #fcd51b;
 }
 
@@ -160,7 +160,8 @@ footer p {
   border-bottom: 2px solid black;
 }
 
-div.footer-info-left, div.footer-info-right {
+div.footer-info-left,
+div.footer-info-right {
   width: 50%;
   float: left;
   line-height: 30px;
@@ -229,7 +230,8 @@ button:hover {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.16);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
   background-color: white;
 }
@@ -243,6 +245,7 @@ button:hover {
 }
 
 /* Home - About */
+
 #app section#about div.container {
   min-height: 300px;
   padding-bottom: 70px;
@@ -407,6 +410,7 @@ div.container small {
 }
 
 /* Calendar Details */
+
 .details {
   width: calc(50% - 41px);
   height: 419px;
@@ -563,7 +567,8 @@ div.container small {
 
 form {
   display: block;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 5px;
   padding: 10px 20px 60px;
@@ -596,7 +601,8 @@ form .form-title {
   margin-top: 10px;
 }
 
-.form-group label, .form-group input {
+.form-group label,
+.form-group input {
   display: block;
   margin-top: 10px;
   width: calc(100% - 15px);
@@ -633,7 +639,8 @@ form button[type="submit"] {
 
 .events form {
   display: inline;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0;
   padding: 0;
   position: relative;
@@ -658,7 +665,8 @@ span.contact-event {
 
 .review {
   padding: 20px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.16);
   background-color: #fff;
   margin-top: 20px;
@@ -753,4 +761,3 @@ span.contact-event {
   padding: 10px 0;
 }
 
-/*# sourceMappingURL=app.css.map */

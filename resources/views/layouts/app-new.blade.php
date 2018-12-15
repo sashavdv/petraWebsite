@@ -16,8 +16,113 @@
         @endif
         {{ config('app.name') }}
     </title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
+    {{--<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>--}}
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+
+    <style>
+        .navbar-link {
+            margin-right: 1em;
+        }
+        #copy-text {
+            font-family: Italic;
+        }
+        #nav-top {
+            border-radius: 0;
+            background-color: #fcd51b;
+        }
+        #nav-side {
+            background-color: #fcd51b;
+        }
+        #nav-top .item {
+            min-height: 4em;
+        }
+        #nav-top img {
+            border-radius: 50%;
+            height: 3em;
+            width: 3em;
+            margin: -.5em 0;
+        }
+        #nav-top img:first-child {
+            border-radius: 0;
+            margin: calc(-1em - 2px) calc(-1em - 1px) calc(-1em - 2px) calc(-1em - 2px) ;
+            width: 4em;
+            height: 4em;
+        }
+        footer {
+            background-color: #fcd51b;
+            padding-top: 1em;
+            margin-top: 1em;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="app">
+        <nav id="nav-top" class="ui stackable menu petra-primary">
+            <div class="ui container">
+                <a class="header item" href="/"><img src="{{ asset('images/logo.png') }}"/></a>
+                <a class="item" href="/beauty"><span class="navbar-link">@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}"/></a>
+                <a class="item" href="/relaxation"><span class="navbar-link">@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}"/></a>
+                <a class="item" href="/divination"><span class="navbar-link">@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}"/></a>
+                <a class="item" onclick="toggleSideNav()">@lang('nav.more')</a>
+            </div>
+        </nav>
+
+        <div id="nav-side" class="ui sidebar vertical right menu petra-primary">
+            <a class="item" href="about">@lang('nav.about')</a>
+            <a class="item" href="contact">@lang('nav.contact')</a>
+            <a class="item" href="prices">@lang('nav.prices')</a>
+            <a class="item" href="practical">@lang('nav.practical')</a>
+            <a class="item" href="terms">Terms & agreements</a>
+            <div id="lang" class="item"><a href="lang/nl">NL</a> - <a href="lang/fr">EN</a> </div>
+        </div>
+
+        <div class="pusher">
+            <div id="app-content" class="ui container">
+                @yield('content')
+            </div>
+        </div>
+
+        <footer>
+            <div class="ui container">
+                <div class="ui grid">
+                    <div class="one column center aligned row">
+                        <div class="column"><p id="copy-text" class="ui header">You don't have to be a witch to practice magic(k)s</p></div>
+                    </div>
+                    <div class="two column center aligned row">
+                        <div class="column">
+                            <div class="ui list">
+                                <div class="item">+32 123/45/67/89</div>
+                                <div class="item">test@example.com</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui list">
+                                <div class="item">BE09999999999</div>
+                                <div class="item">Grote markt 18, 3500 Hasselt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one column center aligned row">
+                        <div class="column">
+                            <div class="ui horizontal list">
+                                <a class="item" href="#">Facebook</a>
+                                <a class="item" href="#">Twitter</a>
+                                <a class="item" href="#">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one column center aligned row">
+                        <div class="column">
+                            <p>&copy; pure-petra.com - {{ date('Y') }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>
@@ -25,87 +130,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
 
     <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
-</head>
-<body>
-    <nav id="top-nav" class="nav-top">
-        <ul>
-            <a href="/"><li><img id="logo" src="{{ asset('images/logo.png') }}" /></li></a>
-            <a href="beauty"><li><span>@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}" ></li></a>
-            <a href="relaxation"><li><span>@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}" ></li></a>
-            <a href="divination"><li><span>@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}" ></li></a>
-        </ul>
-        <button id="nav-open" onclick="toggleSideNav()">@lang('nav.more')</button>
-    </nav>
-    <nav id="side-nav" class="nav-side hidden">
-        <button id="nav-close" onclick="toggleSideNav()">@lang('nav.less')</button>
-        <ul id="side-nav">
-            <a href="about"><li>@lang('nav.about')</li></a>
-            <a href="contact"><li>@lang('nav.contact')</li></a>
-            <a href="prices"><li>@lang('nav.prices')</li></a>
-            <a href="practical"><li>@lang('nav.practical')</li></a>
-            <a href="terms"><li>Terms & agreements</li></a>
-        </ul>
-        <span id="lang" class="lang"><a href="lang/nl">NL</a> - <a href="lang/fr">EN</a> </span>
-    </nav>
 
-    <div id="app">
-        @yield('content')
-    </div>
-
-    <footer>
-        <p><i>You don't have to be a witch to practice magic(k)s</i></p>
-        <div class="footer-info">
-            <div class="footer-info-left">
-                <ul>
-                    <li>+32 123/45/67/89</li>
-                    <li>test@example.com</li>
-                </ul>
-            </div>
-            <div class="footer-info-right">
-                <ul>
-                    <li>BE09999999999</li>
-                    <li>Grote markt 18, 3500 Hasselt</li>
-                </ul>
-            </div>
-            <div class="social">
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                </ul>
-            </div>
-            <span class="copy">&copy; pure-petra.com - {{ date('Y') }}</span>
-        </div>
-    </footer>
+    <script src="{{ asset('js/semantic.min.js') }}"></script>
 
     <script>
         function toggleSideNav() {
-            var sideNav = document.getElementById('side-nav');
-            var app = document.getElementById('app');
-
-            if (sideNav.classList.contains('hidden')) {
-                sideNav.classList.remove('hidden');
-                sideNav.classList.add('visible');
-                app.addEventListener('click', toggleSideNav);
-            }
-            else if (sideNav.classList.contains('visible')) {
-                sideNav.classList.remove('visible');
-                sideNav.classList.add('hidden');
-                app.removeEventListener('click', toggleSideNav);
-            }
+            $('.ui.sidebar')
+                .sidebar('toggle')
+            ;
         }
-
-        // $( document ).ready(function () {
-        //     var top = $('#top-nav').outerHeight();
-        //     var side = $('#side-mav').outerHeight();
-        //     document.getElementById('lang').style.marginTop = '100px';
-        // });
     </script>
+
     @yield('scripts')
+
 </body>
 </html>
