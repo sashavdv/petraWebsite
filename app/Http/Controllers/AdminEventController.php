@@ -15,23 +15,55 @@ class AdminEventController extends Controller
             return redirect('login');
         }
 
-       return view('admin/events');
+        $aEvents = Event::orderBy('date', 'desc')->get();
+
+        return view('admin.events.overview', [
+            'aEvents' => $aEvents,
+        ]);
     }
-    public function addEvent(Request $request)
+
+    public function removeEvent(Request $request) {
+        Event::destroy($request->post('eventId'));
+
+        return response()->json([
+            'success' => true,
+        ]);
+    }
+
+    public function editEventForm($iEventId = null) {
+        return self::displayInputForm(Event::find($iEventId));
+    }
+
+    public function addEventForm()
     {
-//        try {
-            Event::insert([
-                'date' => $request->post('date'),
-                'event_time' => $request->post('time'),
-                'title' => $request->post('title'),
-                'type' => $request->post('type'),
-                'description_nl' => $request->post('description_nl'),
-                'description_en' => $request->post('description_en'),
-                'price' => $request->post('price'),
-            ]);
-            return redirect()->back()->with('message',  'Het evenemt is toegevoegd aan de agenda!');
-//        } catch (\Exception $exception) {
-//            return redirect()->back()->withInput()->with('message', 'De gegevens kunnen niet worden opgeslagen!');
-//        }
+        return self::displayInputForm();
+    }
+
+    public function saveEvent(Request $request) {
+        if ($request->post('id') == null) {
+            $oEvent = new Event;
+        }
+        else {
+            $oEvent = Event::find($request->post('id'));
+        }
+
+        $oEvent->date = $request->post('date');
+        $oEvent->event_time = $request->post('time');
+        $oEvent->title = $request->post('title');
+        $oEvent->type = $request->post('type');
+        $oEvent->price = $request->post('price');
+        $oEvent->description_nl = $request->post('description_nl');
+        $oEvent->description_en = $request->post('description_en');
+
+        $oEvent->save();
+
+        return redirect()->route('admin_events');
+    }
+
+    private static function displayInputForm($oEventData = null) {
+        if ($oEventData == null) $oEventData = new Event;
+        return view('admin.events.input_fields', [
+            'oEventData' => $oEventData,
+        ]);
     }
 }

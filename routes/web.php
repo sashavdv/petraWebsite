@@ -61,11 +61,17 @@ Route::get('/lang/{lang}', function ($lang) {
     return redirect()->back();
 });
 
-Route::get('/admin', 'AdminController@index');
-Route::get('/admin/reviews', 'AdminReviewController@index');
-Route::post('/admin/reviews', 'AdminReviewController@writeReview');
-Route::get('/admin/events', 'AdminEventController@index');
-Route::post('/admin/events', 'AdminEventController@addEvent');
+Route::prefix('admin')->group(function () {
+    Route::get('/', 'AdminController@index');
+    Route::get('reviews', 'AdminReviewController@index');
+    Route::post('reviews', 'AdminReviewController@writeReview');
+    Route::get('events', 'AdminEventController@index')->name('admin_events');
+    Route::post('events', 'AdminEventController@saveEvent');
+    Route::post('events/remove', 'AdminEventController@removeEvent');
+    Route::get('events/edit/{id}', 'AdminEventController@editEventForm');
+    Route::get('events/add', 'AdminEventController@addEventForm');
+});
+
 
 Route::get('/json_events', function(){
     return agenda_events::collection(Agenda::get());
