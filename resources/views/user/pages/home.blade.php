@@ -124,3 +124,8 @@ App::setLocale($lang);
         }
     </script>
 @endsection
+
+@section('scripts')
+    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
+@endsection
