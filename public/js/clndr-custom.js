@@ -16,6 +16,7 @@ function loadCalender(events, lang) {
                 /* Set Back and Next Buttun Text */
                 $('.clndr-previous-button').html("<");
                 $('.clndr-next-button').html(">");
+                updateCalenderContentHeight();
             },
 
             click: function(target) {

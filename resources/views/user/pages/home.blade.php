@@ -9,7 +9,6 @@ App::setLocale($lang);
 @section('content')
     <section id="about">
         <div class="ui container">
-{{--            <h1>@lang('titles.about')</h1>--}}
             <div class="ui card" style="max-width: 100%; min-width: 100%;">
                 <div class="content">
                     <div class="ui items">
@@ -35,11 +34,29 @@ App::setLocale($lang);
 
     <section id="events">
         <div class="ui container">
-            <h1>@lang('titles.events')</h1>
-            <div class="events">
-                <div class="cal1"></div>
-                <div class="details">
-                    {{--<span id="day">{{ date('d M Y') }}</span>--}}
+            <div class="ui stackable grid">
+                <div class="eight wide column">
+                    <div class="cal1"></div>
+                </div>
+                <div class="eight wide column">
+                    <div class="clndr-details">
+                        <div id="clndr-day">{{ date('d M Y') }}</div>
+                        <div class="content-wrapper">
+                            <div class="overflow-container">
+                                <div id="clndr-day-details">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur excepturi illum nulla saepe ullam. Libero, maiores, nisi. Assumenda delectus doloremque esse et exercitationem expedita inventore quidem quisquam ratione voluptas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,7 +99,17 @@ App::setLocale($lang);
 @endsection
 
 @section('scripts')
-
+    <script>
+        $(document).ready(function () {
+            updateCalenderContentHeight();
+        });
+        window.onresize = function() {
+            updateCalenderContentHeight();
+        };
+        function updateCalenderContentHeight() {
+            $('#clndr-day-details').height($('.clndr-table').height());
+        }
+    </script>
     <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
     <script>

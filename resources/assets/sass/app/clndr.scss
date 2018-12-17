@@ -1,224 +1,101 @@
-#app section#events div.container {
-  position: relative;
-  overflow: hidden;
-}
-#events container {
-  padding-bottom: 0px;
-}
-.events {
-  margin: -20px -20px -20px -20px;
-  display: block;
-  width: calc(100% + 40px);
-  height: calc(100% + 20px);
-}
-.cal1 {
-  float: left;
-  width: 50%;
-  height: 420px;
-  display: inline-block;
-  overflow: hidden;
-  margin-bottom: -20px;
-  border-radius: 5px 0 0 5px;
-  border-right: 1px solid $color-shadow;
-}
-.clndr-table {
-  width: 100%;
-  text-align: center;
-  font-size: 1.15em;
-  height: 300px;
-  padding: 20px;
-  background-color: white;
+.clndr {
+  border: 1px solid #D4D4D5;
+  border-radius: 5px;
 }
 .clndr-controls {
-  text-align: center;
-  position: relative;
-  background-color: $color-accent;
-  line-height: 50px;
+  font-weight: bold;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  padding: 1em;
+  background-color: #fcd51b;
+  border-radius: 3px 3px 0 0;
+}
+.clndr-controls > * {
+  display: inline-block;
+  padding: 0 1em;
   font-size: 1.2em;
-  border-bottom: 1px solid $color-shadow;
 }
-.clndr-controls .clndr-control-button {
-  position: absolute;
-  left: 30px;
+.clndr-previous-button, .clndr-next-button {
+  font-size: 1.5em;
 }
-.clndr-control-button:hover {
+.clndr-previous-button:hover, .clndr-next-button:hover {
   cursor: pointer;
 }
-.clndr-controls .clndr-control-button:last-child {
-  position: absolute;
-  left: auto;
-  right: 30px;
-}
-.clndr-controls div {
-  display: inline-block;
-}
-.day {
-  width: 14%;
-  line-height: 16%;
-  padding-top: 12px;
-}
-.adjacent-month {
-  opacity: 0.4;
-}
-.day-contents {
-  padding: 10px 8px 6px;
-  line-height: 100%;
-  height: 1.15em;
-  width: 1.15em;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-.header-days td{
-  padding-bottom: 10px;
-}
-.today .day-contents {
-  border: 1px solid #292363;
-}
-.event .day-contents {
-  border: 1px solid #961a1c;
-}
-.event:hover * {
-  cursor: pointer;
-}
-.selected .day-contents {
-  background-color: #f3f3f3;
-}
-.event.selected .day-contents {
-  background-color: #961a1c;
-}
-/* Calendar Details */
-.details {
-  width: calc(50% - 41px);
-  height: 419px;
-  display: inline-block;
-  background-color: $color-background;
-  padding: 0 20px;
-  overflow-y: scroll;
-  margin-bottom: -4px;
-  position: relative;
-}
-#day {
-  line-height: 50px;
-  font-size: 1.2em;
-  background-color: $color-accent;
-  height: 50px;
+
+.clndr-table {
   display: block;
-  position: sticky;
-  border-bottom: 1px solid $color-shadow;
-  width: calc(100% + 40px);
   text-align: center;
-  left: -20px;
-  margin-left: -20px;
-  top: 0;
-  z-index: 5;
+  padding: 1em;
+  margin-top: -1em;
 }
-.selected-event {
-  margin-top: 20px;
-  position: relative;
-}
-.selected-event:last-of-type {
-  margin-bottom: 30px;
-}
-.selected-event button[name="event-button"] {
+.clndr-table thead, .clndr-table tbody {
   display: block;
   width: 100%;
-  margin-left: -20px;
-  height: 40px;
-  border: none;
-  background-color: $color-accent;
-  font-size: 1.05em;
 }
-#event-time {
-  font-size: 1.15em;
-  display: inline-block;
-  margin-right: 20px;
-  width: 45px;
+.header-days, .clndr-table tbody tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: .5em;
 }
-#event-title {
-  font-size: 1.15em;
+.header-day, .day {
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
 }
-#event-description {
-  margin-left: 70px;
-  margin-top: 20px;
+
+.day-contents {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
 }
-.selected-event {
-  border: 1px solid $color-shadow;
-  border-radius: 5px;
-  padding: 60px 20px 60px 20px;
+
+.adjacent-month {
+  opacity: .3;
+}
+.today .day-contents{
+  border-color: green;
+  color: green;
+}
+.event .day-contents {
+  border-color: red;
+  color: red;
+}
+.event .day-contents:hover {
+  cursor: pointer;
+}
+
+.clndr-details {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
   position: relative;
+  border: 1px solid #D4D4D5;
+  border-radius: 5px;
 }
-.event-time {
-  position: absolute;
-  left: 0px;
-  width: 50%;
-  display: block;
-  top: 0;
-  line-height: 40px;
-  background-color: $color-accent;
-  padding-left: 20px;
-  font-size: 1.05em;
-}
-.event-title {
-  position: absolute;
-  width: 70%;
-  display: block;
-  text-align: left;
-  top: 0;
-  right: 0px;
-  line-height: 40px;
-  background-color: $color-accent;
-  padding-right: 20px;
+#clndr-day {
   font-weight: bold;
-  font-size: 1.05em;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  background-color: #fcd51b;
+  border-radius: 3px 3px 0 0;
+  height: 3.1em;
 }
-.events form {
-  height: 0;
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  min-height: 0;
 }
-// Beauty
-.selected-event.event-type.beauty span.event-time {
-  background-color: $col-beauty;
-  color: $col-beauty-text;
-  border-radius: 5px 0 0 0;
+.overflow-container {
+  flex: 1;
+  overflow: auto;
 }
-.selected-event.event-type.beauty span.event-title {
-  background-color: $col-beauty;
-  color: $col-beauty-text;
-  border-radius: 0 5px 0 0;
-}
-.selected-event.event-type.beauty button {
-  background-color: $col-beauty;
-  color: $col-beauty-text;
-  border-radius: 0 0 5px 5px;
-}
-// Relaxation
-.selected-event.event-type.relaxation span.event-time {
-  background-color: $col-relaxation;
-  color: $col-relaxation-text;
-  border-radius: 5px 0 0 0;
-}
-.selected-event.event-type.relaxation span.event-title {
-  background-color: $col-relaxation;
-  color: $col-relaxation-text;
-  border-radius: 0 5px 0 0;
-}
-.selected-event.event-type.relaxation button {
-  background-color: $col-relaxation;
-  color: $col-relaxation-text;
-  border-radius: 0 0 5px 5px;
-}
-// Divination
-.selected-event.event-type.divination span.event-time {
-  background-color: $col-divination;
-  color: $col-divination-text;
-  border-radius: 5px 0 0 0;
-}
-.selected-event.event-type.divination span.event-title {
-  background-color: $col-divination;
-  color: $col-divination-text;
-  border-radius: 0 5px 0 0;
-}
-.selected-event.event-type.divination button {
-  background-color: $col-divination;
-  color: $col-divination-text;
-  border-radius: 0 0 5px 5px;
+#clndr-day-details {
+  padding: .5em 1em;
 }
