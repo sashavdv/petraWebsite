@@ -6,39 +6,53 @@
     App::setLocale($lang);
     ?>
     <section id="parking">
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.parking')</h1>
             <p>@lang('content.parking')</p>
-            <p></p>
-            <ul>
-                <li>
-                    <span>@lang('content.parking-free'):</span>
+            <div class="ui list">
+                <div class="item">
+                    @lang('content.parking-free'):
                     <a href="https://www.hasselt.be/nl/gratisparkeren" target="_blank">https://www.hasselt.be/nl/gratisparkeren</a>
-                </li>
-                <li>
-                    <span>@lang('content.parking-paid'):</span>
+                </div>
+                <div class="item">
+                    @lang('content.parking-paid'):
                     <a href="https://www.hasselt.be/nl/betaald-parkeren" target="_blank">https://www.hasselt.be/nl/betaald-parkeren</a>
                     <small>*@lang('content.parking-disclaimer')</small>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </section>
+
+    <div class="ui divider"></div>
+
     <section id="location">
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.location')</h1>
-            <ul>
-                <li>Grote Markt 18</li>
-                <li>3500 Hasselt</li>
-            </ul>
-            <div id="map"></div>
+            <div class="ui list">
+                <div class="item">Grote Markt 18</div>
+                <div class="item">3500 Hasselt</div>
+            </div>
+            <div class="ui card" style="max-width: 100%; min-width: 100%;">
+                <div id="map"></div>
+                <style>
+                    #map {
+                        width: 100%;
+                        max-height: 50vh;
+                        height: 500px;
+                    }
+                </style>
+            </div>
         </div>
     </section>
 @endsection
 
+@section('styles')
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+@endsection
+
 @section('scripts')
-    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-            crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <script type="text/javascript">
         var map = L.map('map').setView([50.929189,5.3375989], 18);
