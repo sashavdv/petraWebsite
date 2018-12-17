@@ -39,9 +39,7 @@ App::setLocale($lang);
             <h1>@lang('titles.reviews')</h1>
             @foreach ($aReviews as $oReview)
                 <div id="review{{ $oReview->id }}" class="review">
-                    @if($oReview->title != null)
-                        <span class="rev-title">{{ $oReview->title }}</span>
-                    @endif
+
                     <span class="rev-name">{{ $oReview->name }}</span>
                     @if($oReview->rating != null)
                         <span class="rev-stars">
@@ -89,7 +87,11 @@ App::setLocale($lang);
                 event.description = event.description_en;
                 buttons = {
                     Subscribe: function () {
-                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
+                        /* Als het event geen divinatie is stuur persoon door naar contact pagina
+                        *  Is het wel divinatie, stuur hem door naar een registratie pagina
+                        * */
+                            window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
+
                     },
                     Cancel: function () {
 

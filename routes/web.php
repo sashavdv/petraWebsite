@@ -54,6 +54,10 @@ Route::get('/terms', function () {
     return view('user.pages.terms');
 });
 
+Route::post('/payment', 'PaymentController@preparePayment');
+Route::name('webhooks.mollie')->post('webhooks/mollie', 'PaymentController@handle');
+//  Route::name('payment.succes')->post('/webhooks/mollie', 'PaymentController@handle');
+
 // ADMIN gedeelte
 
 Route::get('/lang/{lang}', function ($lang) {

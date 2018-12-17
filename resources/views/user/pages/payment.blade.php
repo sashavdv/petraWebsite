@@ -14,20 +14,10 @@
             <p>{{ session('failure') }}</p>
         </div>
     @endif
-    <section id="contact">
+    <section id="payment">
         <div class="container">
-            <h1>@lang('titles.contact')</h1>
-
-            @if(isset($oEvent))
-                @if($oEvent->type != 'divination')
-                    {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"']) }}
-                @else
-                    {{ Form::open(['action' => 'PaymentController@preparePayment', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"']) }}
-                @endif
-            @else
-                {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"']) }}
-            @endif
-
+            <h1>@lang('titles.payment')</h1>
+            {{ Form::open(['action' => 'PaymentController@subscribe', 'method' => 'post']) }}
             <div class="form-group">
                 <label for="subject">@lang('forms.subject')</label>
                 @if (isset($oEvent))

@@ -1045,16 +1045,16 @@
         },
         {
             "name": "mollie/laravel-mollie",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/laravel-mollie.git",
-                "reference": "211de7708b7c75242a4052fa735e8840eaf0b3a9"
+                "reference": "7db5f296660807cbb5c25d9f19082f71dc2db003"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/laravel-mollie/zipball/211de7708b7c75242a4052fa735e8840eaf0b3a9",
-                "reference": "211de7708b7c75242a4052fa735e8840eaf0b3a9",
+                "url": "https://api.github.com/repos/mollie/laravel-mollie/zipball/7db5f296660807cbb5c25d9f19082f71dc2db003",
+                "reference": "7db5f296660807cbb5c25d9f19082f71dc2db003",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 "sofortbanking",
                 "subscriptions"
             ],
-            "time": "2018-10-04T17:07:03+00:00"
+            "time": "2018-11-22T13:50:35+00:00"
         },
         {
             "name": "mollie/mollie-api-php",
