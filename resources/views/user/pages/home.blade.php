@@ -44,7 +44,7 @@ App::setLocale($lang);
             </div>
         </div>
     </section>
-
+    <section id="modal"></section>
     <div class="ui divider"></div>
 
     <section id="reviews">
@@ -126,21 +126,38 @@ App::setLocale($lang);
                     },
                 };
             }
+        // <div class="header">
+        //         Modal Title
+        //     </div>
+        //     <div class="image content">
+        //         <div class="image">
+        //         An image can appear on left or an icon
+        //     </div>
+        //     <div class="description">
+        //         A description can appear on the right
+        //     </div>
+        //     </div>
+        //     <div class="actions">
+        //         <div class="ui button">Cancel</div>
+        //         <div class="ui button">OK</div>
+        //         </div>
+            var htmlDescription = $('<div class="ui modal">')
+                .append($('<span class="header popup-date">').text(event.date))
+                .append($('<span class="content popup-time">').text(event.event_time))
+                .append($('<span class="content popup-price">').text('€' + event.price))
+                .append($('<span class="content popup-type">').text(event.type))
+                .append($('<p class="description popup-description">').text(event.description))
+                .append($('<small class="content popup-disclaimer">').text())
+                .append('<div class="actions">')
 
-            var htmlDescription = $('<div class="popup-container">')
-                .append($('<span class="popup-date">').text(event.date))
-                .append($('<span class="popup-time">').text(event.event_time))
-                .append($('<span class="popup-price">').text('€' + event.price))
-                .append($('<span class="popup-type">').text(event.type))
-                .append($('<p class="popup-description">').text(event.description))
-                .append($('<small class="popup-disclaimer">').text());
+            htmlDescription
+            console.log(buttons);
 
-            $.confirm({
-                title: event.title,
-                content: htmlDescription,
-                buttons: buttons,
-                theme: 'my-theme',
-            });
+            $('#modal').append(htmlDescription);
+
+            $('.ui.modal')
+                .modal('show')
+            ;
         }
 
         function getEvent(id) {
