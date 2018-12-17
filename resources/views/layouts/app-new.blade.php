@@ -54,6 +54,7 @@
             margin-top: 1em;
         }
     </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     @yield('styles')
 
@@ -108,9 +109,11 @@
                     <div class="one column center aligned row">
                         <div class="column">
                             <div class="ui horizontal list">
-                                <a class="item" href="#">Facebook</a>
-                                <a class="item" href="#">Twitter</a>
-                                <a class="item" href="#">Instagram</a>
+                                <a class="item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <div class="item">-</div>
+                                <a class="item" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <div class="item">-</div>
+                                <a class="item" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -123,6 +126,40 @@
             </div>
         </footer>
     </div>
+
+    <div class="floating action button">
+        <a href="#app" class="fab icon" data-content="@lang('info.scroll-to-top')">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <style>
+        .floating.action.button {
+            display: block;
+            position: fixed;
+            bottom: 1em;
+            left: 1em;
+        }
+        .fab.icon {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: #fcd51b;
+            box-shadow: 0 0 2px grey;
+            text-decoration: none;
+            opacity: .6;
+            transition: .1s all ease-in-out;
+        }
+        .fab.icon i.fas {
+            padding: 35%;
+            height: 30px;
+            color: black;
+        }
+        .fab.icon:hover {
+            background-color: #ffde41;
+            opacity: 1;
+        }
+    </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
@@ -137,6 +174,10 @@
                 .sidebar('toggle')
             ;
         }
+
+        $('.fab.icon')
+            .popup()
+        ;
     </script>
 
     @yield('scripts')
