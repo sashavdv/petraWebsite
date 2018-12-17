@@ -23,14 +23,13 @@
                 @if($oEvent->type != 'divination')
                     {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"', 'class' => 'ui form']) }}
                 @else
-                    {{ Form::open(['action' => 'PaymentController@preparePayment', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"']) }}
+                    {{ Form::open(['action' => 'PaymentController@preparePayment', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"', 'class' => 'ui form']) }}
                 @endif
             @else
-                {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"']) }}
+                {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"', 'class' => 'ui form']) }}
             @endif
 
             <div class="field">
-
                 <label for="subject">@lang('forms.subject')</label>
                 @if (isset($oEvent))
                     <input type="hidden" name="event" value="true">
