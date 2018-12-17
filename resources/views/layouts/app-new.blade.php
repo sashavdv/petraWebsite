@@ -18,6 +18,7 @@
         {{ config('app.name') }}
     </title>
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
     <style>
         .navbar-link {

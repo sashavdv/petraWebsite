@@ -82,6 +82,9 @@ App::setLocale($lang);
 @endsection
 
 @section('scripts')
+
+    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
     <script>
         loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
     </script>
@@ -151,6 +154,4 @@ App::setLocale($lang);
         }
     </script>
 
-    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
 @endsection

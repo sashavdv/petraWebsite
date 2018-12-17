@@ -19,7 +19,6 @@
         <div class="ui container">
             <h1>@lang('titles.contact')</h1>
 
-<<<<<<< HEAD
             @if(isset($oEvent))
                 @if($oEvent->type != 'divination')
                     {{ Form::open(['action' => 'ContactController@sendMail', 'method' => 'post', 'onsubmit' => 'onsubmit="return checkCheckBoxes(this);"', 'class' => 'ui form']) }}
@@ -73,7 +72,7 @@
 
             <div class="field">
                 <div class="ui checkbox">
-                    <input name="subscribe" id="subscribe" required type="checkbox" checked class="hidden">
+                    <input name="subscribe" id="subscribe"  type="checkbox" checked class="hidden">
                     <label>@lang('forms.subscribe-check')</label>
                     <small>*@lang('forms.disclaimer')</small>
                 </div>
