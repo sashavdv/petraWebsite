@@ -99,3 +99,7 @@
 #clndr-day-details {
   padding: .5em 1em;
 }
+#clndr-day-details .header, #clndr-day-details .meta {
+  display: flex;
+  justify-content: space-between;
+}
