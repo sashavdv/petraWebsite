@@ -150,7 +150,7 @@ App::setLocale($lang);
                 .append($('<small class="content popup-disclaimer">').text())
                 .append('<div class="actions">')
 
-            htmlDescription
+           // htmlDescription
             console.log(buttons);
 
             $('#modal').append(htmlDescription);
