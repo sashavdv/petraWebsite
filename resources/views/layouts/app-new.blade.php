@@ -78,7 +78,12 @@
             <a class="item" href="prices">@lang('nav.prices')</a>
             <a class="item" href="practical">@lang('nav.practical')</a>
             <a class="item" href="terms">Terms & agreements</a>
-            <a class="item" href="login">Login</a>
+            @if(\Illuminate\Support\Facades\Auth::check())
+                <a class="item" href="admin">Dashboard</a>
+                <a class="item" href="logout">Logout</a>
+            @else
+                <a class="item" href="login">Login</a>
+            @endif
             <div id="lang" class="item"><a href="lang/nl">NL</a> - <a href="lang/fr">EN</a> </div>
         </div>
 

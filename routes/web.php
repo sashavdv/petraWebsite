@@ -84,3 +84,7 @@ Route::get('/json_events', function(){
 
 Auth::routes();
 
+Route::get('logout', function () {
+    \Illuminate\Support\Facades\Auth::logout();
+    return redirect('home');
+});

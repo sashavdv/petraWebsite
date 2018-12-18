@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
     <section id="participants">
-        <div class="container">
+        <div class="ui container">
             <h1>Opgeslagen personen</h1>
             <table>
                 <thead>
@@ -27,8 +27,11 @@
             </table>
         </div>
     </section>
+
     <section id="update-mail">
-        <h1>Updatemail versturen</h1>
-        <a href="/admin/updatemail/send">Verstuur mail</a>
+        <div class="ui container">
+            <h1>Updatemail versturen</h1>
+            <a class="ui button" href="/admin/updatemail/send">Verstuur mail</a>
+        </div>
     </section>
 @endsection

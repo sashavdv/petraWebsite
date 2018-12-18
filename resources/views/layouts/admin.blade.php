@@ -12,7 +12,10 @@
         @endif
         {{ config('app.name') }}
     </title>
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>--}}
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -25,13 +28,14 @@
     <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
 </head>
 <body>
-    <nav id="top-nav" class="nav-top admin-nav">
-        <ul>
-            <a href="/admin"><li><span>Dashboard</span></li></a>
-            <a href="/admin/reviews"><li><span>Reviews</span></li></a>
-            <a href="/admin/events"><li><span>Agenda</span></li></a>
-        </ul>
+    <nav id="nav-top" class="ui stackable menu petra-primary">
+        <div class="ui container">
+            <a class="item" href="/admin">Dashboard</a>
+            <a class="item" href="/admin/reviews">Reviews</a>
+            <a class="item" href="/admin/events">Agenda</a>
+        </div>
     </nav>
+
     <div id="app">
         @yield('content')
     </div>
