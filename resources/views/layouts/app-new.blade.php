@@ -64,7 +64,7 @@
     <div id="app">
         <nav id="nav-top" class="ui stackable menu petra-primary">
             <div class="ui container">
-                <a class="header item" href="/"><img src="{{ asset('images/logo.png') }}"/></a>
+                <a class="header item" href="/" data-content="Home"><img src="{{ asset('images/logo.png') }}"/></a>
                 <a class="item" href="/beauty"><span class="navbar-link">@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}"/></a>
                 <a class="item" href="/relaxation"><span class="navbar-link">@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}"/></a>
                 <a class="item" href="/divination"><span class="navbar-link">@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}"/></a>
@@ -178,6 +178,10 @@
         }
 
         $('.fab.icon')
+            .popup()
+        ;
+
+        $('.header.item')
             .popup()
         ;
     </script>
