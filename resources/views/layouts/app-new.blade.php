@@ -78,6 +78,7 @@
             <a class="item" href="prices">@lang('nav.prices')</a>
             <a class="item" href="practical">@lang('nav.practical')</a>
             <a class="item" href="terms">Terms & agreements</a>
+            <a class="item" href="login">Login</a>
             <div id="lang" class="item"><a href="lang/nl">NL</a> - <a href="lang/fr">EN</a> </div>
         </div>
 
