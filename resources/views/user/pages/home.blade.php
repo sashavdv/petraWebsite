@@ -43,60 +43,7 @@ App::setLocale($lang);
                         <div id="clndr-day">{{ date('d M Y') }}</div>
                         <div class="content-wrapper">
                             <div class="overflow-container">
-                                <div id="clndr-day-details">
-                                    <div class="ui card event-card">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">
-                                               <p>
-                                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.
-                                               </p>
-                                            </div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                    <div class="ui card event-card">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.</div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                    <div class="ui card event-card">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.</div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                </div>
+                                <div id="clndr-day-details"></div>
                             </div>
                         </div>
                     </div>

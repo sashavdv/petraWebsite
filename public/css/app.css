@@ -122,6 +122,18 @@
   justify-content: space-between;
 }
 
+.event-button-beauty {
+  background-color: #C7F8D2 !important;
+}
+
+.event-button-relaxation {
+  background-color: #ABEEFF !important;
+}
+
+.event-button-divination {
+  background-color: #F3DFEE !important;
+}
+
 .jconfirm.jconfirm-my-theme .jconfirm-bg {
   background-color: rgba(55, 37, 15, 0.8);
 }
