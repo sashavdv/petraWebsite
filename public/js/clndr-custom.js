@@ -29,10 +29,12 @@ function loadCalender(events, lang) {
                         nl: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
                     };
 
+                    $('#clndr-day').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear());
+
                     /* Remove all elements and add the Date bar */
-                    $('.details').children().remove();
+                    $('#clndr-day-details').children().remove();
                     /* Display The Date */
-                    $('.details').append($('<span id="day">').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear()));
+                    // $('#clndr-day-details').append($('<span id="day">').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear()));
 
                     for (var i = 0; i < target.events.length; i++) {
                         /* Set the description based on the current language */
@@ -60,15 +62,31 @@ function loadCalender(events, lang) {
                             classString = ' event-type ' + target.events[i].type;
                         }
 
-                        var btn = $('<button name="event-button" value="' + target.events[i].id + '">');
+                        var btn = $('<button class="ui bottom attached button event-button-' + target.events[i].type + '" name="event-button" value="' + target.events[i].id + '">');
                         btn.text(buttonText);
 
                         /* Create The Event Content */
-                        $('.details').append(
-                            $('<div class="selected-event' + classString + '">').append(
-                                $('<span class="event-time">').text(target.events[i].event_time)).append(
-                                $('<span class="event-title">').text(target.events[i].title)).append(
-                                $('<p class="event-description">').text(description)).append(btn)
+
+                        $('#clndr-day-details').append(
+                              $('<div class="ui card event-card">').append(
+                                  $('<div class="content">').append(
+                                      $('<div class="header">').append(
+                                          $('<span>').text(target.events[i].title)
+                                      ).append(
+                                          $('<span>').text('€' + target.events[i].price)
+                                      )
+                                  ).append(
+                                      $('<div class="meta">').append(
+                                          $('<span>').text(target.events[i].date + ' ' + target.events[i].event_time)
+                                      ).append(
+                                          $('<span>').text(target.events[i].type)
+                                      )
+                                  ).append(
+                                      $('<div class="description">').append(
+                                          $('<p>').text(description)
+                                      )
+                                  )
+                              ).append(btn)
                         );
                     }
                     addButtonEvents();
