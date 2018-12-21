@@ -208,6 +208,10 @@ body p {
   margin-right: 1em;
 }
 
+.navbar-link:last-child {
+  margin-right: 0;
+}
+
 #copy-text {
   font-family: Italic;
 }
