@@ -29,10 +29,12 @@ function loadCalender(events, lang) {
                         nl: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
                     };
 
+                    $('#clndr-day').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear());
+
                     /* Remove all elements and add the Date bar */
                     $('#clndr-day-details').children().remove();
                     /* Display The Date */
-                    $('#clndr-day-details').append($('<span id="day">').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear()));
+                    // $('#clndr-day-details').append($('<span id="day">').text(clickedDate.getDate() + ' ' + months[lang][clickedDate.getMonth()] + ' ' + clickedDate.getFullYear()));
 
                     for (var i = 0; i < target.events.length; i++) {
                         /* Set the description based on the current language */
@@ -66,7 +68,7 @@ function loadCalender(events, lang) {
                         /* Create The Event Content */
 
                         $('#clndr-day-details').append(
-                              $('<div class="ui card event-card" style="max-width: 100%; min-width: 100%;">').append(
+                              $('<div class="ui card event-card">').append(
                                   $('<div class="content">').append(
                                       $('<div class="header">').append(
                                           $('<span>').text(target.events[i].title)
