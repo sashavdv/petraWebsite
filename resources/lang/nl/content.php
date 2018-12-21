@@ -1,8 +1,48 @@
 <?php
 
 return [
-    /* About */
-    'about-short' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sollicitudin dolor venenatis gravida. Aliquam at purus viverra, pulvinar enim eget, lobortis sapien. Praesent mollis massa at massa interdum convallis ut eu nisi. Pellentesque vestibulum lacinia fermentum. Duis tincidunt fermentum elementum. Vestibulum vehicula massa sed dictum sollicitudin. Mauris suscipit facilisis pharetra. Maecenas consectetur, diam nec laoreet laoreet, orci risus porttitor est, non fermentum metus sem ac orci. Integer et felis non diam tempor interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque porttitor placerat erat, a viverra sapien commodo vitae. Maecenas imperdiet nulla id pretium accumsan. Mauris quis nunc et est aliquet rutrum id nec velit. Integer porta ligula fringilla urna tempor, vitae hendrerit magna maximus. Aenean facilisis, mi sit amet mattis ultrices, eros urna accumsan velit, auctor facilisis odio diam sit amet felis. Donec et neque eu diam fermentum pellentesque. ',
+    /* Over Petra */
+    'about-short' => 'Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen.
+Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.
+Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen.
+Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.
+',
+    /* about page */
+    'about_paragraph_1' => 'Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen.
+Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.' ,
+'about_paragraph_2' => 'Dat haar ouders hun kerkelijk ambt aan de haak hingen en voor een gezin kozen, zorgde wel altijd voor wat deining in de dorpsgemeenschap en Petra kreeg met veelvuldige pesterijen rond dit stigma te maken. 
+Het maakte dat ze zich als tiener jarenlang ‘anders’ voelde en geen aansluiting vond. Het maakte echter ook dat haar ontwakingsproces op gang kwam doordat ze van veel zaken al jong de andere kant van de medaille kon observeren.
+En het kweekte in kiem, hoe onaangenaam ook op dat eigenste moment, een soort van vertrouwen in zichzelf en haar eigen intuïtie. 
+Het leerde haar anders te kijken.',
+'about_paragraph_3' => 'Tevens draaide ze in een vorm van jeugdige rebellie, alle wereldgodsdiensten wel eens op zijn kop en bleef toen een periode hangen aan het paganisme. Al kwam die insteek oorspronkelijk eerder op gang door haar enorme voorliefde voor fytotherapie en het ritueel gebruik van geneeskrachtige en giftige planten.',
+'about_paragraph_4' => 'Toch ook daar, bij deze natuurgodsdienst, zette ze na 15 jaar kanttekeningen bij de heersende denkbeelden die evenzeer eerder richting macht stroomden, dan richting universele liefde en liefde voor het individue.',
+'about_paragraph_5' => 'In de loop der jaren, verdiepte ze zich in het eenheidsgegeven van deze wereld, zonder daarom aan onze klassieke ‘realiteit’ van dualiteit voorbij te gaan.
+Wit & zwart, voor haar gaan ze, in deze realiteit, deze wereld samen. 
+Met als stipulatie weliswaar, dat onze leefwereld er een is waar kwantumfysica & kosmisch denken, gelukkig stilaan mainstream in ons gezamenlijk collectief doorbreekt.',
+'about_paragraph_6' => 'De kern hiervan: Zelfliefde & healing, het weten dat het al goed (zo) is, ongeacht de omstandigheden van onze persoonlijke levens, is wat ze wilt uitdragen.
+Voor deze hedendaagse maatschappij, is dat gegeven van verbinding, van zoveel mogelijk echtheid, haar gift. ',
+'about_paragraph_7' => 'Petra is van opleiding een gedreven schoonheidsspecialiste met een specialisatie in cosmetologie, aromatherapie, natuurlijke huidverzorging, cosmetische en ontspanningsmassage en medische pedicure.
+Kleur, geur en natuurlijke fleur, doen haar hart sneller slaan.',
+'about_paragraph_8' => 'Je kan bij haar terecht voor persoonlijk advies rond je  gevoelige- of probleemhuid + littekenbehandeling na plastische chirurgie of operaties.
+Een gelaatsverzorging zal altijd voorafgegaan worden door een grondige huidanalyse, en de gebruikte extracten en producten worden ter plekke aan jouw huidtype aangepast.',
+'about_paragraph_9' => 'Heb je probleem voeten, of gewoon moeilijk te verzorgen voeten of teennagels, dan kan je bij haar genieten van een pedicure die verder gaat dan nagels knippen en velletjes & eelt verwijderen.',
+'about_paragraph_10' => 'Tevens biedt Petra je veelvuldige meditatietechnieken aan, en ook op het gebied van spiritualiteit kan je bij haar terecht. Balancering door middel van chakrawerk is een specialiteit.',
+'about_paragraph_11' => 'Of voel je je aangetrokken tot de werking van de Tarot en zijn omstandige, mystieke symboliek? Heb je eerder een boon voor de vrijmoedige Lenormandkaarten?
+Petra geeft regelmatig info hierover vrij, en er staat jaarcursus op het programma voor  diegenen die zich hierin willen verdiepen.',
+'about_paragraph_12' => 'De modus in spiritueel onderzoek en divinatie is altijd gericht op een groter begripsvermogen en bijgaande inzichtelijke puurheid, die reikt naar wat ons doet tikken als mens, naar dat wat onze harten oplicht en verblijd.',
+'about_paragraph_13' => 'Schaduwonderzoek wordt hierbij niet vermeden daar perfectionisme naar constante vrolijkheid, een utopie is die vaak maar ontduikingsgedrag voorstelt.
+We zijn licht én duister in haar ondervinding, al vallen deze beiden sowieso onder de noemer LIEFDE. Instincten en miljoenen jaren celgeheugen laten zich op dit vlak wel degelijk gelden, toch zijn wij mensen als energetische entiteit zoveel groter en meer dan we zelf vaak beseffen.',
+'about_paragraph_14' => 'Gelukkig zijn is voor Petra een balans(oefening) die je kan leren, iets waar ze zich graag mee naar het collectief toe, ten dienste stelt.
+Wees gerust, we zijn nooit klaar, en we never get it ‘done’. 
+Mens zijn betekent voor haar intrinsiek impecfectie. Datgene wat net zo mooi, ontwapenend en spannend kan zijn.
+Intuïtieve kracht in jezelf vinden, dicht bij jezelf blijven - maw het goddelijke aspect van jezelf eren, datgene wat zo moeilijk onder woorden te brengen is, is wat zij op een DIY manier inbouwt in haar leven. Gelijk ook hetgene zij uitdraagt en waar ze allerlei manieren voor aanreikt als houvast.',
+'about_paragraph_15' => 'Haar laatste fascinatie geldt de verschillen in man- vrouw energie. En hoe we als maatschappij en individue kunnen terugkomen van het #METOO verhaal.
+Maw: Hoe geraken een man en een vrouw nader?
+Liefde beleven in het post feministische tijdperk - waar de eerste uitwassen van deze maatschappelijk (nodige) stroming blijken  – is niet voor watjes of bange zieltjes. Je hart staat op het spel en we begrijpen elkaar vaak niet…',
+'about_paragraph_16' => 'Petra is nu 45, heeft een leven van onderzoek erop zitten, baarde 2 prachtige kinderen – Jasper & Jasmijn en is pas gehuwd met een man voor wie ze haar spirituele inslag en haar hang naar esthetiek en werkelijke schoonheid, niet moet minimaliseren of langer ontkennen.',
+'about_paragraph_17' => 'Haar keuze om te kiezen voor innerlijke en uiterlijke schoonheid en esthetiek, balancering en ontspanningsvermogen in combinatie in-zichtelijkheid via divinatie, leest na dit relaas waarschijnlijk als de logica zelve.
+Haar MISSION STATEMENT in life is dan ook Fun, Freedom, Helping others and Love.',
+'about_paragraph_18' => 'Enkele jaren terug besliste zij om uitsluitend nog datgene te doen met haar leven, wat onder deze noemers te catalogiseren valt.',
     /* Parking */
     'parking' => 'Hier vindt u de mogelijke parkeerplaatsen in de regio hasselt.',
     'parking-free' => 'Gratis',

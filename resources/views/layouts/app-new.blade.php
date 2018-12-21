@@ -18,43 +18,9 @@
         {{ config('app.name') }}
     </title>
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
-    <style>
-        .navbar-link {
-            margin-right: 1em;
-        }
-        #copy-text {
-            font-family: Italic;
-        }
-        #nav-top {
-            border-radius: 0;
-            background-color: #fcd51b;
-        }
-        #nav-side {
-            background-color: #fcd51b;
-        }
-        #nav-top .item {
-            min-height: 4em;
-        }
-        #nav-top img {
-            border-radius: 50%;
-            height: 3em;
-            width: 3em;
-            margin: -.5em 0;
-        }
-        #nav-top img:first-child {
-            border-radius: 0;
-            margin: calc(-1em - 2px) calc(-1em - 1px) calc(-1em - 2px) calc(-1em - 2px) ;
-            width: 4em;
-            height: 4em;
-        }
-        footer {
-            background-color: #fcd51b;
-            padding-top: 1em;
-            margin-top: 1em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     @yield('styles')
@@ -68,7 +34,7 @@
                 <a class="item" href="/beauty"><span class="navbar-link">@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}"/></a>
                 <a class="item" href="/relaxation"><span class="navbar-link">@lang('nav.relaxation')</span><img src="{{ asset('images/relaxation.png') }}"/></a>
                 <a class="item" href="/divination"><span class="navbar-link">@lang('nav.divination')</span><img src="{{ asset('images/divination.png') }}"/></a>
-                <a class="item" onclick="toggleSideNav()">@lang('nav.more')</a>
+                <a class="item" onclick="toggleSideNav()"><span class="navbar-link">@lang('nav.more')</span></a>
             </div>
         </nav>
 

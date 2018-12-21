@@ -18,8 +18,8 @@ App::setLocale($lang);
                             </div>
                             <div class="content" style="padding: 1rem;">
                                 <div class="header">Petra Stienaers</div>
-                                <div class="extra content">
-                                    <p style="text-align: justify">@lang('content.about-short')</p>
+                                <div class="description">
+                                    <p>@lang('content.about-short')</p>
                                     <a class="ui button" href="/about">@lang('buttons.read-more')</a>
                                 </div>
                             </div>
@@ -44,7 +44,27 @@ App::setLocale($lang);
                         <div class="content-wrapper">
                             <div class="overflow-container">
                                 <div id="clndr-day-details">
-                                    <div class="ui card" style="max-width: 100%; min-width: 100%;">
+                                    <div class="ui card event-card">
+                                        <div class="content">
+                                            <div class="header">
+                                                <span>Event Title</span>
+                                                <span>$15</span>
+                                            </div>
+                                            <div class="meta">
+                                                <span>15/12/2019 20u30</span>
+                                                <span>Divination</span>
+                                            </div>
+                                            <div class="description">
+                                               <p>
+                                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.
+                                               </p>
+                                            </div>
+                                        </div>
+                                        <div class="ui bottom attached button">
+                                            Lees Meer
+                                        </div>
+                                    </div>
+                                    <div class="ui card event-card">
                                         <div class="content">
                                             <div class="header">
                                                 <span>Event Title</span>
@@ -60,23 +80,7 @@ App::setLocale($lang);
                                             Lees Meer
                                         </div>
                                     </div>
-                                    <div class="ui card" style="max-width: 100%; min-width: 100%;">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.</div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                    <div class="ui card" style="max-width: 100%; min-width: 100%;">
+                                    <div class="ui card event-card">
                                         <div class="content">
                                             <div class="header">
                                                 <span>Event Title</span>
@@ -107,27 +111,27 @@ App::setLocale($lang);
         <div class="ui container">
             <h1>@lang('titles.reviews')</h1>
             @foreach ($aReviews as $oReview)
-                <div class="ui card" style="max-width: 100%; min-width: 100%;">
+                <div class="ui card event-card">
                     <div class="content">
                         <div class="ui items">
                             <div class="item">
-                                <div class="content" style="padding: 1rem;">
-                                    <div class="header">
+                                <div class="content">
+                                    <div class="header p15">
                                         <span>{{ $oReview->name }}</span>
-                                        <span style="position: absolute; right: 2rem">
-                                            @for($i = 0; $i < $oReview->rating ;$i++)
-                                                <i class="fa fa-star"></i>
-                                            @endfor
-                                        </span>
                                     </div>
-                                    <div class="extra content">
+                                    <span class="right floated">
+                                            @for($i = 0; $i < $oReview->rating ;$i++)
+                                            <i class="fa fa-star"></i>
+                                        @endfor
+                                    </span>
+                                    <div class="description">
                                         <p style="text-align: justify">{{ $oReview->review }}</p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             @endforeach
         </div>
     </section>

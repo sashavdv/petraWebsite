@@ -16,8 +16,9 @@
 //@import "app/forms";
 //@import "app/reviews";
 @import "app/popup";
-
+@import "_custom.scss" ;
 // Import FontAwesome
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 @import url("https://unpkg.com/leaflet@1.3.4/dist/leaflet.css");
 @import url("https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css");
+
