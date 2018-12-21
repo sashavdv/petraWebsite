@@ -7,7 +7,7 @@
     App::setLocale($lang);
     ?>
     <section>
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.terms')</h1>
         </div>
     </section>

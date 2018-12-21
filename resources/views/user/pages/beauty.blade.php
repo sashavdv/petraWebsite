@@ -6,7 +6,7 @@
     App::setLocale($lang);
     ?>
     <section id="skincare">
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.beauty')</h1>
         </div>
     </section>

@@ -6,7 +6,7 @@
     App::setLocale($lang);
     ?>
     <section>
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.divination')</h1>
         </div>
     </section>
