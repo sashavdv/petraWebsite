@@ -3,6 +3,7 @@
 @section('content')
     <section>
         <div class="ui container">
+            <h1>Evenementen</h1>
             <table class="ui table">
                 <thead>
                 <tr>

@@ -106,6 +106,8 @@
         </a>
     </div>
 
+    @yield('modals')
+
     <style>
         .floating.action.button {
             display: block;

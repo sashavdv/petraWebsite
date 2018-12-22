@@ -3,6 +3,7 @@
 @section('content')
  <section>
   <div class="ui container">
+   <h1>Evenement aanmaken/bewerken</h1>
    {{ Form::open(['action' => 'AdminEventController@saveEvent', 'method' => 'post', 'class' => 'ui form']) }}
    {{ Form::hidden('id', $oEventData->id) }}
    <div class="field">
