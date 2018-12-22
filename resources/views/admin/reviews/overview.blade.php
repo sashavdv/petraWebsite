@@ -29,7 +29,6 @@
     </section>
 @endsection
 
-
 @section('scripts')
     <script>
         function confirmDelte(reviewEntry) {

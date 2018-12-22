@@ -70,6 +70,6 @@ class ContactController extends Controller
             Mail::to($sEmail)->send(new UpdateMail($aEvents));
         }
 
-        return $aEmailReceivers;
+        return redirect()->back()->with('success', 'De update mail is succesvol verzonden!');
     }
 }

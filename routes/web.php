@@ -66,6 +66,8 @@ Route::get('/lang/{lang}', function ($lang) {
 Route::prefix('admin')->group(function () {
     Route::get('/', 'AdminController@index');
 
+    Route::post('/removeParticipant', 'AdminController@removeParticipant');
+
     Route::get('reviews', 'AdminReviewController@index')->name('admin_reviews');
     Route::post('reviews', 'AdminReviewController@saveReview');
     Route::post('reviews/remove', 'AdminReviewController@removeReview');
