@@ -43,6 +43,7 @@
         @yield('content')
     </div>
 
-@yield('scripts')
+    <script src="{{ asset('js/semantic.min.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>

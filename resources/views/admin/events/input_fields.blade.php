@@ -20,12 +20,17 @@
    </div>
    <div class="field">
     {{ Form::label('type', 'Categorie') }}
-    <select name="type" value="{{ $oEventData->type }}">
-     <option value="default">Algemeen</option>
-     <option value="beauty">Schoonheid</option>
-     <option value="relaxation">Relaxatie</option>
-     <option value="divination">Divinatie</option>
-    </select>
+    <div class="ui selection dropdown">
+     <input type="hidden" name="type" value="{{ $oEventData->type }}">
+     <i class="dropdown icon"></i>
+     <div class="default text">Selecteer een categorie</div>
+     <div class="menu">
+      <div class="item" data-value="default">Algemeen</div>
+      <div class="item" data-value="beauty">Schoonheid</div>
+      <div class="item" data-value="relaxation">Relaxatie</div>
+      <div class="item" data-value="divination">Divinatie</div>
+     </div>
+    </div>
    </div>
    <div class="field">
     {{ Form::label('price', 'Prijs') }}
@@ -39,9 +44,16 @@
     {{ Form::label('description_en', 'Beschrijving engels') }}
     {{ Form::textarea('description_en', $oEventData->description_en, ['class' => 'form-control', 'required']) }}
    </div>
-   <button class="ui button" type="submit">Opslaan</button>
-   <a class="ui button" href="/admin/events">Annuleren</a>
+   <button class="ui primary button" type="submit">Opslaan</button>
+   <a class="ui negative button" href="/admin/events">Annuleren</a>
    {{ Form::close() }}
   </div>
  </section>
+@endsection
+
+@section('scripts')
+ <script>
+  $('.ui.dropdown')
+          .dropdown()  ;
+ </script>
 @endsection
