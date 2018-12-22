@@ -34,13 +34,6 @@
             </div>
             <div class="ui card" style="max-width: 100%; min-width: 100%;">
                 <div id="map"></div>
-                <style>
-                    #map {
-                        width: 100%;
-                        max-height: 50vh;
-                        height: 500px;
-                    }
-                </style>
             </div>
         </div>
     </section>
