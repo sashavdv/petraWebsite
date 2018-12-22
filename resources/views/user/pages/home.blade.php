@@ -86,7 +86,6 @@ App::setLocale($lang);
 
 @section('modals')
     <div class="ui modal">
-        <div class="close icon"><i class="fas fa-times"></i></div>
         <div class="header"><span id="modal-title"></span></div>
         <div class="content">
             <div class="meta">
@@ -105,24 +104,24 @@ App::setLocale($lang);
 @endsection
 
 @section('scripts')
+    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
+
     <script>
+        loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
+
         $(document).ready(function () {
             updateCalenderContentHeight();
         });
+
         window.onresize = function() {
             updateCalenderContentHeight();
         };
+
         function updateCalenderContentHeight() {
             $('#clndr-day-details').height($('.clndr-table').height());
         }
-    </script>
-    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
-    <script>
-        loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
-    </script>
 
-    <script>
         function addButtonEvents() {
             var eventbuttons = document.getElementsByName('event-button');
 
@@ -149,20 +148,17 @@ App::setLocale($lang);
             $('#modal-description').text(event.description);
             $('#modal-subscribe').attr('href', '{{ url('/') }}/contact?event_id=' + event.id).attr('class', 'ui button event-button-' + event.type);
 
-            $('.ui.modal')
-                .modal('show')
-            ;
-        }
+            $('.ui.modal').modal('show');
 
-        function getEvent(id) {
-            var events = <?php echo $aEvents ?>;
+            function getEvent(id) {
+                var events = <?php echo $aEvents ?>;
 
-            for (var event of events) {
-                if (event.id == id) {
-                    return event;
+                for (var event of events) {
+                    if (event.id == id) {
+                        return event;
+                    }
                 }
             }
         }
     </script>
-
 @endsection

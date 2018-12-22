@@ -109,31 +109,6 @@
     @yield('modals')
 
     <style>
-        .floating.action.button {
-            display: block;
-            position: fixed;
-            bottom: 1em;
-            left: 1em;
-        }
-        .fab.icon {
-            width: 3em;
-            height: 3em;
-            border-radius: 50%;
-            background-color: #fcd51b;
-            box-shadow: 0 0 2px grey;
-            text-decoration: none;
-            opacity: .6;
-            transition: .1s all ease-in-out;
-        }
-        .fab.icon i.fas {
-            padding: 35%;
-            height: 30px;
-            color: black;
-        }
-        .fab.icon:hover {
-            background-color: #ffde41;
-            opacity: 1;
-        }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -145,18 +120,11 @@
 
     <script>
         function toggleSideNav() {
-            $('.ui.sidebar')
-                .sidebar('toggle')
-            ;
+            $('.ui.sidebar').sidebar('toggle');
         }
 
-        $('.fab.icon')
-            .popup()
-        ;
-
-        $('.header.item')
-            .popup()
-        ;
+        $('.fab.icon').popup();
+        $('.header.item').popup();
     </script>
 
     @yield('scripts')
