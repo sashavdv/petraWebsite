@@ -11,10 +11,6 @@ use Illuminate\Support\Facades\Auth;
 class AdminEventController extends Controller
 {
     public function index(){
-        if (!Auth::check()) {
-            return redirect('login');
-        }
-
         $aEvents = Event::orderBy('date', 'desc')->orderBy('event_time', 'desc')->paginate(10);
 
         return view('admin.events.overview', [
@@ -62,6 +58,7 @@ class AdminEventController extends Controller
 
     private static function displayInputForm($oEventData = null) {
         if ($oEventData == null) $oEventData = new Event;
+
         return view('admin.events.input_fields', [
             'oEventData' => $oEventData,
         ]);
