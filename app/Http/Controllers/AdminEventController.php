@@ -35,6 +35,14 @@ class AdminEventController extends Controller
         return self::displayInputForm();
     }
 
+    private static function displayInputForm($oEventData = null) {
+        if ($oEventData == null) $oEventData = new Event;
+
+        return view('admin.events.input_fields', [
+            'oEventData' => $oEventData,
+        ]);
+    }
+
     public function saveEvent(Request $request) {
         if ($request->post('id') == null) {
             $oEvent = new Event;
@@ -53,14 +61,6 @@ class AdminEventController extends Controller
 
         $oEvent->save();
 
-        return redirect()->route('admin_events');
-    }
-
-    private static function displayInputForm($oEventData = null) {
-        if ($oEventData == null) $oEventData = new Event;
-
-        return view('admin.events.input_fields', [
-            'oEventData' => $oEventData,
-        ]);
+        return redirect()->route('admin_events')->with('success', 'Het evenement is succesvol opgeslagen!');
     }
 }

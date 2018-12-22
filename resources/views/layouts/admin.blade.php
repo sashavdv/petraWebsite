@@ -40,10 +40,31 @@
     </nav>
 
     <div id="app">
+        @if(session('success'))
+            <div class="ui container positive message transition">
+                <div class="close icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="header">Berricht</div>
+                <p>{{ session('success') }}</p>
+            </div>
+        @endif
+
         @yield('content')
     </div>
 
+
     <script src="{{ asset('js/semantic.min.js') }}"></script>
+    <script>
+        $('.message .close')
+            .on('click', function() {
+                $(this)
+                    .closest('.message')
+                    .transition('fade')
+                ;
+            })
+        ;
+    </script>
     @yield('scripts')
 </body>
 </html>

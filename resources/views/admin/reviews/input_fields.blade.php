@@ -40,7 +40,6 @@
 
 @section('scripts')
     <script>
-        $('.ui.dropdown')
-            .dropdown()  ;
+        $('.ui.dropdown').dropdown();
     </script>
 @endsection

@@ -55,6 +55,6 @@ class AdminReviewController extends Controller
 
         $oReview->save();
 
-        return redirect()->route('admin_reviews');
+        return redirect()->route('admin_reviews')->with('success', 'De review is succesvol opgeslagen!');
     }
 }
