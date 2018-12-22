@@ -55,6 +55,16 @@
 
         <div class="pusher">
             <div id="app-content">
+                @if(session('success'))
+                    <div class="ui container positive message transition">
+                        <div class="close icon">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="header">Berricht</div>
+                        <p>{{ session('success') }}</p>
+                    </div>
+                @endif
+
                 @yield('content')
             </div>
         </div>
@@ -125,6 +135,15 @@
 
         $('.fab.icon').popup();
         $('.header.item').popup();
+
+        $('.message .close')
+            .on('click', function() {
+                $(this)
+                    .closest('.message')
+                    .transition('fade')
+                ;
+            })
+        ;
     </script>
 
     @yield('scripts')

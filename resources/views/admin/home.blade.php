@@ -29,6 +29,7 @@
                 @endforeach
                 </tbody>
             </table>
+            {{ $aParticipants->links() }}
         </div>
     </section>
 @endsection

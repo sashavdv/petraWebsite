@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
     public function index() {
-        $aParticipants = Participants::get();
+        $aParticipants = Participants::paginate(10);
 
         return view('admin.home',  [
             'aParticipants' => $aParticipants,

@@ -5,15 +5,6 @@
     if ($lang != 'nl') $lang = 'en';
     App::setLocale($lang);
     ?>
-    @if(session('success'))
-        <div class="message message-success">
-            <p>{{ session('success') }}</p>
-        </div>
-    @elseif(session('failure'))
-        <div class="message message-failure">
-            <p>{{ session('failure') }}</p>
-        </div>
-    @endif
 
     <section id="contact">
         <div class="ui container">
