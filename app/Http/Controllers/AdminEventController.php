@@ -15,7 +15,7 @@ class AdminEventController extends Controller
             return redirect('login');
         }
 
-        $aEvents = Event::orderBy('date', 'desc')->get();
+        $aEvents = Event::orderBy('date', 'desc')->orderBy('event_time', 'desc')->paginate(10);
 
         return view('admin.events.overview', [
             'aEvents' => $aEvents,

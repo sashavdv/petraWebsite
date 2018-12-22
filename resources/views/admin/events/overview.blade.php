@@ -18,7 +18,7 @@
                 <tbody>
                 @foreach($aEvents as $oEvent)
                     <tr>
-                        <td>{{ $oEvent->date }} {{ $oEvent->event_time }}</td>
+                        <td>{{ date_format(new DateTime($oEvent->date), 'd-m-Y') }} - {{ $oEvent->event_time }}</td>
                         <td>{{ $oEvent->title }}</td>
                         <td>{{ $oEvent->type }}</td>
                         <td>{{ $oEvent->price }}</td>
@@ -30,6 +30,7 @@
                 @endforeach
                 </tbody>
             </table>
+            {{ $aEvents->links() }}
         </div>
     </section>
 @endsection

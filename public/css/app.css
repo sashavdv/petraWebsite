@@ -707,6 +707,52 @@ footer {
   opacity: 1;
 }
 
+ul.pagination {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.page-item {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin-right: -4px;
+  border: 1px solid #d5d5d5;
+  transition: .1s all ease-in-out;
+}
+
+li.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+li.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+}
+
+.page-link {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+.pagination *, .pagination *:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.page-item:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.page-item.active {
+  background-color: #d5d5d5;
+}
+
 .event-card {
   max-width: 100%;
   min-width: 100%;

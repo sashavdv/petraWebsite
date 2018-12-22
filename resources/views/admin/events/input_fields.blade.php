@@ -12,7 +12,7 @@
    </div>
    <div class="field">
     {{ Form::label('time', 'Tijd') }}
-    {{ Form::text('time', $oEventData->event_time, ['class' => 'form-control', 'required']) }}
+    {{ Form::time('time', $oEventData->event_time, ['class' => 'form-control', 'required']) }}
    </div>
    <div class="field">
     {{ Form::label('title', 'Titel') }}
