@@ -81,7 +81,7 @@
             @if (isset($oEvent))
                 <button name="event" class="ui secondary  button" value="{{ $oEvent->id }}" type="submit">@lang('forms.subscribe-button')</button>
             @else
-                <button type="submit" class="ui secondary  button">@lang('forms.send')</button>
+                <button type="submit" class="ui secondary  button">@lang('buttons.send')</button>
             @endif
             {{ Form::close() }}
         </div>
