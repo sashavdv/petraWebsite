@@ -147,7 +147,7 @@ App::setLocale($lang);
             $('#modal-date').text(event.date + " " + event.event_time);
             $('#modal-price').text("€" + event.price);
             $('#modal-description').text(event.description);
-            $('#modal-subscribe').attr('href', '{{ url('/') }}/contact?event_id=' + event.id);
+            $('#modal-subscribe').attr('href', '{{ url('/') }}/contact?event_id=' + event.id).attr('class', 'ui button event-button-' + event.type);
 
             $('.ui.modal')
                 .modal('show')
