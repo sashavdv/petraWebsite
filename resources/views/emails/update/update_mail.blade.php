@@ -10,11 +10,27 @@
     <link rel="stylesheet" href="{{ asset('css/semantic.min.css') }}">
 </head>
 <body>
+    <h1>Volgende evenementen</h1>
     @foreach($aEvents as $oEvent)
         <div class="ui card event-card">
             <div class="content">
-                <span>{{ $oEvent->title }}</span>
-                <span>€{{ $oEvent->price }}</span>
+                <div class="header">
+                    <span>{{ $oEvent->title }}</span>
+                    <span>€{{ $oEvent->price }}</span>
+                </div>
+                <div class="meta">
+                    <span>{{ $oEvent->date }} {{ $oEvent->event_time }}</span>
+                    <span>{{ $oEvent->type }}</span>
+                </div>
+                <div class="description">
+                    <span>NL</span>
+                    <p>{{ $oEvent->description_nl }}</p>
+
+                    <div class="ui divider"></div>
+
+                    <span>EN</span>
+                    <p>{{ $oEvent->description_en }}</p>
+                </div>
             </div>
         </div>
     @endforeach
