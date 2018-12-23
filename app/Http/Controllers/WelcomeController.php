@@ -11,7 +11,7 @@ class WelcomeController extends Controller
 {
     public function index() {
         $aReviews = Review::get();
-        $aEvents = Event::get();
+        $aEvents = Event::orderBy('event_time')->get();
 
         return view('user.pages.home', [
             'aReviews' => $aReviews,

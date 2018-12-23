@@ -58,6 +58,7 @@ class ContactController extends Controller
         catch (\Exception  $exception) {
             return redirect('contact')->with('failure', 'De email is niet verzonden. Probeer het later opnieuw!');
         }
+
         return redirect('contact')->with('success', 'De email is succesvol verzonden!');
     }
 
