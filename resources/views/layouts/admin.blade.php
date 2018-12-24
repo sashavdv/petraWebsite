@@ -33,6 +33,7 @@
 <body>
     <nav id="nav-top" class="ui stackable menu petra-primary">
         <div class="ui container">
+            <a class="item" href="/">Home</a>
             <a class="item" href="/admin">Dashboard</a>
             <a class="item" href="/admin/reviews">Reviews</a>
             <a class="item" href="/admin/events">Agenda</a>

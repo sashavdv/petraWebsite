@@ -22,12 +22,7 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
-    protected function schedule(Schedule $schedule)
-    {
-        $schedule->call(function () {
-            sendUpdate();
-        })->everyMinute();
-    }
+    protected function schedule(Schedule $schedule) {}
 
     /**
      * Register the commands for the application.
