@@ -11,8 +11,15 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <h1>Volgende evenementen</h1>
-    @foreach($aEvents as $oEvent)
+    <div style="
+        display: block;
+        width: 80%;
+        max-width: 1200px;
+        min-width: 400px;
+        margin: 0 auto;
+    ">
+        <h1>Volgende evenementen</h1>
+        @foreach($aEvents as $oEvent)
         <div class="ui card event-card">
             <div class="content">
                 <div class="header">
@@ -26,14 +33,13 @@
                 <div class="description">
                     <span>NL</span>
                     <p>{{ $oEvent->description_nl }}</p>
-
                     <div class="ui divider"></div>
-
                     <span>EN</span>
                     <p>{{ $oEvent->description_en }}</p>
                 </div>
             </div>
         </div>
     @endforeach
+    </div>
 </body>
 </html>

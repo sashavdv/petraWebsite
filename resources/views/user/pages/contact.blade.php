@@ -23,9 +23,9 @@
             <div class="field">
                 <label for="subject">@lang('forms.subject')</label>
                 @if (isset($oEvent))
-                    <input type="hidden" name="event" value="true">
-                    <input type="hidden" type="text" name="subject" id="subject" value="{{ $oEvent->title }}" required/>
-                    <span class="contact-event">{{ $oEvent->title }}</span>
+                    <input type="hidden" name="event" value="true"/>
+                    <input readonly type="text" name="subject" class="ui disabled input" id="subject" value="{{ $oEvent->title }}" required/>
+                    {{--<span class="contact-event">{{ $oEvent->title }}</span>--}}
                 @else
                     <input type="text" name="subject" id="subject" value="" required/>
                 @endif
