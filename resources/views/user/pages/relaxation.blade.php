@@ -6,7 +6,7 @@
     App::setLocale($lang);
     ?>
     <section>
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.relaxation')</h1>
             <h2>@lang('subtitles.relaxation-subtitle-1')</h2>
             <p>@lang('content.relaxation-paragraph-1')</p>
