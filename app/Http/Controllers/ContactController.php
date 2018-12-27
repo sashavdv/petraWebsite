@@ -53,11 +53,14 @@ class ContactController extends Controller
         }
 
         try {
-            Mail::to(config('mail.username'))->send(new ContactEmail($aMailData));
+            Mail::to(config('mail.username'))
+                ->cc($request->post('email'))
+                ->send(new ContactEmail($aMailData));
         }
         catch (\Exception  $exception) {
             return redirect('contact')->with('failure', 'De email is niet verzonden. Probeer het later opnieuw!');
         }
+
         return redirect('contact')->with('success', 'De email is succesvol verzonden!');
     }
 
@@ -70,6 +73,6 @@ class ContactController extends Controller
             Mail::to($sEmail)->send(new UpdateMail($aEvents));
         }
 
-        return $aEmailReceivers;
+        return redirect()->back()->with('success', 'De update mail is succesvol verzonden!');
     }
 }

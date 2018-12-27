@@ -3,6 +3,8 @@
 @section('content')
     <section>
         <div class="ui container">
+            <h1>Evenementen</h1>
+            <a class="ui primary button" href="/admin/events/add">Nieuw evenement <i class="fas fa-plus pl-5"></i></a>
             <table class="ui table">
                 <thead>
                 <tr>
@@ -16,25 +18,19 @@
                 <tbody>
                 @foreach($aEvents as $oEvent)
                     <tr>
-                        <td>{{ $oEvent->date }} {{ $oEvent->event_time }}</td>
+                        <td>{{ date_format(new DateTime($oEvent->date), 'd-m-Y') }} - {{ $oEvent->event_time }}</td>
                         <td>{{ $oEvent->title }}</td>
                         <td>{{ $oEvent->type }}</td>
                         <td>{{ $oEvent->price }}</td>
                         <td>
-                            <a class="ui button" href="/admin/events/edit/{{ $oEvent->id }}">Aanpassen</a>
-                            <button class="ui button" type="button" onclick="confirmDelte({{ $oEvent }})">Verwijderen</button>
+                            <a class="ui primary button" href="/admin/events/edit/{{ $oEvent->id }}">Aanpassen <i class="fas fa-pen pl-5"></i></a>
+                            <button class="ui negative button" type="button" onclick="confirmDelte({{ $oEvent }})">Verwijderen <i class="fas fa-trash pl-5"></i></button>
                         </td>
                     </tr>
                 @endforeach
                 </tbody>
-                <tfoot>
-                <tr>
-                    <td colspan="6">
-                        <a class="ui button" href="/admin/events/add">Nieuw evenement</a>
-                    </td>
-                </tr>
-                </tfoot>
             </table>
+            {{ $aEvents->links() }}
         </div>
     </section>
 @endsection

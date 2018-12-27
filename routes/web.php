@@ -58,8 +58,6 @@ Route::post('/payment', 'PaymentController@preparePayment');
 Route::name('webhooks.mollie')->post('webhooks/mollie', 'PaymentController@handle');
 //  Route::name('payment.succes')->post('/webhooks/mollie', 'PaymentController@handle');
 
-// ADMIN gedeelte
-
 Route::get('/lang/{lang}', function ($lang) {
     Cookie::queue('lang', $lang, 5000);
     return redirect()->back();
@@ -67,13 +65,21 @@ Route::get('/lang/{lang}', function ($lang) {
 
 Route::prefix('admin')->group(function () {
     Route::get('/', 'AdminController@index');
-    Route::get('reviews', 'AdminReviewController@index');
-    Route::post('reviews', 'AdminReviewController@writeReview');
+
+    Route::post('/removeParticipant', 'AdminController@removeParticipant');
+
+    Route::get('reviews', 'AdminReviewController@index')->name('admin_reviews');
+    Route::post('reviews', 'AdminReviewController@saveReview');
+    Route::post('reviews/remove', 'AdminReviewController@removeReview');
+    Route::get('reviews/edit/{id}', 'AdminReviewController@editReviewForm');
+    Route::get('reviews/add', 'AdminReviewController@addReviewForm');
+
     Route::get('events', 'AdminEventController@index')->name('admin_events');
     Route::post('events', 'AdminEventController@saveEvent');
     Route::post('events/remove', 'AdminEventController@removeEvent');
     Route::get('events/edit/{id}', 'AdminEventController@editEventForm');
     Route::get('events/add', 'AdminEventController@addEventForm');
+
     Route::get('updatemail/send', 'ContactController@sendUpdateMail');
 });
 

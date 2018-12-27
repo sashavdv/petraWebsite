@@ -4,19 +4,18 @@
 // Variables
 @import "variables";
 
-// Import defaults
-//@import "app/defaults.scss";
-
 // Import Custom CSS
-//@import "app/navigation";
-//@import "app/footer";
-//@import "app/application";
-//@import "app/map";
+@import "app/application";
+@import "app/spacings";
+@import "app/navigation";
+@import "app/footer";
+@import "app/buttons";
 @import "app/clndr";
-//@import "app/forms";
-//@import "app/reviews";
-@import "app/popup";
+@import "app/map";
+@import "app/floating_action_button";
+@import "app/pagination";
 @import "_custom.scss" ;
+
 // Import FontAwesome
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 @import url("https://unpkg.com/leaflet@1.3.4/dist/leaflet.css");

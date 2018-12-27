@@ -55,6 +55,16 @@
 
         <div class="pusher">
             <div id="app-content">
+                @if(session('success'))
+                    <div class="ui container positive message transition">
+                        <div class="close icon">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="header">Berricht</div>
+                        <p>{{ session('success') }}</p>
+                    </div>
+                @endif
+
                 @yield('content')
             </div>
         </div>
@@ -106,32 +116,9 @@
         </a>
     </div>
 
+    @yield('modals')
+
     <style>
-        .floating.action.button {
-            display: block;
-            position: fixed;
-            bottom: 1em;
-            left: 1em;
-        }
-        .fab.icon {
-            width: 3em;
-            height: 3em;
-            border-radius: 50%;
-            background-color: #fcd51b;
-            box-shadow: 0 0 2px grey;
-            text-decoration: none;
-            opacity: .6;
-            transition: .1s all ease-in-out;
-        }
-        .fab.icon i.fas {
-            padding: 35%;
-            height: 30px;
-            color: black;
-        }
-        .fab.icon:hover {
-            background-color: #ffde41;
-            opacity: 1;
-        }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -143,17 +130,19 @@
 
     <script>
         function toggleSideNav() {
-            $('.ui.sidebar')
-                .sidebar('toggle')
-            ;
+            $('.ui.sidebar').sidebar('toggle');
         }
 
-        $('.fab.icon')
-            .popup()
-        ;
+        $('.fab.icon').popup();
+        $('.header.item').popup();
 
-        $('.header.item')
-            .popup()
+        $('.message .close')
+            .on('click', function() {
+                $(this)
+                    .closest('.message')
+                    .transition('fade')
+                ;
+            })
         ;
     </script>
 

@@ -10,78 +10,51 @@ use Illuminate\Support\Facades\Session;
 class AdminReviewController extends Controller
 {
     public function index() {
-        /*
-        if (!Auth::check()) {
-            return redirect('login');
-        }
-        */
+        $aReviews = Review::paginate(3);
 
-        $aReviews = Review::get();
-
-        return view('admin.reviews', [
+        return view('admin.reviews.overview', [
             'aReviews' => $aReviews,
         ]);
     }
 
-    public function writeReview(Request $request) {
-        /*
-        if (!Auth::check()) {
-            return redirect('login');
-        }
-        */
+    public function removeReview(Request $request) {
+        Review::destroy($request->post('reviewId'));
 
-        $aReviews = Review::get();
-        $sStatus = null;
-        $iToUpdate = null;
-
-        if ($request->post('status') == 'new') {
-            $sStatus = 'new';
-        }
-
-        if ($request->post('status') == 'save-new') {
-            Review::insert([
-                'title' => $request->post('title'),
-                'name' => $request->post('name'),
-                'rating' => $request->post('rating'),
-                'review' => $request->post('review'),
-            ]);
-
-            return redirect('/admin/reviews');
-        }
-
-        if (substr($request->post('status'), 0, 6) == 'update') {
-            $iToUpdate = substr($request->post('status'), 7);
-        }
-
-        if (substr($request->post('status'), 0, 11) == 'save-update') {
-            $iToUpdate = substr($request->post('status'), 12);
-
-            Review::where('id' , $iToUpdate)->update([
-                'title' => $request->post('title'),
-                'name' => $request->post('name'),
-                'rating' => $request->post('rating'),
-                'review' => $request->post('review'),
-            ]);
-
-            return redirect('/admin/reviews');
-        }
-
-        if (substr($request->post('status'), 0, 4) == 'drop') {
-            $iToDrop = substr($request->post('status'), 5);
-
-            Review::destroy($iToDrop);
-
-            return redirect('/admin/reviews');
-        }
-
-        return view('admin.reviews', [
-            'aReviews' => $aReviews,
-            'sStatus' => $sStatus,
-            'iToUpdate' => $iToUpdate,
+        return response()->json([
+            'success' => true,
         ]);
     }
 
-    public function updateReview(Request $request) {
+    public function editReviewForm($iReviewId = null) {
+        return $this->displayInputForm(Review::find($iReviewId));
+    }
 
+    public function addReviewForm() {
+        return $this->displayInputForm();
+    }
+
+    private function displayInputForm($oReviewData = null) {
+        if ($oReviewData == null) $oReviewData = new Review;
+
+        return view('admin.reviews.input_fields', [
+            'oReviewData' => $oReviewData,
+        ]);
+    }
+
+    public function saveReview(Request $request) {
+        if ($request->post('id') == null) {
+            $oReview = new Review;
+        }
+        else {
+            $oReview = Review::find($request->post('id'));
+        }
+
+        $oReview->name = $request->post('name');
+        $oReview->rating = $request->post('rating');
+        $oReview->review = $request->post('review');
+
+        $oReview->save();
+
+        return redirect()->route('admin_reviews')->with('success', 'De review is succesvol opgeslagen!');
     }
 }

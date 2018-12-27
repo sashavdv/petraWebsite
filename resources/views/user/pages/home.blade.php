@@ -43,60 +43,7 @@ App::setLocale($lang);
                         <div id="clndr-day">{{ date('d M Y') }}</div>
                         <div class="content-wrapper">
                             <div class="overflow-container">
-                                <div id="clndr-day-details">
-                                    <div class="ui card event-card">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">
-                                               <p>
-                                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.
-                                               </p>
-                                            </div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                    <div class="ui card event-card">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.</div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                    <div class="ui card event-card">
-                                        <div class="content">
-                                            <div class="header">
-                                                <span>Event Title</span>
-                                                <span>$15</span>
-                                            </div>
-                                            <div class="meta">
-                                                <span>15/12/2019 20u30</span>
-                                                <span>Divination</span>
-                                            </div>
-                                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis doloremque fugiat id necessitatibus odit quam quos sunt suscipit? Deleniti dignissimos nisi omnis perferendis saepe sapiente soluta sunt velit, vero.</div>
-                                        </div>
-                                        <div class="ui bottom attached button">
-                                            Lees Meer
-                                        </div>
-                                    </div>
-                                </div>
+                                <div id="clndr-day-details"></div>
                             </div>
                         </div>
                     </div>
@@ -137,29 +84,44 @@ App::setLocale($lang);
     </section>
 @endsection
 
-@section('styles')
-
+@section('modals')
+    <div class="ui modal">
+        <div class="header"><span id="modal-title"></span></div>
+        <div class="content">
+            <div class="meta">
+                <span id="modal-date"></span>
+                <span id="modal-price"></span>
+            </div>
+            <div class="description">
+                <span id="modal-description"></span>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black deny button">@lang('modal.cancel')</div>
+            <a id="modal-subscribe" class="ui positive button">@lang('modal.subscribe')<i class="fas fa-pen" style="margin-left: 1em"></i></a>
+        </div>
+    </div>
 @endsection
 
 @section('scripts')
+    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
+
     <script>
+        loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
+
         $(document).ready(function () {
             updateCalenderContentHeight();
         });
+
         window.onresize = function() {
             updateCalenderContentHeight();
         };
+
         function updateCalenderContentHeight() {
             $('#clndr-day-details').height($('.clndr-table').height());
         }
-    </script>
-    <script src="{{ asset('js/clndr.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/clndr-custom.js') }}" type="text/javascript"></script>
-    <script>
-        loadCalender(<?php echo($aEvents) ?>, <?php echo '\'' . Cookie::get('lang') . '\'' ?>);
-    </script>
 
-    <script>
         function addButtonEvents() {
             var eventbuttons = document.getElementsByName('event-button');
 
@@ -172,73 +134,31 @@ App::setLocale($lang);
 
         function displayPopUp(id) {
             var event = getEvent(id);
-            var buttons;
 
             if ('{{ $lang }}' == 'nl') {
                 event.description = event.description_nl;
-                buttons = {
-                    Inschrijven: function () {
-                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
-                    },
-                    Annuleren: function () {
-
-                    },
-                };
             }
             else {
                 event.description = event.description_en;
-                buttons = {
-                    Subscribe: function () {
-                        window.location.href = '{{ url('/') }}/contact?event_id=' + event.id;
-                    },
-                    Cancel: function () {
-
-                    },
-                };
             }
-        // <div class="header">
-        //         Modal Title
-        //     </div>
-        //     <div class="image content">
-        //         <div class="image">
-        //         An image can appear on left or an icon
-        //     </div>
-        //     <div class="description">
-        //         A description can appear on the right
-        //     </div>
-        //     </div>
-        //     <div class="actions">
-        //         <div class="ui button">Cancel</div>
-        //         <div class="ui button">OK</div>
-        //         </div>
-            var htmlDescription = $('<div class="ui modal">')
-                .append($('<span class="header popup-date">').text(event.date))
-                .append($('<span class="content popup-time">').text(event.event_time))
-                .append($('<span class="content popup-price">').text('€' + event.price))
-                .append($('<span class="content popup-type">').text(event.type))
-                .append($('<p class="description popup-description">').text(event.description))
-                .append($('<small class="content popup-disclaimer">').text())
-                .append('<div class="actions">')
 
-           // htmlDescription
-            console.log(buttons);
+            $('#modal-title').text(event.title);
+            $('#modal-date').text(event.date + " " + event.event_time);
+            $('#modal-price').text("€" + event.price);
+            $('#modal-description').text(event.description);
+            $('#modal-subscribe').attr('href', '{{ url('/') }}/contact?event_id=' + event.id).attr('class', 'ui button event-button-' + event.type);
 
-            $('#modal').append(htmlDescription);
+            $('.ui.modal').modal('show');
 
-            $('.ui.modal')
-                .modal('show')
-            ;
-        }
+            function getEvent(id) {
+                var events = <?php echo $aEvents ?>;
 
-        function getEvent(id) {
-            var events = <?php echo $aEvents ?>;
-
-            for (var event of events) {
-                if (event.id == id) {
-                    return event;
+                for (var event of events) {
+                    if (event.id == id) {
+                        return event;
+                    }
                 }
             }
         }
     </script>
-
 @endsection

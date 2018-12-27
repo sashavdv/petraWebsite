@@ -6,19 +6,23 @@
     App::setLocale($lang);
     ?>
     <section id="beauty">
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.beauty')</h1>
         </div>
     </section>
 
-    <section id="relaxation">
-        <div class="container">
+    <div class="ui divider"></div>
+
+    <section id="ui relaxation">
+        <div class="ui container">
             <h1>@lang('titles.relaxation')</h1>
         </div>
     </section>
 
-    <section id="divination">
-        <div class="container">
+    <div class="ui divider"></div>
+
+    <section id="ui divination">
+        <div class="ui container">
             <h1>@lang('titles.divination')</h1>
         </div>
     </section>

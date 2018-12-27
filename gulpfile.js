@@ -5,6 +5,6 @@ elixir(function(mix) {
 elixir(function(mix) {
     mix.webpack('app.js');
 });
-elixir(function(mix) {
-    mix.less('clndr.less');
-});
+// elixir(function(mix) {
+//     mix.less('clndr.less');
+// });

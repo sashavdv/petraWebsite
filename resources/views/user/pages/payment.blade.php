@@ -15,7 +15,7 @@
         </div>
     @endif
     <section id="payment">
-        <div class="container">
+        <div class="ui container">
             <h1>@lang('titles.payment')</h1>
             {{ Form::open(['action' => 'PaymentController@subscribe', 'method' => 'post']) }}
             <div class="form-group">

@@ -1,118 +1,29 @@
-nav {
-  background-color: $color-primary;
-  box-shadow: 0 0 6px $color-shadow;
+.navbar-link {
+  font-size: 24px;
+  margin-right: 1em;
 }
-nav a {
-  text-decoration: none;
-  color: $color-text;
-  font-size: 1.4em;
-  transition: 0.2s ease-in-out all;
+.navbar-link:last-child {
+  margin-right: 0;
 }
-nav a:hover {
-  background-color: $color-hover;
-}
-nav.nav-top {
-  height: 70px;
-  overflow: hidden;
-  line-height: 70px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  border-bottom: 1px solid $color-shadow;
-}
-nav.nav-top ul {
-  list-style: none;
-}
-nav.nav-top img {
-  height: 70px;
-}
-nav.nav-top a {
-  height: 70px;
-  line-height: 70px;
-  display: block;
-  float: left;
-  position: relative;
-  padding-right: 90px;
-  width: 150px;
-  text-align: center;
-  border-left: 1px solid $color-shadow;
-}
-nav.nav-top img {
-  position: absolute;
-  right: 20px;
-  top: 5px;
-  height: 58px;
-  border-radius: 50%;
-  border: 1px solid $color-shadow;
-}
-nav.nav-top a:first-child {
-  padding: 0;
-  width: 70px;
-  border-left: none;
-}
-nav.nav-top a:nth-child(2) {
-  border-left: none;
-}
-nav.nav-top a:first-child img {
-  top: 0;
-  left: 0;
-  height: 70px;
+#nav-top {
   border-radius: 0;
+  background-color: #fcd51b;
 }
-nav.nav-top button {
-  position: fixed;
-  right: 0;
-  height: 70px;
-  padding: 0 20px;
-  background-color: transparent;
-  border: none;
-  font-size: 1.4em;
+#nav-side {
+  background-color: #fcd51b;
 }
-nav.nav-side {
-  width: 200px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  height: 100vh;
-  border-left: 1px solid $color-shadow;
-  transition: 0.2s ease-in-out all;
-  padding-top: 70px;
+#nav-top .item {
+  min-height: 4em;
 }
-nav.nav-side.hidden {
-  right: -210px;
+#nav-top img {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  margin: -.5em 0;
 }
-nav.nav-side.visible {
-  right: 0;
-}
-nav.nav-side button {
-  padding: 20px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.4em;
-  height: 70px;
-  background-color: transparent;
-  border: none;
-}
-nav.nav-side ul {
-  list-style: none;
-}
-nav.nav-side ul a {
-  padding: 15px 20px;
-  border-top: 1px solid $color-shadow;
-  display: block;
-  font-size: 1.25em;
-}
-nav.nav-side span.lang {
-  display: block;
-  line-height: 30px;
-  height: 30px;
-  padding: 20px 20px;
-  border-top: 1px solid $color-shadow;
-  font-size: 1.1em;
-}
-nav.nav-side span.lang a {
-  font-size: 1.1em;
+#nav-top img:first-child {
+  border-radius: 0;
+  margin: calc(-1em - 2px) calc(-1em - 1px) calc(-1em - 2px) calc(-1em - 2px) ;
+  width: 4em;
+  height: 4em;
 }

@@ -5,15 +5,6 @@
     if ($lang != 'nl') $lang = 'en';
     App::setLocale($lang);
     ?>
-    @if(session('success'))
-        <div class="message message-success">
-            <p>{{ session('success') }}</p>
-        </div>
-    @elseif(session('failure'))
-        <div class="message message-failure">
-            <p>{{ session('failure') }}</p>
-        </div>
-    @endif
 
     <section id="contact">
         <div class="ui container">
@@ -32,9 +23,9 @@
             <div class="field">
                 <label for="subject">@lang('forms.subject')</label>
                 @if (isset($oEvent))
-                    <input type="hidden" name="event" value="true">
-                    <input type="hidden" type="text" name="subject" id="subject" value="{{ $oEvent->title }}" required/>
-                    <span class="contact-event">{{ $oEvent->title }}</span>
+                    <input type="hidden" name="event" value="true"/>
+                    <input readonly type="text" name="subject" class="ui disabled input" id="subject" value="{{ $oEvent->title }}" required/>
+                    {{--<span class="contact-event">{{ $oEvent->title }}</span>--}}
                 @else
                     <input type="text" name="subject" id="subject" value="" required/>
                 @endif
@@ -81,7 +72,7 @@
             @if (isset($oEvent))
                 <button name="event" class="ui secondary  button" value="{{ $oEvent->id }}" type="submit">@lang('forms.subscribe-button')</button>
             @else
-                <button type="submit" class="ui secondary  button">@lang('forms.send')</button>
+                <button type="submit" class="ui secondary  button">@lang('buttons.send')</button>
             @endif
             {{ Form::close() }}
         </div>

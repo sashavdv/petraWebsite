@@ -9,14 +9,18 @@ use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
     public function index() {
-        if (!Auth::check()){
-            return redirect(route('login'));
-        }
-
-        $aParticipants = Participants::get();
+        $aParticipants = Participants::paginate(10);
 
         return view('admin.home',  [
             'aParticipants' => $aParticipants,
+        ]);
+    }
+
+    public function removeParticipant(Request $request) {
+        Participants::destroy($request->post('participantId'));
+
+        return response()->json([
+            'success' => true,
         ]);
     }
 }
