@@ -33,7 +33,6 @@ App::setLocale($lang);
     <div class="ui divider"></div>
 
     <section id="events">
-        {{-- TODO Info -> Gebruiksaanwijzing (footnote) --}}
         <div class="ui container">
             <div class="ui stackable grid">
                 <div class="eight wide column">
@@ -49,6 +48,10 @@ App::setLocale($lang);
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ui bottom attached">
+                {{-- TODO Info -> Gebruiksaanwijzing (footnote) --}}
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam, architecto blanditiis consequatur distinctio dolorem dolorum error ipsam iste, libero natus nemo quaerat ratione repellat sequi sint unde veritatis voluptates!</p>
             </div>
         </div>
     </section>
