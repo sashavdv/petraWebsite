@@ -7,3 +7,16 @@ footer {
   padding-top: 1em;
   margin-top: 1em;
 }
+.social-media i {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  color: black;
+}
+.social-media {
+  text-decoration: none;
+  color: black;
+}
+.social-media i:hover {
+  color: white;
+}

@@ -29,7 +29,6 @@
 <body>
     <div id="app">
         <nav id="nav-top" class="ui stackable menu petra-primary">
-            {{-- TODO Opmaak -> Navigatie dikker (even dik als footer lijn) ?? --}}
             <div class="ui container">
                 <a class="header item" href="/" data-content="Home"><img src="{{ asset('images/logo.png') }}"/></a>
                 <a class="item" href="/beauty"><span class="navbar-link">@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}"/></a>
@@ -74,7 +73,7 @@
             <div class="ui container">
                 <div class="ui grid">
                     <div class="one column center aligned row">
-                        <div class="column"><p id="copy-text" class="ui header">You don't have to be a witch to practice magic(k)s</p></div>
+                        <div class="column"><p id="copy-text" class="ui header"><i>You don't have to be a witch to practice magic(k)s</i></p></div>
                     </div>
                     <div class="two column center aligned row">
                         <div class="column">
@@ -93,17 +92,17 @@
                     <div class="one column center aligned row">
                         <div class="column">
                             <div class="ui horizontal list">
-                                <a class="item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="item social-media" data-content="Facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <div class="item">-</div>
-                                <a class="item" href="https://youtube.coms/" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="item social-media" data-content="Youtube" href="https://youtube.coms/" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <div class="item">-</div>
-                                <a class="item" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="item social-media" data-content="Instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="one column center aligned row">
                         <div class="column">
-                            <p>&copy; pure-petra.com - {{ date('Y') }}</p>
+                            <p>&copy; purepetra.be - {{ date('Y') }}</p>
                         </div>
                     </div>
                 </div>
@@ -136,6 +135,7 @@
 
         $('.fab.icon').popup();
         $('.header.item').popup();
+        $('.social-media').popup();
 
         $('.message .close')
             .on('click', function() {

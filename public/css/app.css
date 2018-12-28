@@ -533,6 +533,22 @@ footer {
   margin-top: 1em;
 }
 
+.social-media i {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  color: black;
+}
+
+.social-media {
+  text-decoration: none;
+  color: black;
+}
+
+.social-media i:hover {
+  color: white;
+}
+
 .event-button-beauty {
   background-color: #C7F8D2 !important;
 }
