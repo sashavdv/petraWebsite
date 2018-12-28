@@ -1,5 +1,3 @@
-// TODO Lettertype -> (sans serif/ 'viaculturaNormal', Arial, sans-serif of Droid Sans", Verdana, Geneva, sans-serif)
-
 // Variables
 @import "variables";
 
@@ -20,3 +18,7 @@
 @import url("https://unpkg.com/leaflet@1.3.4/dist/leaflet.css");
 @import url("https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css");
 
+// Default Font
+* {
+  font-family: 'viaculturaNormal Arial sans-serif';
+}

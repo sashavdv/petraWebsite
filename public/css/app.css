@@ -766,4 +766,8 @@ li.page-item:last-child {
   padding: 1rem;
 }
 
+* {
+  font-family: 'viaculturaNormal Arial sans-serif';
+}
+
 /*# sourceMappingURL=app.css.map */
