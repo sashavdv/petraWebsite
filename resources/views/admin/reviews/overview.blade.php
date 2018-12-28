@@ -2,6 +2,7 @@
 
 @section('content')
     <section>
+        {{-- TODO Toevoegen -> Foto + Beroep --}}
         <div class="ui container">
             <h1>Reviews</h1>
             <a class="ui primary button" href="/admin/reviews/add">Nieuwe review <i class="fas fa-plus pl-5"></i></a>

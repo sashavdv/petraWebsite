@@ -55,7 +55,7 @@
         }).addTo(map);
 
         L.marker([50.929189,5.3375989]).addTo(map)
-            .bindPopup('Grote markt 18,<br>3500 Hasselt')
+            .bindPopup('Grote Markt 18 bus 3/04,<br>3500 Hasselt')
             .openPopup();
 
         map.addControl(new L.Control.Fullscreen());

@@ -1112,7 +1112,6 @@
                 eventsOpt.onIntervalChange.apply(ctx, intervalArg);
             }
         }
-        // @V2-todo see https://github.com/kylestetz/CLNDR/issues/225
         else {
             if (nextMonth && eventsOpt.nextMonth) {
                 eventsOpt.nextMonth.apply(ctx, monthArg);
@@ -1186,7 +1185,6 @@
             ctx.intervalEnd = ctx.intervalStart.clone()
                 .add(timeOpt.days - 1, 'days')
                 .endOf('day');
-            // @V2-todo Useless, but consistent with API
             ctx.month = ctx.intervalStart.clone();
         }
 
@@ -1249,7 +1247,6 @@
             ctx.intervalEnd = ctx.intervalStart.clone()
                 .add(timeOpt.days - 1, 'days')
                 .endOf('day');
-            // @V2-todo Useless, but consistent with API
             ctx.month = ctx.intervalStart.clone();
         }
         else {
@@ -1388,7 +1385,6 @@
 
         // Extend any options
         options = $.extend(true, {}, defaults, options);
-        // @V2-todo Only used for legacy month view
         ctx.month = moment().startOf('month');
 
         if (timeOpt.days) {

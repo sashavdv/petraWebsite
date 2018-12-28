@@ -13,6 +13,7 @@ class CreateReviewsTable extends Migration
      */
     public function up()
     {
+//      TODO Toevoegen -> Foto + Beroep
         Schema::create('reviews', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title')->nullable();

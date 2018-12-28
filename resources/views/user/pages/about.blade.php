@@ -6,7 +6,8 @@
     if ($lang != 'nl') $lang = 'en';
     App::setLocale($lang);
     ?>
-    <section>
+    <section id="about">
+        {{-- TODO Toevoegen -> Mission statement --}}
         <div class="ui container">
             <h1>@lang('titles.about')</h1>
             <p>@lang('content.about_paragraph_1')</p>

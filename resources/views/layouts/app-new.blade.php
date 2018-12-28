@@ -29,6 +29,7 @@
 <body>
     <div id="app">
         <nav id="nav-top" class="ui stackable menu petra-primary">
+            {{-- TODO Opmaak -> Navigatie dikker (even dik als footer lijn) ?? --}}
             <div class="ui container">
                 <a class="header item" href="/" data-content="Home"><img src="{{ asset('images/logo.png') }}"/></a>
                 <a class="item" href="/beauty"><span class="navbar-link">@lang('nav.beauty')</span><img src="{{ asset('images/beauty.png') }}"/></a>
@@ -70,6 +71,7 @@
         </div>
 
         <footer>
+            {{-- TODO Content -> Twitter wordt Youtube --}}
             <div class="ui container">
                 <div class="ui grid">
                     <div class="one column center aligned row">
@@ -78,14 +80,14 @@
                     <div class="two column center aligned row">
                         <div class="column">
                             <div class="ui list">
-                                <div class="item">+32 123/45/67/89</div>
+                                <div class="item">+32 656 82 72 83</div>
                                 <div class="item">test@example.com</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="ui list">
                                 <div class="item">BE09999999999</div>
-                                <div class="item">Grote markt 18, 3500 Hasselt</div>
+                                <div class="item">Grote Markt 18 bus 3/04, 3500 Hasselt</div>
                             </div>
                         </div>
                     </div>

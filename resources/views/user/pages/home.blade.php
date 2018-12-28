@@ -33,6 +33,7 @@ App::setLocale($lang);
     <div class="ui divider"></div>
 
     <section id="events">
+        {{-- TODO Info -> Gebruiksaanwijzing (footnote) --}}
         <div class="ui container">
             <div class="ui stackable grid">
                 <div class="eight wide column">
@@ -55,6 +56,8 @@ App::setLocale($lang);
     <div class="ui divider"></div>
 
     <section id="reviews">
+        {{-- TODO Toevoegen -> Foto + Beroep --}}
+        {{-- TODO Opmaak -> Eerste 5 woorden vet gedrukt + Plumpjes onder elkaar (mobiel) + Petra bezorgd screens --}}
         <div class="ui container">
             <h1>@lang('titles.reviews')</h1>
             @foreach ($aReviews as $oReview)
