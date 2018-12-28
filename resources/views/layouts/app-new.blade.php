@@ -71,7 +71,6 @@
         </div>
 
         <footer>
-            {{-- TODO Content -> Twitter wordt Youtube --}}
             <div class="ui container">
                 <div class="ui grid">
                     <div class="one column center aligned row">
@@ -96,7 +95,7 @@
                             <div class="ui horizontal list">
                                 <a class="item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <div class="item">-</div>
-                                <a class="item" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="item" href="https://youtube.coms/" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <div class="item">-</div>
                                 <a class="item" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
