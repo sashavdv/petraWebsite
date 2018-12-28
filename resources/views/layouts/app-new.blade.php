@@ -73,7 +73,7 @@
             <div class="ui container">
                 <div class="ui grid">
                     <div class="one column center aligned row">
-                        <div class="column"><p id="copy-text" class="ui header"><i>You don't have to be a witch to practice magic(k)s</i></p></div>
+                        <div class="column"><p id="copy-text" class="ui header"><i>You don't have to be a witch to practice magic(k)s</i> - Petra Stienears</p></div>
                     </div>
                     <div class="two column center aligned row">
                         <div class="column">
