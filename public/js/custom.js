@@ -1,17 +1,21 @@
 window.onscroll = function() {
     nav();
 }
+
 function registerForEvent(){
     var eventTitle = $('#title').text();
-    console.log("contact/" + encodeURI(eventTitle));
-    window.location = "contact/" + encodeURI(eventTitle);
+    $.get("petra.test/contact", eventTitle);
 }
-
 nav = function(){
 
 };
 
 function readMore(){
+    var isVisible = $( ".hide.about" ).is( ":visible" );
     $(".hide.about").toggle(500);
-    $(".ui.button").text("Lees minder");
+    if(isVisible) {
+        $(".ui.button").text("Lees meer");
+    } else {
+        $(".ui.button").text("Lees minder");
+    }
 }

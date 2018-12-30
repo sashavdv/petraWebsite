@@ -13,11 +13,11 @@ App::setLocale($lang);
             <div class="ui card" style="max-width: 100%; min-width: 100%;">
                 <div class="content">
                     <div class="ui items">
-                        <div class="item">
+                        <div class="item ">
                             <div class="ui medium image">
-                                <img src="{{ asset('images/petra.jpg') }}"/>
+                                <img class="ui large rounded image" src="{{ asset('images/petra.jpg') }}"/>
                             </div>
-                            <div class="content" style="padding: 1rem;">
+                            <div class="content" >
                                 <div class="header">Petra Stienaers</div>
                                 <div class="description">
                                     <p>@lang('content.about_paragraph_1')</p>
