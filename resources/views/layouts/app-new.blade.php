@@ -60,7 +60,7 @@
                         <div class="close icon">
                             <i class="fas fa-times"></i>
                         </div>
-                        <div class="header">Berricht</div>
+                        <div class="header">Bericht</div>
                         <p>{{ session('success') }}</p>
                     </div>
                 @endif
@@ -124,7 +124,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
     <script src="{{ asset('js/semantic.min.js') }}"></script>
-
+    <script src="{{ asset('js/custom.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 

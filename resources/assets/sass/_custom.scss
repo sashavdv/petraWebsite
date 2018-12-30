@@ -5,3 +5,12 @@
 .content {
   padding: 1rem;
 }
+
+.shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hide.about {
+  display: none;
+}

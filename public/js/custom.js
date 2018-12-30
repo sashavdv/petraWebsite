@@ -10,3 +10,8 @@ function registerForEvent(){
 nav = function(){
 
 };
+
+function readMore(){
+    $(".hide.about").toggle(500);
+    $(".ui.button").text("Lees minder");
+}

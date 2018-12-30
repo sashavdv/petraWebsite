@@ -9,6 +9,7 @@ App::setLocale($lang);
 @section('content')
     <section id="about">
         <div class="ui container">
+
             <div class="ui card" style="max-width: 100%; min-width: 100%;">
                 <div class="content">
                     <div class="ui items">
@@ -19,10 +20,19 @@ App::setLocale($lang);
                             <div class="content" style="padding: 1rem;">
                                 <div class="header">Petra Stienaers</div>
                                 <div class="description">
-                                    <p>@lang('content.about-short')</p>
-                                    <a class="ui button" href="/about">@lang('buttons.read-more')</a>
+                                    <p>@lang('content.about_paragraph_1')</p>
+                                    <p class="shorten">@lang('content.about_paragraph_2')</p>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <p class="hide about">@lang('content.about_paragraph_3')</p>
+                                <p class="hide about">@lang('content.about_paragraph_4')</p>
+                                <a class="ui button fluid" onclick="readMore()">@lang('buttons.read-more')</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

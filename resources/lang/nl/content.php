@@ -1,49 +1,33 @@
 <?php
-
 return [
-    /* Over Petra */
-    'about-short' => 'Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen.
-                      Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.
-                      Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen.
-                      Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.
-                      ',
-    /* about page */
-    'about_paragraph_1' => 'Als dochter van ouders met een vroegere achtergrond in de clerus, kwam Petra al jong de tegenstellingen in georganiseerde religie en meer holistische denkbeelden tegen.
-                            Haar ouders zetten zich ook als eerste(n) in een kleine dorpsgemeenschap ook in naar sociaal onrecht, haar moeder was erg creatief van natuur en haar vader had een goedlachs standvastig karakter, waar zijn liefde voor het leven zich voornamelijk uitte in de genegenheid hij voor zijn vrouw en dochter koesterde.' ,
-    'about_paragraph_2' => 'Dat haar ouders hun kerkelijk ambt aan de haak hingen en voor een gezin kozen, zorgde wel altijd voor wat deining in de dorpsgemeenschap en Petra kreeg met veelvuldige pesterijen rond dit stigma te maken.</br> 
-                            Het maakte dat ze zich als tiener jarenlang ‘anders’ voelde en geen aansluiting vond. Het maakte echter ook dat haar ontwakingsproces op gang kwam doordat ze van veel zaken al jong de andere kant van de medaille kon observeren.</br>
-                            En het kweekte in kiem, hoe onaangenaam ook op dat eigenste moment, een soort van vertrouwen in zichzelf en haar eigen intuïtie. 
-                            </br>Het leerde haar anders te kijken.',
-    'about_paragraph_3' => 'Tevens draaide ze in een vorm van jeugdige rebellie, alle wereldgodsdiensten wel eens op zijn kop en bleef toen een periode hangen aan het paganisme. Al kwam die insteek oorspronkelijk eerder op gang door haar enorme voorliefde voor fytotherapie en het ritueel gebruik van geneeskrachtige en giftige planten.',
-    'about_paragraph_4' => 'Toch ook daar, bij deze natuurgodsdienst, zette ze na 15 jaar kanttekeningen bij de heersende denkbeelden die evenzeer eerder richting macht stroomden, dan richting universele liefde en liefde voor het individue.',
-    'about_paragraph_5' => 'In de loop der jaren, verdiepte ze zich in het eenheidsgegeven van deze wereld, zonder daarom aan onze klassieke ‘realiteit’ van dualiteit voorbij te gaan.</br>
-                            Wit & zwart, voor haar gaan ze, in deze realiteit, deze wereld samen.</br>
-                            Met als stipulatie weliswaar, dat onze leefwereld er een is waar kwantumfysica & kosmisch denken, gelukkig stilaan mainstream in ons gezamenlijk collectief doorbreekt.',
-    'about_paragraph_6' => 'De kern hiervan: Zelfliefde & healing, het weten dat het al goed (zo) is, ongeacht de omstandigheden van onze persoonlijke levens, is wat ze wilt uitdragen.</br>
-                            Voor deze hedendaagse maatschappij, is dat gegeven van verbinding, van zoveel mogelijk echtheid, haar gift. ',
-    'about_paragraph_7' => 'Petra is van opleiding een gedreven schoonheidsspecialiste met een specialisatie in cosmetologie, aromatherapie, natuurlijke huidverzorging, cosmetische en ontspanningsmassage en medische pedicure.</br>
-                            Kleur, geur en natuurlijke fleur, doen haar hart sneller slaan.',
-    'about_paragraph_8' => 'Je kan bij haar terecht voor persoonlijk advies rond je  gevoelige- of probleemhuid + littekenbehandeling na plastische chirurgie of operaties.</br>
-                            Een gelaatsverzorging zal altijd voorafgegaan worden door een grondige huidanalyse, en de gebruikte extracten en producten worden ter plekke aan jouw huidtype aangepast.',
-    'about_paragraph_9' => 'Heb je probleem voeten, of gewoon moeilijk te verzorgen voeten of teennagels, dan kan je bij haar genieten van een pedicure die verder gaat dan nagels knippen en velletjes & eelt verwijderen.',
-    'about_paragraph_10' => 'Tevens biedt Petra je veelvuldige meditatietechnieken aan, en ook op het gebied van spiritualiteit kan je bij haar terecht. Balancering door middel van chakrawerk is een specialiteit.',
-    'about_paragraph_11' => 'Of voel je je aangetrokken tot de werking van de Tarot en zijn omstandige, mystieke symboliek? Heb je eerder een boon voor de vrijmoedige Lenormandkaarten?</br>
-                            Petra geeft regelmatig info hierover vrij, en er staat jaarcursus op het programma voor  diegenen die zich hierin willen verdiepen.',
-    'about_paragraph_12' => 'De modus in spiritueel onderzoek en divinatie is altijd gericht op een groter begripsvermogen en bijgaande inzichtelijke puurheid, die reikt naar wat ons doet tikken als mens, naar dat wat onze harten oplicht en verblijd.',
-    'about_paragraph_13' => 'Schaduwonderzoek wordt hierbij niet vermeden daar perfectionisme naar constante vrolijkheid, een utopie is die vaak maar ontduikingsgedrag voorstelt.</br>
-                            We zijn licht én duister in haar ondervinding, al vallen deze beiden sowieso onder de noemer LIEFDE. Instincten en miljoenen jaren celgeheugen laten zich op dit vlak wel degelijk gelden, toch zijn wij mensen als energetische entiteit zoveel groter en meer dan we zelf vaak beseffen.',
-    'about_paragraph_14' => 'Gelukkig zijn is voor Petra een balans(oefening) die je kan leren, iets waar ze zich graag mee naar het collectief toe, ten dienste stelt.</br>
-                             Wees gerust, we zijn nooit klaar, en we never get it ‘done’. </br>
-                             Mens zijn betekent voor haar intrinsiek impecfectie. Datgene wat net zo mooi, ontwapenend en spannend kan zijn.</br>
-                             Intuïtieve kracht in jezelf vinden, dicht bij jezelf blijven - maw het goddelijke aspect van jezelf eren, datgene wat zo moeilijk onder woorden te brengen is, is wat zij op een DIY manier inbouwt in haar leven. Gelijk ook hetgene zij uitdraagt en waar ze allerlei manieren voor aanreikt als houvast.',
-    'about_paragraph_15' => 'Haar laatste fascinatie geldt de verschillen in man- vrouw energie. En hoe we als maatschappij en individue kunnen terugkomen van het #METOO verhaal.</br>
-                             Maw: Hoe geraken een man en een vrouw nader?</br>
-                             Liefde beleven in het post feministische tijdperk - waar de eerste uitwassen van deze maatschappelijk (nodige) stroming blijken  – is niet voor watjes of bange zieltjes. Je hart staat op het spel en we begrijpen elkaar vaak niet…',
-    'about_paragraph_16' => 'Petra is nu 45, heeft een leven van onderzoek erop zitten, baarde 2 prachtige kinderen – Jasper & Jasmijn en is pas gehuwd met een man voor wie ze haar spirituele inslag en haar hang naar esthetiek en werkelijke schoonheid, niet moet minimaliseren of langer ontkennen.',
-    'about_paragraph_17' => 'Haar keuze om te kiezen voor innerlijke en uiterlijke schoonheid en esthetiek, balancering en ontspanningsvermogen in combinatie in-zichtelijkheid via divinatie, leest na dit relaas waarschijnlijk als de logica zelve.</br>
-                             Haar MISSION STATEMENT in life is dan ook Fun, Freedom, Helping others and Love.',
-    'about_paragraph_18' => 'Enkele jaren terug besliste zij om uitsluitend nog datgene te doen met haar leven, wat onder deze noemers te catalogiseren valt.',
+        /* Over Petra */
+        'about-short' => 'Petra kiest er dagelijks voor om 3 aspecten aan bod te laten komen.<br>
+                          Het lichaam, de mind en de ziel.<br>
+                          Met haar sprankel alledaagse magie, brengt ze je naar meer lichamelijk zelfrespect, laat ze je gedachten even rusten en inspireert ze mee jouw innerlijke zielen',
+        /* about page */
+        'about_paragraph_1' => 'Petra kiest er dagelijks voor om 3 aspecten aan bod te laten komen.<br>
+                            Het lichaam, de mind en de ziel.<br>
+                            Met haar sprankel alledaagse magie, brengt ze je naar meer lichamelijk zelfrespect, laat ze je gedachten even rusten en inspireert ze mee jouw innerlijke zielen' ,
+        'about_paragraph_2' => 'Petra Stienaers heeft als schoonheidsspecialiste 25 jaar ervaring in reguliere en alternatieve huidverzorging.<br>
+                            Ze is gediplomeerd schoonheidsspecialiste, Dr.Hauschka Therapeute, aromatherapeute, (medische) pedicure, visagiste, kleur- & stijl styliste, cosmetisch masseuse en fervent hobby herboriste.<br>
+                            De écht natuurlijke huidverzorging trekt haar aan. Ze wil jullie betrekken in haar beleving hiervan.',
+        'about_paragraph_3' => 'Petra ontwikkelde zich ook tot meditatie coach. Ze ondervond dat meditatie je gelukkiger maakt en levens kan redden.<br><br>
+                            Meditatie brengt meer contact tussen jouw lichaam en je ziel.<br>
+                            De technieken hiervoor wil ze je doorleren. <br>
+                            Balanceren kan je leren, tot rust kan je komen en naar binnen kan je kijken, ondervond ze.<br><br>
 
+                            Dat laatste is zich nu voor haar aan het vertalen via de mystieke leer van de Tarot. <br>
+                            Divinatie via Tarot kaarten is een degelijke methode voor schaduwwerk.<br>
+                            Schaduwwerk neemt je mee naar je gewoontes en je hart. Het laat je zien wat je dient en waardoor je kan groeien.<br>
+                            Tarot is het meest gekende kaartspel ter wereld, het wordt gebruikt als instrument voor zelfhulp en transformatie.<br>
+                            Een passie die ze met je wilt delen via lezingen en cursussen.',
+        'about_paragraph_4' => 'Ik vat de 3 aspecten samen als: body Beauty + mind Relaxation+ soul Divination.<br>
+                            Haar credo is dan ook: <br>
+                            “ You don’t have to be a witch to practise magic(k).”
+                            <br><br>
+                            Dat mag natuurlijk, maar het moet niet.
+                            <br><br>
+                            I love you!',
     /* Beauty */
     'beauty_paragraph_1' => 'Onze huid is ons grootste orgaan. En toch vergeten we vaak, dat dit een levend organisme is.',
     'beauty_paragraph_2' => 'In een wereld waar we overspoeld worden door toxische stoffen, wil ik jou en je huid
