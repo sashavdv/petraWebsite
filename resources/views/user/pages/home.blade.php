@@ -69,8 +69,6 @@ App::setLocale($lang);
     <div class="ui divider"></div>
 
     <section id="reviews">
-        {{-- TODO Toevoegen -> Foto + Beroep --}}
-        {{-- TODO Opmaak -> Eerste 5 woorden vet gedrukt + Plumpjes onder elkaar (mobiel) + Petra bezorgd screens --}}
         <div class="ui container">
             <h1>@lang('titles.reviews')</h1>
             @foreach ($aReviews as $oReview)
@@ -78,19 +76,19 @@ App::setLocale($lang);
                     <div class="content">
                         <div class="ui items">
                             <div class="item">
-                                <div class="ui medium image">
+                                <div class="ui small image">
                                     <img alt="monkey" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg"/>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
                                 <div class="content">
                                     <div class="header p15">
                                         <span>{{ $oReview->name }}</span>
-                                    </div>
-                                    <span class="right floated">
+                                        <span style="position: absolute; right: 2rem">
                                             @for($i = 0; $i < $oReview->rating ;$i++)
-                                            <i class="fa fa-star"></i>
-                                        @endfor
-                                    </span>
+                                                <i class="fa fa-star"></i>
+                                            @endfor
+                                        </span>
+                                    </div>
+                                    <div class="meta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
                                     <div class="description">
                                         <p style="text-align: justify">{{ $oReview->review }}</p>
                                     </div>

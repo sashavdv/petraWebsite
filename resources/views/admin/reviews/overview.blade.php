@@ -9,15 +9,25 @@
             @foreach($aReviews as $oReview)
                 <div class="ui card" style="max-width: 100%; min-width: 100%;">
                     <div class="content">
-                        <div class="header">
-                            <span>{{ $oReview->name }}</span>
-                            <span style="position: absolute; right: 2rem">
-                                @for($i = 0; $i < $oReview->rating;$i++)
-                                    <i class="fa fa-star"></i>
-                                @endfor
-                            </span>
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="ui small image">
+                                    <img alt="monkey" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg"/>
+                                </div>
+                                <div class="content">
+                                    <div class="header">
+                                        <span>{{ $oReview->name }}</span>
+                                        <span style="position: absolute; right: 2rem">
+                                            @for($i = 0; $i < $oReview->rating;$i++)
+                                                <i class="fa fa-star"></i>
+                                            @endfor
+                                        </span>
+                                    </div>
+                                    <div class="meta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    <div class="description">{{ $oReview->review }}</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="description">{{ $oReview->review }}</div>
                     </div>
                     <div class="extra content">
                         <a class="ui primary button" href="/admin/reviews/edit/{{ $oReview->id }}">Aanpassen <i class="fas fa-pen pl-5"></i></a>
