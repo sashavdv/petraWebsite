@@ -39,7 +39,7 @@
         </nav>
 
         <div id="nav-side" class="ui sidebar vertical right menu petra-primary">
-            <a class="item" href="about">@lang('nav.about')</a>
+            {{--<a class="item" href="about">@lang('nav.about')</a>--}}
             <a class="item" href="contact">@lang('nav.contact')</a>
             <a class="item" href="prices">@lang('nav.prices')</a>
             <a class="item" href="practical">@lang('nav.practical')</a>

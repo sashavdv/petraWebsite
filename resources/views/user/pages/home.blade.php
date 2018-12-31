@@ -78,6 +78,10 @@ App::setLocale($lang);
                     <div class="content">
                         <div class="ui items">
                             <div class="item">
+                                <div class="ui medium image">
+                                    <img alt="monkey" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg"/>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
                                 <div class="content">
                                     <div class="header p15">
                                         <span>{{ $oReview->name }}</span>

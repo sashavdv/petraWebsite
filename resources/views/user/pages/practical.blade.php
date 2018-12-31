@@ -29,7 +29,7 @@
         <div class="ui container">
             <h1>@lang('titles.location')</h1>
             <div class="ui list">
-                <div class="item">Grote Markt 18</div>
+                <div class="item">Grote Markt 18 bus 3/04</div>
                 <div class="item">3500 Hasselt</div>
             </div>
             <div class="ui card" style="max-width: 100%; min-width: 100%;">
