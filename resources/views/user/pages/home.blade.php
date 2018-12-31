@@ -77,7 +77,11 @@ App::setLocale($lang);
                         <div class="ui items">
                             <div class="item">
                                 <div class="ui small image">
-                                    <img alt="monkey" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg"/>
+                                    @if($oReview->photo)
+                                        <img class="ui large rounded image" src="{{ $oReview->photo }}"/>
+                                    @else
+                                        <img class="ui large rounded image" src="{{ asset("images/person-placeholder.jpg") }}"/>
+                                    @endif
                                 </div>
                                 <div class="content">
                                     <div class="header p15">
@@ -88,7 +92,7 @@ App::setLocale($lang);
                                             @endfor
                                         </span>
                                     </div>
-                                    <div class="meta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    <div class="meta">{{ $oReview->job }}</div>
                                     <div class="description">
                                         <p style="text-align: justify">{{ $oReview->review }}</p>
                                     </div>

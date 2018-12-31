@@ -7,11 +7,19 @@
             {{ Form::open(['action' => 'AdminReviewController@saveReview', 'method' => 'post', 'class' => 'ui form']) }}
             {{ Form::hidden('id', $oReviewData->id) }}
             <div class="field">
-                {{ Form::label('name', 'Naam') }}
-                {{ Form::text('name', $oReviewData->name, ['class' => 'form-control', 'required' => 'required']) }}
+                {{ Form::label('name', 'Naam*') }}
+                {{ Form::text('name', $oReviewData->name, ['required']) }}
             </div>
             <div class="field">
-                {{ Form::label('rating', 'Categorie') }}
+                {{ Form::label('job', 'Beroep') }}
+                {{ Form::text('job', $oReviewData->job) }}
+            </div>
+            <div class="field">
+                {{ Form::label('photo', 'Foto') }}
+                {{ Form::file('photo') }}
+            </div>
+            <div class="field">
+                {{ Form::label('rating', 'Score') }}
                 <div class="ui selection dropdown">
                     <input type="hidden" name="rating" value="{{ $oReviewData->rating }}">
                     <i class="dropdown icon"></i>
@@ -28,8 +36,8 @@
                 </div>
             </div>
             <div class="field">
-                {{ Form::label('review', 'Review') }}
-                {{ Form::textarea('review', $oReviewData->review, ['class' => 'form-control', 'required']) }}
+                {{ Form::label('review', 'Review*') }}
+                {{ Form::textarea('review', $oReviewData->review, ['required']) }}
             </div>
             <button class="ui primary button" type="submit">Opslaan</button>
             <a class="ui negative button" href="/admin/reviews">Annuleren</a>
