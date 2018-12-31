@@ -1,37 +1,42 @@
-// TODO Opmaak -> Border images groter (dikte van footer lijn) + Kleur border (footer lijn)
-// TODO Opmaak -> Logo dikker / Groter
+#nav-top {
+  border-radius: 0;
+  background-color: #fcd51b;
+
+  .item {
+    min-height: 4em;
+    padding: .5em;
+  }
+
+  .item:first-child {
+    padding: calc(1em + 2px);
+  }
+
+  img {
+    border-radius: 50%;
+    border: 1px solid darkgray;
+    height: 3.5em;
+    width: 3.5em;
+    margin: -.5em 0;
+  }
+
+  img:first-child {
+    border-radius: 0;
+    border: none;
+    margin: calc(-1em - 2px) calc(-1em - 1px) calc(-1em - 2px) calc(-1em - 2px) ;
+    width: 4.5em;
+    height: 4.5em;
+  }
+}
+
+#nav-side {
+  background-color: #fcd51b;
+}
+
 .navbar-link {
   font-size: 22px;
   margin-right: 1em;
 }
+
 .navbar-link:last-child {
   margin-right: 0;
-}
-#nav-top {
-  border-radius: 0;
-  background-color: #fcd51b;
-}
-#nav-side {
-  background-color: #fcd51b;
-}
-#nav-top .item {
-  min-height: 4em;
-  padding: .5em;
-}
-#nav-top .item:first-child {
-  padding: calc(1em + 2px);
-}
-#nav-top img {
-  border-radius: 50%;
-  border: 1px solid darkgray;
-  height: 3.5em;
-  width: 3.5em;
-  margin: -.5em 0;
-}
-#nav-top img:first-child {
-  border-radius: 0;
-  border: none;
-  margin: calc(-1em - 2px) calc(-1em - 1px) calc(-1em - 2px) calc(-1em - 2px) ;
-  width: 4.5em;
-  height: 4.5em;
 }

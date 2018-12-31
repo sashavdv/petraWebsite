@@ -2,10 +2,12 @@
   width: 100%;
   max-height: 50vh;
   height: 500px;
-}
-#map div.leaflet-popup-content {
-  text-align: center;
-}
-#map h1 {
-  z-index: 10;
+
+  div.leaflet-popup-content {
+    text-align: center;
+  }
+
+  h1 {
+    z-index: 10;
+  }
 }

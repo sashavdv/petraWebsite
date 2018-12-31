@@ -1,75 +1,90 @@
-// TODO Opmaak -> Cirkel dikker
 .clndr {
   border: 1px solid #D4D4D5;
   border-radius: 5px;
-}
-.clndr-controls {
-  font-weight: bold;
-  justify-content: space-between;
-  width: 100%;
-  display: flex;
-  padding: 1em;
-  background-color: #fcd51b;
-  border-radius: 3px 3px 0 0;
-}
-.clndr-controls > * {
-  display: inline-block;
-  padding: 0 1em;
-  font-size: 1.2em;
-}
-.clndr-previous-button, .clndr-next-button {
-  font-size: 1.5em;
-}
-.clndr-previous-button:hover, .clndr-next-button:hover {
-  cursor: pointer;
-}
 
-.clndr-table {
-  display: block;
-  text-align: center;
-  padding: 1em;
-  margin-top: -1em;
-}
-.clndr-table thead, .clndr-table tbody {
-  display: block;
-  width: 100%;
-}
-.header-days, .clndr-table tbody tr {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: .5em;
-}
-.header-day, .day {
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
-}
+  .clndr-controls {
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    background-color: #fcd51b;
+    border-radius: 3px 3px 0 0;
 
-.day-contents {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid gray;
-}
+    >* {
+      display: inline-block;
+      padding: 0 1em;
+      font-size: 1.2em;
+    }
 
-.adjacent-month {
-  opacity: .3;
-}
-.today .day-contents{
-  border-color: green;
-  color: white;
-  background-color: green;
-}
-.event .day-contents {
-  border-color: red;
-  color: red;
-  transition: .1s all ease-in-out;
-}
-.event .day-contents:hover {
-  cursor: pointer;
-  background-color: red;
-  color: white;
+    .clndr-previous-button, .clndr-next-button {
+      font-size: 1.5em;
+    }
+
+    .clndr-previous-button:hover, .clndr-next-button:hover {
+      cursor: pointer;
+    }
+  }
+
+  .clndr-table {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin-top: -1em;
+
+    thead, tbody {
+      display: block;
+      width: 100%;
+    }
+
+    .header-days, tbody tr {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: .5em;
+
+      .header-day {
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+      }
+    }
+
+    .day {
+      width: 2.5em;
+      height: 2.5em;
+      line-height: 2.5em;
+
+      .day-contents {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid gray;
+      }
+    }
+
+    .today .day-contents{
+      border-color: green;
+      color: white;
+      background-color: green;
+    }
+
+    .event .day-contents {
+      border-color: red;
+      color: red;
+      transition: .1s all ease-in-out;
+    }
+
+    .event .day-contents:hover {
+      cursor: pointer;
+      background-color: red;
+      color: white;
+    }
+
+    .adjacent-month {
+      opacity: .3;
+    }
+  }
 }
 
 .clndr-details {
@@ -79,32 +94,37 @@
   position: relative;
   border: 1px solid #D4D4D5;
   border-radius: 5px;
-}
-#clndr-day {
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding: 1em;
-  line-height: 1.2em;
-  font-size: 1.2em;
-  background-color: #fcd51b;
-  border-radius: 3px 3px 0 0;
-  height: 3.1em;
-}
-.content-wrapper {
-  display: flex;
-  flex: 1;
-  min-height: 0;
-}
-.overflow-container {
-  flex: 1;
-  overflow: auto;
-}
-#clndr-day-details {
-  padding: .5em 1em;
-}
-#clndr-day-details .header, #clndr-day-details .meta {
-  display: flex;
-  justify-content: space-between;
+
+  #clndr-day {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    background-color: #fcd51b;
+    border-radius: 3px 3px 0 0;
+    height: 3.1em;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+
+    .overflow-container {
+      flex: 1;
+      overflow: auto;
+
+      #clndr-day-details {
+        padding: .5em 1em;
+
+        .header, .meta {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
 }

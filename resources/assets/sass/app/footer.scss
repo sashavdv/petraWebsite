@@ -1,22 +1,26 @@
 // TODO Lettertype -> Slogan sierlijk
-#copy-text {
-  font-family: Italic;
-}
 footer {
   background-color: #fcd51b;
   padding-top: 1em;
   margin-top: 1em;
-}
-.social-media i {
-  width: 1.5em;
-  height: 1.5em;
-  font-size: 1.5em;
-  color: black;
-}
-.social-media {
-  text-decoration: none;
-  color: black;
-}
-.social-media i:hover {
-  color: white;
+
+  #copy-text {
+    font-family: Italic;
+  }
+
+  .social-media {
+    text-decoration: none;
+    color: black;
+
+    i {
+      width: 1.5em;
+      height: 1.5em;
+      font-size: 1.5em;
+      color: black;
+    }
+
+    i:hover {
+      color: white;
+    }
+  }
 }
