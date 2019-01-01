@@ -53,7 +53,32 @@ App::setLocale($lang);
                         <div id="clndr-day">{{ date('d M Y') }}</div>
                         <div class="content-wrapper">
                             <div class="overflow-container">
-                                <div id="clndr-day-details"></div>
+                                <div id="clndr-day-details">
+                                    @foreach(\App\Event::getTodaysEvents() as $oEvent)
+                                        <div class="ui card event-card">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <span>{{ $oEvent->title }}</span>
+                                                    <span>{{ $oEvent->price }}</span>
+                                                </div>
+                                                <div class="meta">
+                                                    <span>{{ $oEvent->date }} {{ $oEvent->event_time }}</span>
+                                                    <span>{{ $oEvent->type }}</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p>
+                                                        @if(config('app.locale') == 'nl')
+                                                            {{ $oEvent->description_nl }}
+                                                        @else
+                                                            {{ $oEvent->description_en }}
+                                                        @endif
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <button class="ui bottom attached button event-button-{{ $oEvent->type }}" name="event-button" onclick="displayPopUp({{ $oEvent->id }})" value="{{ $oEvent->id }}">@lang('buttons.read-more')</button>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>

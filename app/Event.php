@@ -12,7 +12,6 @@ class Event extends Model
 
         $aExploded = explode('-', $now->toDateString());
 
-
         $aEvents = Event::get();
 
         $aNextEvents = array();
@@ -26,5 +25,13 @@ class Event extends Model
         }
 
         return $aNextEvents;
+    }
+
+    public static function getTodaysEvents() {
+        $now = Carbon::today()->toDateString();
+
+        $aEvents = self::where('date', $now)->get();
+
+        return $aEvents;
     }
 }

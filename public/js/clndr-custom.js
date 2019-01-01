@@ -50,7 +50,7 @@ function loadCalender(events, lang) {
                         var buttonText = '';
 
                         if (lang == 'nl') {
-                            buttonText = 'Meer Informatie';
+                            buttonText = 'Lees Meer';
                         } else {
                             buttonText = 'More information';
                         }
