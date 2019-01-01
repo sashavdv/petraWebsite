@@ -24,6 +24,7 @@
     },
     "dependencies": {
         "fullcalendar": "^3.9.0",
-        "gulp": "^3.9.1"
+        "gulp": "^3.9.1",
+        "trumbowyg": "^2.13.0"
     }
 }

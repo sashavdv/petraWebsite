@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     {{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
+    @yield('styles')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     {{--<script src="{{ asset('js/bootstrap.js') }}" defer></script>--}}
