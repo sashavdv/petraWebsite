@@ -1,10 +1,20 @@
 @extends('layouts.admin')
 
 @section('content')
-    <section>
+    {{ Form::open(['action' => 'AdminEventController@saveEvent', 'method' => 'post', 'class' => 'ui form']) }}
+
+    <section id="header">
         <div class="ui container">
             <h1>Evenement aanmaken/bewerken</h1>
-            {{ Form::open(['action' => 'AdminEventController@saveEvent', 'method' => 'post', 'class' => 'ui form']) }}
+            <button class="ui primary button" type="submit">Opslaan <i class="fas fa-save pl-5"></i></button>
+            <a class="ui negative button" href="/admin/events">Annuleren <i class="fas fa-ban pl-5"></i></a>
+        </div>
+    </section>
+
+    <div class="ui divider"></div>
+
+    <section>
+        <div class="ui container">
             {{ Form::hidden('id', $oEventData->id) }}
             <div class="field">
                 {{ Form::label('date', 'Datum') }}
@@ -44,11 +54,10 @@
                 {{ Form::label('description_en', 'Beschrijving engels') }}
                 {{ Form::textarea('description_en', $oEventData->description_en, ['class' => 'form-control', 'required']) }}
             </div>
-            <button class="ui primary button" type="submit">Opslaan</button>
-            <a class="ui negative button" href="/admin/events">Annuleren</a>
-            {{ Form::close() }}
         </div>
     </section>
+
+    {{ Form::close() }}
 @endsection
 
 @section('scripts')

@@ -6,8 +6,8 @@
     <section id="header">
         <div class="ui container">
             <h1>Email template</h1>
-            <button class="ui primary button">Opslaan</button>
-            <a class="ui negative button" href="/admin/mail/template">Annuleren</a>
+            <button class="ui primary button">Opslaan <i class="fas fa-save pl-5"></i></button>
+            <a class="ui negative button" href="/admin/mail/template">Annuleren <i class="fas fa-ban pl-5"></i></a>
         </div>
     </section>
 

@@ -1,11 +1,17 @@
 @extends('layouts.admin')
 
 @section('content')
-    <section>
-        {{-- TODO Toevoegen -> Foto + Beroep --}}
+    <section id="header">
         <div class="ui container">
             <h1>Reviews</h1>
             <a class="ui primary button" href="/admin/reviews/add">Nieuwe review <i class="fas fa-plus pl-5"></i></a>
+        </div>
+    </section>
+
+    <div class="ui divider"></div>
+
+    <section>
+        <div class="ui container">
             @foreach($aReviews as $oReview)
                 <div class="ui card" style="max-width: 100%; min-width: 100%;">
                     <div class="content">

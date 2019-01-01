@@ -1,10 +1,17 @@
 @extends('layouts.admin')
 
 @section('content')
-    <section>
+    <section id="header">
         <div class="ui container">
             <h1>Evenementen</h1>
             <a class="ui primary button" href="/admin/events/add">Nieuw evenement <i class="fas fa-plus pl-5"></i></a>
+        </div>
+    </section>
+
+    <div class="ui divider"></div>
+
+    <section>
+        <div class="ui container">
             <table class="ui table">
                 <thead>
                 <tr>

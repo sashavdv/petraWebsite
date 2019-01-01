@@ -1,10 +1,20 @@
 @extends('layouts.admin')
 
 @section('content')
-    <section>
+    {{ Form::open(['action' => 'AdminReviewController@saveReview', 'method' => 'post', 'class' => 'ui form', 'enctype' => 'multipart/form-data']) }}
+
+    <section id="header">
         <div class="ui container">
             <h1>Review aanmaken/bewerken</h1>
-            {{ Form::open(['action' => 'AdminReviewController@saveReview', 'method' => 'post', 'class' => 'ui form', 'enctype' => 'multipart/form-data']) }}
+            <button class="ui primary button" type="submit">Opslaan <i class="fas fa-save pl-5"></i></button>
+            <a class="ui negative button" href="/admin/reviews">Annuleren <i class="fas fa-ban pl-5"></i></a>
+        </div>
+    </section>
+
+    <div class="ui divider"></div>
+
+    <section>
+        <div class="ui container">
             {{ Form::hidden('id', $oReviewData->id) }}
             <div class="field">
                 {{ Form::label('name', 'Naam*') }}
@@ -39,11 +49,10 @@
                 {{ Form::label('review', 'Review*') }}
                 {{ Form::textarea('review', $oReviewData->review, ['required']) }}
             </div>
-            <button class="ui primary button" type="submit">Opslaan</button>
-            <a class="ui negative button" href="/admin/reviews">Annuleren</a>
-            {{ Form::close() }}
         </div>
     </section>
+
+    {{ Form::close() }}
 @endsection
 
 @section('scripts')
