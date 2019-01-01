@@ -85,7 +85,10 @@ Route::prefix('admin')->group(function () {
     Route::prefix('mail')->group(function () {
         Route::get('participants', 'AdminMailController@showParticipants');
         Route::post('participants/removeParticipant', 'AdminMailController@removeParticipant');
-        Route::get('template', 'AdminMailController@showMailTemplate');
+
+        Route::get('template', 'AdminMailController@showMailTemplate')->name('admin_template');
+        Route::get('template/edit', 'AdminMailController@editMailTemplate');
+        Route::post('template/update', 'AdminMailController@updateMailTemplate');
     });
 });
 

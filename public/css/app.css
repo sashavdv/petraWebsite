@@ -806,6 +806,10 @@ ul.pagination *, ul.pagination *:hover {
   text-align: center;
 }
 
+.ui.celled.table.mail-template th {
+  background-color: #fcd51b;
+}
+
 * {
   font-family: 'viaculturaNormal Arial sans-serif';
 }

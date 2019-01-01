@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             ReviewsTableSeeder::class,
             EventsTableSeeder::class,
             ParticipantsTableSeeder::class,
+            MailTemplatesTableSeeder::class,
         ]);
     }
 }
