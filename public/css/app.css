@@ -486,6 +486,7 @@ body p {
 }
 
 #nav-top {
+  margin-top: 0;
   border-radius: 0;
   background-color: #fcd51b;
 }
