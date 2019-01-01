@@ -4,7 +4,7 @@
     <section>
         <div class="ui container">
             <h1>Review aanmaken/bewerken</h1>
-            {{ Form::open(['action' => 'AdminReviewController@saveReview', 'method' => 'post', 'class' => 'ui form']) }}
+            {{ Form::open(['action' => 'AdminReviewController@saveReview', 'method' => 'post', 'class' => 'ui form', 'enctype' => 'multipart/form-data']) }}
             {{ Form::hidden('id', $oReviewData->id) }}
             <div class="field">
                 {{ Form::label('name', 'Naam*') }}

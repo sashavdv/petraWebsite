@@ -18,7 +18,6 @@ class ReviewsTableSeeder extends Seeder
         ]);
 
         DB::table('reviews')->insert([
-            'title' => 'Hartverwarmednde bezoeken',
             'name' => 'Eric Waitykawa Theunis',
             'rating' => 5,
             'review' => 'Het zijn steeds hartverwarmende chakrawandelingen met telkens een duidelijke en toegankelijke doe activiteit over een bepaalde chakra telkens op een super mooie locatie, proficiat Petra voor de organisatie en energie die je hier insteekt in licht en liefde Namasté Eric.',

@@ -6,6 +6,7 @@ use App\Review;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class AdminReviewController extends Controller
 {
@@ -49,7 +50,14 @@ class AdminReviewController extends Controller
             $oReview = Review::find($request->post('id'));
         }
 
+        if (($oPhoto = $request->file('photo')) != null) {
+            $oPhoto = $request->file('photo')->store('photos');
+//            return var_dump($oPhoto);
+            $oReview->photo = $oPhoto;
+        }
+
         $oReview->name = $request->post('name');
+        $oReview->job = $request->post('job');
         $oReview->rating = $request->post('rating');
         $oReview->review = $request->post('review');
 

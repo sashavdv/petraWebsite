@@ -78,7 +78,7 @@ App::setLocale($lang);
                             <div class="item">
                                 <div class="ui small image">
                                     @if($oReview->photo)
-                                        <img class="ui large rounded image" src="{{ $oReview->photo }}"/>
+                                        <img class="ui large rounded image" src="storage/photos/{{ $oReview->photo }}"/>
                                     @else
                                         <img class="ui large rounded image" src="{{ asset("images/person-placeholder.jpg") }}"/>
                                     @endif
