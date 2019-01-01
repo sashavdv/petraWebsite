@@ -37,6 +37,13 @@
             <a class="item" href="/admin">Dashboard</a>
             <a class="item" href="/admin/reviews">Reviews</a>
             <a class="item" href="/admin/events">Agenda</a>
+            <div class="ui simple dropdown item">
+                <span>Mails</span> <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="/admin/mail/participants">Mail Lijst</a>
+                    <a class="item" href="/admin/mail/template">Main Template</a>
+                </div>
+            </div>
         </div>
     </nav>
 

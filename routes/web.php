@@ -81,6 +81,12 @@ Route::prefix('admin')->group(function () {
     Route::get('events/add', 'AdminEventController@addEventForm');
 
     Route::get('updatemail/send', 'ContactController@sendUpdateMail');
+
+    Route::prefix('mail')->group(function () {
+        Route::get('participants', 'AdminMailController@showParticipants');
+        Route::post('participants/removeParticipant', 'AdminMailController@removeParticipant');
+        Route::get('template', 'AdminMailController@showMailTemplate');
+    });
 });
 
 
