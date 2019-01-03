@@ -1195,16 +1195,16 @@
         },
         {
             "name": "mollie/mollie-api-php",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/mollie-api-php.git",
-                "reference": "ca17c9f5a11f5dc9ab7b5293f29f7426a251ccd8"
+                "reference": "f2ea293108a5924a62bbfe9f35f3a719ef12c6d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/ca17c9f5a11f5dc9ab7b5293f29f7426a251ccd8",
-                "reference": "ca17c9f5a11f5dc9ab7b5293f29f7426a251ccd8",
+                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/f2ea293108a5924a62bbfe9f35f3a719ef12c6d4",
+                "reference": "f2ea293108a5924a62bbfe9f35f3a719ef12c6d4",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1276,7 @@
                 "sofortbanking",
                 "subscriptions"
             ],
-            "time": "2018-11-28T11:12:40+00:00"
+            "time": "2019-01-03T10:38:08+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2951,16 +2951,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
+                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
+                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
                 "shasum": ""
             },
             "require": {
@@ -2997,7 +2997,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-29T20:33:41+00:00"
+            "time": "2018-10-30T17:29:25+00:00"
         }
     ],
     "packages-dev": [
