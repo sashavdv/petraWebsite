@@ -18,7 +18,7 @@
         min-width: 400px;
         margin: 0 auto;
     ">
-        <h1>Volgende evenementen</h1>
+        {!! \App\MailTemplate::find(1)->mail_head !!}
         @foreach($aEvents as $oEvent)
         <div class="ui card event-card">
             <div class="content">
@@ -39,7 +39,8 @@
                 </div>
             </div>
         </div>
-    @endforeach
+        @endforeach
+        {!! \App\MailTemplate::find(1)->mail_foot !!}
     </div>
 </body>
 </html>
