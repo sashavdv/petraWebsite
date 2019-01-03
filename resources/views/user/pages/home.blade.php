@@ -30,7 +30,7 @@ App::setLocale($lang);
                             <div class="content">
                                 <p class="hide about">@lang('content.about_paragraph_3')</p>
                                 <p class="hide about">@lang('content.about_paragraph_4')</p>
-                                <a class="ui button fluid" onclick="readMore()">@lang('buttons.read-more')</a>
+                                <a class="ui button fluid" onclick="readMore('{{ App::getLocale() }}')">@lang('buttons.read-more')</a>
                             </div>
 
                         </div>

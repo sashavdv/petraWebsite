@@ -10,12 +10,20 @@ nav = function(){
 
 };
 
-function readMore(){
+function readMore(lang){
     var isVisible = $( ".hide.about" ).is( ":visible" );
     $(".hide.about").toggle(500);
     if(isVisible) {
-        $(".ui.button").text("Lees meer");
+        if(lang == 'nl') {
+            $(".ui.button").text("Lees meer");
+        } else {
+            $(".ui.button").text("Read more");
+        }
     } else {
-        $(".ui.button").text("Lees minder");
+        if(lang == 'nl') {
+            $(".ui.button").text("Lees minder");
+        } else {
+            $(".ui.button").text("Read less");
+        }
     }
 }
