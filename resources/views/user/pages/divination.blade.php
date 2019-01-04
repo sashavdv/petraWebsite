@@ -19,18 +19,16 @@
                         <div class="six wide column ">
                             <img class="ui image bordered rounded medium" src="{{ asset('images/divinatie/cirkelbloemen.jpg') }}" alt="A picture of a circle of flowers">
                         </div>
-                        <div class="ten wide column right floated">
+                        <div class="ten wide column ">
                             <p>@lang('content.divination_paragraph_1')</p>
                         </div>
                     </div>
 
-                    <div class="fourteen wide row">
-                        <div class="ten wide column">
+                        <div class="twelve wide column centered">
                             <p>@lang('content.divination_paragraph_2')</p>
                         </div>
-                    </div>
 
-                    <div class="fourteen wide row">
+                    <div class="sixteen wide row">
                         <div class="six wide column ">
                             <img class="ui image bordered rounded medium" src="{{ asset('images/divinatie/tarot_lovers.jpg') }}" alt="A picture of the lovers tarot card">
                         </div>
@@ -63,7 +61,7 @@
                     </div>
 
                     <div class="fourteen wide row">
-                        <div class="eight wide column centered">
+                        <div class="twelve wide column centered">
                             <p>@lang('content.divination_paragraph_6')</p>
                             <p>@lang('content.divination_paragraph_7')</p>
                         </div>
