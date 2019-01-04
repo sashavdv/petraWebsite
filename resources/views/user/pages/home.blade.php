@@ -111,7 +111,6 @@ App::setLocale($lang);
                                 <div class="content">
                                     <div class="header p15">
                                         <span>{{ $oReview->name }}</span>
-
                                     </div>
                                     <div class="header p15 right floated">
                                             <span>
@@ -119,7 +118,6 @@ App::setLocale($lang);
                                                     <i class="fa fa-star "></i>
                                                 @endfor
                                             </span>
-
                                     </div>
                                     <div class="meta">{{ $oReview->job }}</div>
                                     <div class="description">

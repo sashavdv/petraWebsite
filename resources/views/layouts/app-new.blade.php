@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
-
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     @yield('styles')
@@ -72,13 +72,19 @@
         <footer>
             <div class="ui container">
                 <div class="ui grid">
-                    <div class="one column center aligned row">
-                        <div class="column"><p id="copy-text" class="ui header"><i>You don't have to be a witch to practice magic(k)s</i> - Petra Stienears</p></div>
+                    <div class="sixteen wide row center aligned ">
+                        <div class="sixteen wide column">
+                            <p id="copy-text" style="font-size:32px;font-family: 'Dancing Script', cursive;" class="ui header">
+                                "You don't have to be a witch to practice magic(k)s!"
+                                <img class="ui massive spaced image" src="images/logos/infinity.png" alt="infinity symbol"/>
+                                Petra Stienears
+                            </p>
+                        </div>
                     </div>
                     <div class="two column center aligned row">
                         <div class="column">
                             <div class="ui list">
-                                <div class="item">+32 656 82 72 83</div>
+                                <div class="item">@lang('content.phone')</div>
                                 <div class="item">test@example.com</div>
                             </div>
                         </div>

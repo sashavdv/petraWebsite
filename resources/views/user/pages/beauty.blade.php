@@ -17,7 +17,7 @@
                 <div class="ui middle aligned stackable grid container">
                     <div class="fourteen column row">
                         <div class="six wide column">
-                            <img class="ui image bordered rounded large" src="{{ asset('images/relaxatie/Beauty_Behandeling_penselen.jpg') }}" alt="A picture of a beauty treatment">
+                            <img class="ui image bordered rounded large" src="{{ asset('images/beauty/Beauty_Behandeling_penselen.jpg') }}" alt="A picture of a beauty treatment">
                         </div>
                         <div class="eight wide column middle aligned right floated">
                             <h2>@lang('subtitles.beauty_subtitle_1')</h2>

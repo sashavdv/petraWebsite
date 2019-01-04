@@ -120,4 +120,8 @@ return [
                                 Vanaf mei 2019 kan je hiervoor bij me terecht.',
     'divination_paragraph_6' => 'Is dit een onderwerp dat jou boeit, hou dan zeker mijn <b>Kalender</b> in het oog en schrijf je tijdig in of boek je persoonlijke sessie.',
     'divination_paragraph_7' => 'Verdere info kan verkregen worden via het contactformulier op deze site.',
+
+
+    // footer
+    'phone' => '+32 656 82 72 83',
     ];
