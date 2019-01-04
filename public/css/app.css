@@ -814,4 +814,8 @@ ul.pagination *, ul.pagination *:hover {
   font-family: 'viaculturaNormal Arial sans-serif';
 }
 
+p.first-line::first-line {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=app.css.map */

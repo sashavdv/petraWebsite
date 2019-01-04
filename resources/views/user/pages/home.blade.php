@@ -111,15 +111,19 @@ App::setLocale($lang);
                                 <div class="content">
                                     <div class="header p15">
                                         <span>{{ $oReview->name }}</span>
-                                        <span style="position: absolute; right: 2rem">
-                                            @for($i = 0; $i < $oReview->rating ;$i++)
-                                                <i class="fa fa-star"></i>
-                                            @endfor
-                                        </span>
+
+                                    </div>
+                                    <div class="header p15 right floated">
+                                            <span>
+                                                @for($i = 0; $i < $oReview->rating ;$i++)
+                                                    <i class="fa fa-star "></i>
+                                                @endfor
+                                            </span>
+
                                     </div>
                                     <div class="meta">{{ $oReview->job }}</div>
                                     <div class="description">
-                                        <p style="text-align: justify">{{ $oReview->review }}</p>
+                                        <p class="first-line"  style="text-align: justify">{{ $oReview->review }}</p>
                                     </div>
                                 </div>
                                 </div>
