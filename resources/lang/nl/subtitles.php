@@ -7,5 +7,5 @@
  */
 
 return [
-    'beauty_subtitle_1' => 'Het belang van huidverzorging:',
+    'beauty_subtitle_1' => 'Het belang van huidverzorging',
 ];
