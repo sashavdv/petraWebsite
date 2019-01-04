@@ -14,7 +14,7 @@
             </div>
             <div class="mt-30">
             <div class="ui middle aligned stackable grid container">
-                <div class="fourteen wide row">
+                <div class="sixteen wide row">
 
                     <div class="eight wide column">
                         <div class="row pb-30">
@@ -28,7 +28,7 @@
                         <p>@lang('content.relaxation-paragraph-1')</p>
                     </div>
                 </div>
-                <div class="fourteen wide row">
+                <div class="sixteen wide row">
                     <div class="eight wide column middle aligned">
                         <p>@lang('content.relaxation-paragraph-2')</p>
                     </div>
@@ -37,7 +37,7 @@
                     </div>
 
                 </div>
-                <div class="fourteen wide row">
+                <div class="sixteen wide row">
                     <div class="eight wide column">
                         <img class="ui image bordered rounded large" src="{{ asset('images/relaxatie/vermoeidheid-2.jpg') }}" alt="A picture of a beauty treatment">
                     </div>
