@@ -520,6 +520,10 @@ body p {
   background-color: #fcd51b;
 }
 
+#nav-side .item {
+  font-size: 18px;
+}
+
 .navbar-link {
   font-size: 22px;
   margin-right: 1em;

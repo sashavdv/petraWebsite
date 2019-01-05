@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer class="pb-30">
             <div class="ui container">
                 <div class="ui grid">
                     <div class="sixteen wide row center aligned ">
