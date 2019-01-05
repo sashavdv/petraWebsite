@@ -77,7 +77,7 @@
                             <p id="copy-text" style="font-size:32px;font-family: 'Dancing Script', cursive;" class="ui header">
                                 "You don't have to be a witch to practice magic(k)s!"
                                 <img class="ui massive spaced image pb-5" src="images/logos/infinity.png" alt="infinity symbol"/>
-                                Petra Stienears
+                                Petra Stienaers
                             </p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
     </div>
 
     <div class="floating action button">
-        <a href="#app" class="fab icon" data-content="@lang('info.scroll-to-top')">
+        <a href="#app" class="fab icon">
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
@@ -139,7 +139,6 @@
             $('.ui.sidebar').sidebar('toggle');
         }
 
-        $('.fab.icon').popup();
         $('.header.item').popup();
         $('.social-media').popup();
 
