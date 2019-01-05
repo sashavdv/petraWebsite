@@ -46,11 +46,11 @@
                     </div>
                 </div>
                 <div class="ui divider"></div>
-                <div class="fourteen wide row">
+                <div class="sixteen wide row">
                     <div class="eight wide column middle aligned">
                         <p>@lang('content.relaxation-paragraph-4')</p>
                     </div>
-                    <div class="six wide column right floated">
+                    <div class="eight wide column right floated">
                         <img class="ui image bordered rounded full-width-image" src="{{ asset('images/relaxatie/relaxatie_wandelingen.jpg') }}" alt="A picture of a beauty treatment">
                     </div>
                 </div>

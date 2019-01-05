@@ -811,8 +811,22 @@ ul.pagination *, ul.pagination *:hover {
 }
 
 img.full-width-image {
-  display: block;
+  display: block !important;
+  width: 100% !important;
+}
+
+.image-row {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 9em;
+}
+
+.image-row img {
+  display: block;
+  height: 9em;
+  border-radius: 5px;
 }
 
 * {
