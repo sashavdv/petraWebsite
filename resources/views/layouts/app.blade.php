@@ -90,7 +90,7 @@
                         </div>
                         <div class="column">
                             <div class="ui list">
-                                <div class="item">BE09999999999</div>
+                                <div class="item">BE06 56 82 72 83</div>
                                 <div class="item">Grote Markt 18 bus 3/04, 3500 Hasselt</div>
                             </div>
                         </div>

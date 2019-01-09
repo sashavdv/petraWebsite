@@ -20,8 +20,9 @@ App::setLocale($lang);
                             <div class="content" >
                                 <div class="header">Petra Stienaers</div>
                                 <div class="description">
-                                    <p>@lang('content.about_paragraph_1')</p>
-                                    <p class="shorten">@lang('content.about_paragraph_2')</p>
+                                    @lang('content.about-short')
+{{--                                    <p>@lang('content.about_paragraph_1')</p>--}}
+{{--                                    <p class="shorten">@lang('content.about_paragraph_2')</p>--}}
                                 </div>
                             </div>
 

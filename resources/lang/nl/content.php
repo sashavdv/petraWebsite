@@ -1,9 +1,23 @@
 <?php
 return [
         /* Over Petra */
-        'about-short' => 'Petra kiest er dagelijks voor om 3 aspecten aan bod te laten komen.<br>
-                          Het lichaam, de mind en de ziel.<br>
-                          Met haar sprankel alledaagse magie, brengt ze je naar meer lichamelijk zelfrespect, laat ze je gedachten even rusten en inspireert ze mee jouw innerlijke zielen',
+        'about-short' => '<p>Petra kiest er dagelijks voor om 3 aspecten aan bod te laten komen.</p>
+                            <p>Het lichaam, de mind en de ziel. </p>
+                            <p>Met haar sprankel alledaagse magie, brengt ze je naar meer lichamelijk zelfrespect, laat ze jouw gedachten even rusten en inspireert ze mee jouw innerlijke zielenreis.</p>
+                            <p>Petra Stienaers heeft als schoonheidsspecialiste 25 jaar ervaring in reguliere en alternatieve huidverzorging.
+Ze is gediplomeerd schoonheidsspecialiste, Dr.Hauschka Therapeute, aromatherapeute, (medische) pedicure, visagiste, kleur- & stijl styliste, cosmetisch masseuse en fervent hobby herboriste.
+De écht natuurlijke huidverzorging trekt haar aan. Ze wil jullie betrekken in haar beleving hiervan.</p>
+<p>Petra ontwikkelde zich ook tot meditatie coach. Ze ondervond dat meditatie je gelukkiger maakt en levens kan redden.</p>
+                            <p>Meditatie brengt meer contact tussen jouw lichaam en je ziel.
+De technieken hiervoor wil ze je doorleren. <br> Ze zal je zeker vertellen dat je naar binnen kan kijken, dat je tot rust kan komen en dat je balanceren kan leren.</p>
+<p>Voor haar is dat zich nu ook aan het vertalen via de mystieke leer van de Tarot. 
+Divinatie via Tarot kaarten is een degelijke methode voor schaduwwerk.<br>Schaduwwerk neemt je mee naar je gewoontes en je hart. Het laat je zien wat je dient en waardoor je kan groeien.
+Tarot is het meest gekende kaartspel ter wereld, het wordt gebruikt als instrument voor zelfhulp en transformatie, een passie die ze met je wilt delen via lezingen en cursussen.</p>
+<p>Ik vat de 3 aspecten van haar werk samen als: <b>body-Beauty, mind-Relaxation & soul-Divination.</b></p>
+<p>Haar credo is dan ook: <br><b><i>“ You don’t have to be a witch to practise magic(k).”</i></b></p>
+<p>***Dat mag natuurlijk, maar het moet niet. ;-) </p>
+<p>Petra haar Mission Statement kent 4 velden: <b>Fun, Freedom, Service to others & Love.</b>Met deze waarden in het achterhoofd bouwt ze aan haar persoonlijke en professionele weg. Op die weg wilt ze jou graag ontmoeten.</p>
+                            ',
         /* about page */
         'about_paragraph_1' => 'Petra kiest er dagelijks voor om 3 aspecten aan bod te laten komen.<br>
                             Het lichaam, de mind en de ziel.<br>
