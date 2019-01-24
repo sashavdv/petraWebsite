@@ -75,7 +75,7 @@
                     <div class="sixteen wide row center aligned ">
                         <div class="sixteen wide column">
                             <p id="copy-text" style="font-size:32px;font-family: 'Dancing Script', cursive;" class="ui header">
-                                "You don't have to be a witch to practice magic(k)s!"
+                                "You don't have to be a witch to practice magic(k)!"
                                 <img class="ui massive spaced image pb-5" src="images/logos/infinity.png" alt="infinity symbol"/>
                                 Petra Stienaers
                             </p>
