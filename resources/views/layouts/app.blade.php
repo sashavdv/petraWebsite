@@ -150,6 +150,10 @@
                 ;
             })
         ;
+
+        $('.ui.accordion')
+            .accordion()
+        ;
     </script>
 
     @yield('scripts')
