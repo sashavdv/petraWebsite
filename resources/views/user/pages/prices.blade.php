@@ -7,7 +7,7 @@
     ?>
     <section id="beauty">
         <div class="ui container">
-            <p>BEAUTY, de magie van verzorging, ondersteuning, ontgifting en aanraking geeft onze huid werkzame impulsen en diepe ontspanning. De resultaten zijn direct voelbaar & waarneembaar.</p>
+            <p><span style="font-weight: bold">BEAUTY</span>, de magie van verzorging, ondersteuning, ontgifting en aanraking geeft onze huid werkzame impulsen en diepe ontspanning. De resultaten zijn direct voelbaar & waarneembaar.</p>
             <div class="ui accordion">
                 <div class="title"><i class="dropdown icon"></i>Gelaat</div>
                 <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A fuga ipsa itaque laboriosam maxime necessitatibus quae veritatis voluptatem. In itaque labore minus omnis temporibus voluptates. Aut incidunt iure possimus sequi.</div>
@@ -28,7 +28,7 @@
 
     <section id="ui relaxation">
         <div class="ui container">
-            <p>RELAXATION, de magie van mentale ontspanning, de staat van no-mind, de route weg van de stress van ons dagelijkse leven. </p>
+            <p><span style="font-weight: bold">RELAXATION</span>, de magie van mentale ontspanning, de staat van no-mind, de route weg van de stress van ons dagelijkse leven. </p>
             <div class="ui accordion">
                 <div class="title"><i class="dropdown icon"></i>Intake</div>
                 <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A fuga ipsa itaque laboriosam maxime necessitatibus quae veritatis voluptatem. In itaque labore minus omnis temporibus voluptates. Aut incidunt iure possimus sequi.</div>
@@ -46,7 +46,7 @@
 
     <section id="ui divination">
         <div class="ui container">
-            <p>DIVINATION, de magie van energie lezen. Voor jezelf of voor anderen, dat kan je kiezen. Heb jij een interesse naar het mystieke, dan kan je hier terecht.</p>
+            <p><span style="font-weight: bold">DIVINATION</span>, de magie van energie lezen. Voor jezelf of voor anderen, dat kan je kiezen. Heb jij een interesse naar het mystieke, dan kan je hier terecht.</p>
             <div class="ui accordion">
                 <div class="title"><i class="dropdown icon"></i>Individuele Tarot Sessie/Kaartlegging</div>
                 <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A fuga ipsa itaque laboriosam maxime necessitatibus quae veritatis voluptatem. In itaque labore minus omnis temporibus voluptates. Aut incidunt iure possimus sequi.</div>
