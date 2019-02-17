@@ -108,7 +108,7 @@
                     </div>
                     <div class="one column center aligned row">
                         <div class="column">
-                            <p>&copy; purepetra.be - {{ date('Y') }}</p>
+                            <p>&copy; youdonthavetobeawitchtopractisemagick.be - {{ date('Y') }}</p>
                         </div>
                     </div>
                 </div>
