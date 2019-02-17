@@ -69,15 +69,15 @@
             </div>
         </div>
 
-        <footer>
+        <footer class="pb-30">
             <div class="ui container">
                 <div class="ui grid">
                     <div class="sixteen wide row center aligned ">
                         <div class="sixteen wide column">
                             <p id="copy-text" style="font-size:32px;font-family: 'Dancing Script', cursive;" class="ui header">
-                                "You don't have to be a witch to practice magic(k)s!"
-                                <img class="ui massive spaced image" src="images/logos/infinity.png" alt="infinity symbol"/>
-                                Petra Stienears
+                                "You don't have to be a witch to practice magic(k)!"
+                                <img class="ui massive spaced image pb-5" src="images/logos/infinity.png" alt="infinity symbol"/>
+                                Petra Stienaers
                             </p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="column">
                             <div class="ui list">
-                                <div class="item">BE09999999999</div>
+                                <div class="item">BE06 56 82 72 83</div>
                                 <div class="item">Grote Markt 18 bus 3/04, 3500 Hasselt</div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
     </div>
 
     <div class="floating action button">
-        <a href="#app" class="fab icon" data-content="@lang('info.scroll-to-top')">
+        <a href="#app" class="fab icon">
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
@@ -139,7 +139,6 @@
             $('.ui.sidebar').sidebar('toggle');
         }
 
-        $('.fab.icon').popup();
         $('.header.item').popup();
         $('.social-media').popup();
 
@@ -150,6 +149,10 @@
                     .transition('fade')
                 ;
             })
+        ;
+
+        $('.ui.accordion')
+            .accordion()
         ;
     </script>
 
