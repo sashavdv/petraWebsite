@@ -660,6 +660,24 @@ footer .social-media i:hover {
   opacity: .3;
 }
 
+.clndr .clndr-table .event.day-beauty .day-contents {
+  border-color: #607d6d;
+  background-color: #C7F8D2;
+  color: #607d6d;
+}
+
+.clndr .clndr-table .event.day-relaxation .day-contents {
+  border-color: #55747d;
+  background-color: #ABEEFF;
+  color: #55747d;
+}
+
+.clndr .clndr-table .event.day-divination .day-contents {
+  border-color: #7d7178;
+  color: #7d7178;
+  background-color: #F3DFEE;
+}
+
 .clndr-details {
   display: flex;
   flex-flow: column;
