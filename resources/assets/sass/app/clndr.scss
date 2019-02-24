@@ -84,6 +84,24 @@
     .adjacent-month {
       opacity: .3;
     }
+
+    .event.day-beauty .day-contents {
+      border-color: $col-beauty-dark;
+      background-color: $col-beauty;
+      color: $col-beauty-dark;
+    }
+
+    .event.day-relaxation .day-contents {
+      border-color: $col-relaxation-dark;
+      background-color: $col-relaxation;
+      color: $col-relaxation-dark;
+    }
+
+    .event.day-divination .day-contents {
+      border-color: $col-divination-dark;
+      color: $col-divination-dark;
+      background-color: $col-divination;
+    }
   }
 }
 

@@ -618,6 +618,7 @@
         }
 
         if (eventsToday.length) {
+            extraClasses += (" day-" + eventsToday[0].type);
             extraClasses += (" " + this.options.classes.event);
         }
 
